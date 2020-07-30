@@ -1,0 +1,13 @@
+{
+  "name": "study",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Aakash Shah <ashah@lowes.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^26.1.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
