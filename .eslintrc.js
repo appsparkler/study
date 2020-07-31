@@ -3,4 +3,7 @@ module.exports = {
   extends: [
     'google',
   ],
-};
+  rules: {
+    'semi': [2, 'never'],
+  },
+}
