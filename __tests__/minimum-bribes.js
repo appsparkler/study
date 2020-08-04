@@ -1,9 +1,10 @@
 
 describe('minimumBribes', () => {
+  const TOO_CHAOTIC = 'Too chaotic'
   const minimumBribes = (q) => q.reduce(reduceToMinimumBribes, 0)
   const reduceToMinimumBribes = (r, ent, idx, arr) => {
     let rRef = r
-    if (rRef === 'Too Chaotic') return rRef
+    if (rRef === TOO_CHAOTIC) return rRef
     const bribesGiven = ent - idx - 1
     if (
       bribesGiven > 0 &&
@@ -11,7 +12,7 @@ describe('minimumBribes', () => {
     ) {
       rRef += bribesGiven
     } else if (bribesGiven > 2) {
-      rRef = 'Too Chaotic'
+      rRef = TOO_CHAOTIC
     }
     return rRef
   }
@@ -31,12 +32,40 @@ describe('minimumBribes', () => {
   test('test-case 2', () => {
     const q = [2, 5, 1, 3, 4]
     const result = minimumBribes(q)
-    expect(result).toBe('Too Chaotic')
+    expect(result).toBe(TOO_CHAOTIC)
+  })
+
+  test('test-case 3', () => {
+    const q = [2, 1, 5, 3, 4]
+    const result = minimumBribes(q)
+    expect(result).toBe(3)
+  })
+
+  test('test-case 4', () => {
+    const q = [2, 5, 1, 3, 4]
+    const result = minimumBribes(q)
+    expect(result).toBe(TOO_CHAOTIC)
+  })
+
+  xtest('test-case 5', () => {
+    const q = [1, 2, 5, 3, 7, 8, 6, 4]
+    const result = minimumBribes(q)
+    expect(result).toBe(7)
   })
 })
 
 
 /*
+
+1,2,3,4,5,6,7,8
+1,2,3,5,4,6,7,8 (5 bribed 4)
+1,2,5,3,4,6,7,8 (5 bribed 3)
+1,2,5,3,4,7,6,8 (7 bribed 6)
+1,2,5,3,7,4,6,8 (7 bribed 4)
+1,2,5,3,7,4,8,6 (8 bribed 6)
+1,2,5,3,7,8,4,6 (8 bribed 4)
+1,2,5,3,7,8,6,4 (6 bribed 4)
+1,2,5,3,7,8,6,4
 
 0,1,2,3,4
 1,2,3,4,5
