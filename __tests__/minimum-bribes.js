@@ -60,28 +60,52 @@ describe('minimumBribes', () => {
 describe('minimumBribes', () => {
   const TOO_CHAOTIC = 'Too chaotic'
 
-  const minimumBribes = (q) => q
-      .reduce(checkTooChaotic, 0)
-      .reduce(findMinimumBribes, 0)
+  const minimumBribes = (q) => {
+    const normalizedArray = q.map((i, idx) => idx + 1)
+    let bribes = 0
+    let i = 0
+    while (
+      // normalizedArray.toString() !== q.toString() ||
+      //   bribes === TOO_CHAOTIC ||
+      i !== 20
+    ) {
+      i++
+      normalizedArray // [1,2,3]
+          .some((i, idx, arr) => {
+            const expectedIndex = arr.length - 1 -idx
+            const member = normalizedArray[expectedIndex]
+            const actualIndex = q.indexOf(member)
+            const moreThan2BribesGiven = (expectedIndex - actualIndex) > 2
+            if (moreThan2BribesGiven) {
+              bribes = TOO_CHAOTIC
+            } else if (actualIndex < expectedIndex) {
+              console.log('bribe was given by ', member)
+              bribes += (expectedIndex - actualIndex)
+              return [
+                normalizedArray[actualIndex],
+                normalizedArray[expectedIndex],
+              ] =
+              [
+                normalizedArray[expectedIndex],
+                normalizedArray[actualIndex],
+              ]
+            }
+          })
 
-  const checkTooChaotic = (r, item, idx, arr) => {
-    const bribesGiven = item - (idx + 1)
-    let rRef = r
-    if (rRef === TOO_CHAOTIC) return rRef
-    if (bribesGiven > 2) {
-      rRef = TOO_CHAOTIC
+      console.log(normalizedArray)
     }
-    return rRef
-  }
-
-  const findMinimumBribes = (r, item, idx, arr) => {
-    if (r === TOO_CHAOTIC) return r
+    return bribes
   }
 
   test('test-case-0', () => {
-    const q=[4, 2, 1, 3]
+    const q=[2, 1, 3]
+    minimumBribes(q)
+  })
+
+  test('test-case 5', () => {
+    const q = [1, 2, 5, 3, 7, 8, 6, 4]
     const result = minimumBribes(q)
-    expect(result).toBe(TOO_CHAOTIC)
+    expect(result).toBe(7)
   })
 })
 
