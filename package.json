@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
+    "cls-hooked": "^4.2.2",
     "eslint": "^7.5.0",
     "eslint-config-google": "^0.14.0"
   }
