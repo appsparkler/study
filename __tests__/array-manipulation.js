@@ -2,7 +2,6 @@ describe('Array Manipulation', () => {
   const reduceArray = ({
     query, arrOfZeros, idx, arr,
   }) => {
-    const sortArray = (a, b) => a - b
     const [a, b, k] = query
     for (let i = 0; i < arrOfZeros.length; i++) {
       if (i >= (a-1) &&
@@ -11,20 +10,20 @@ describe('Array Manipulation', () => {
       }
     }
     if (idx === (arr.length-1)) {
-      return arrOfZeros.sort(sortArray)
+      return Math.max.apply(null, arrOfZeros)
     }
     return arrOfZeros
   }
 
   const manipulateArray = (n, queries) => {
     const arrOfZeros = [...new Array(n)].map((i) => 0)
-    const updatedArray = queries
+    const result = queries
         .reduce((r, q, idx, arr) => reduceArray({
           query: q,
           arrOfZeros: r,
           idx, arr,
         }), arrOfZeros)
-    return updatedArray.pop()
+    return result
   }
 
   test('case 1', () => {
