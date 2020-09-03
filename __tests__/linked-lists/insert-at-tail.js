@@ -1,6 +1,13 @@
-import getArrayFromInput from '../../utils'
+// import {
+//   getArrayFromInput,
+// } from '../../utils'
+import {main} from '../../question.js'
+// import fs from 'fs'
 
 describe('insertAtTail', () => {
+  const insertNodeAtTail = (...args) => {
+    console.log(args)
+  }
   /*
   *
   **/
@@ -11,126 +18,30 @@ describe('insertAtTail', () => {
     }
   }
 
-  const init = () => {
+  const init = (input) => {
     const llist = new SinglyLinkedList()
-    const llistCount = parseInt(readLine(), 10)
+    const llistCount = input[0]
 
-    for (let i = 0; i < llistCount; i++) {
-      const llistItem = parseInt(readLine(), 10)
+    for (let i = 1; i < llistCount; i++) {
+      const llistItem = input[i]
       const llist_head = insertNodeAtTail(llist.head, llistItem)
       llist.head = llist_head
     }
   }
 
   it('should correctly insert at tail', () => {
+    const input = `5
+141
+302
+164
+530
+474`
+    // const ws = fs.createWriteStream('./question')
+    // ws.write(input)
+    // ws.end()
+    // init(input)
+    const result = main(input)
+    console.log(result)
     expect.assertions(0)
-
-    const input = getArrayFromInput(`5
-      141
-      302
-      164
-      530
-      474`)
   })
-  console.log(input)
 })
-
-
-'use strict'
-
-const fs = require('fs')
-
-process.stdin.resume()
-process.stdin.setEncoding('utf-8')
-
-let inputString = ''
-let currentLine = 0
-
-process.stdin.on('data', (inputStdin) => {
-  inputString += inputStdin
-})
-
-process.stdin.on('end', function() {
-  inputString = inputString.replace(/\s*$/, '')
-      .split('\n')
-      .map((str) => str.replace(/\s*$/, ''))
-
-  main()
-})
-
-function readLine() {
-  return inputString[currentLine++]
-}
-
-const SinglyLinkedListNode = class {
-  constructor(nodeData) {
-    this.data = nodeData
-    this.next = null
-  }
-}
-
-
-function printSinglyLinkedList(node, sep, ws) {
-  while (node != null) {
-    ws.write(String(node.data))
-
-    node = node.next
-
-    if (node != null) {
-      ws.write(sep)
-    }
-  }
-}
-
-// Complete the insertNodeAtTail function below.
-
-/*
- * For your reference:
- *
- * SinglyLinkedListNode {
- *     int data;
- *     SinglyLinkedListNode next;
- * }
- *
- */
-function insertNodeAtTail(head, data) {
-  const isEmpty = head === null
-  const node = {}
-  if (isEmpty) {
-    node.data = data
-    node.next = null
-    head = node
-    return head
-  }
-  const isTail = head.next === null
-  if (isTail) {
-    const node = {}
-    head.next = node
-    node.data = data
-    node.next = null
-    return head
-  } else {
-    const nextHead = head.next
-    const newHead = insertNodeAtTail(nextHead, data)
-    return newHead
-  }
-}
-
-function main() {
-  const ws = fs.createWriteStream(process.env.OUTPUT_PATH)
-
-  const llistCount = parseInt(readLine(), 10)
-
-  const llist = new SinglyLinkedList()
-
-  for (let i = 0; i < llistCount; i++) {
-    const llistItem = parseInt(readLine(), 10)
-    	const llist_head = insertNodeAtTail(llist.head, llistItem)
-      	llist.head = llist_head
-  }
-
-  printSinglyLinkedList(llist.head, '\n', ws)
-  ws.write('\n')
-
-  ws.end()
-}
