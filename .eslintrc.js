@@ -10,5 +10,7 @@ module.exports = {
   rules: {
     'semi': [2, 'never'],
     'no-undef': 2,
+    'camelcase': 0,
+    'require-jsdoc': 0,
   },
 }
