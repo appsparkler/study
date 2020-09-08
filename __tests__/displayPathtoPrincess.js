@@ -17,7 +17,28 @@ describe('displayPathtoPrincess method', () => {
       }
       return r
     }, {})
-    console.log(JSON.stringify(whereArePAndM, null, 2))
+    const {p, m} = whereArePAndM
+    const onGridDiff = m.onGrid - p.onGrid
+    const onGridItemDiff = m.onGridItem - p.onGridItem
+    const neutralizedOnGridDiff = onGridDiff < 0 ? -onGridDiff: onGridDiff
+    const neutralizedOnGridItemDiff = onGridItemDiff < 0 ?
+    -onGridItemDiff : onGridItemDiff
+    const moves = []
+    for (let i = 0; i < neutralizedOnGridDiff; i++) {
+      if (onGridDiff > 0) {
+        moves.push('UP')
+      } else {
+        moves.push('DOWN')
+      }
+    }
+    for (let i = 0; i < neutralizedOnGridItemDiff; i++) {
+      if (onGridItemDiff > 0) {
+        moves.push('LEFT')
+      } else {
+        moves.push('RIGHT')
+      }
+    }
+    return moves
   }
 
   function processData(input) {
@@ -29,6 +50,7 @@ describe('displayPathtoPrincess method', () => {
     }
     displayPathtoPrincess(dimension, grid)
   }
+
   it('should correctly displayPathtoPrincess', () => {
     const input = `3
 ---
