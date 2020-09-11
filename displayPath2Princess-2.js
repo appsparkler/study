@@ -1,4 +1,9 @@
-export function processData(input) {
+export function processData(
+    N, r, c, charArrayGrid
+) {
+  const charArr = charArrayGrid.split('\n')
+
+  console.log(charArr)
   // Enter your code here
 }
 //
