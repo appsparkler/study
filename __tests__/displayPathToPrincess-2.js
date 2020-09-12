@@ -2,15 +2,14 @@ import {processData} from '../displayPath2Princess-2'
 
 describe('displayPathtoPrincess-2', () => {
   it('should correctly displayPathtoPrincess', () => {
-    const N = 5
-    const [r, c] = [2, 3]
-    const charArrayGrid = `-----
+    const input = `5
+0 2
+--m--
 -----
-p--m-
 -----
+---p-
 -----`
-    const result = processData(N, r, c, charArrayGrid)
-
-    expect.assertions(0)
+    const result = processData(input)
+    expect(result).toBe('DOWN')
   })
 })
