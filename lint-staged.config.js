@@ -1,3 +1,3 @@
-{
-  "*.js": "yarn eslint --fix"
+module.exports = {
+  '*.js': 'yarn eslint',
 }
