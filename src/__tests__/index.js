@@ -15,4 +15,20 @@ describe('MachAnythingButANewLine', () => {
     const result = processData(2, 'XX XX XX')
     expect(result).toBe(true)
   })
+
+  // Pattern 3
+  it('should matchPattern - pattern-3 - case 1', () => {
+    const result = processData(3, 'xxx$xxxxxxxxxx$xxx')
+    expect(result).toBe(true)
+  })
+
+  // Pattern 4
+  it('should matchPattern - pattern-4 - case 1', () => {
+    const result = processData(4, '3abcd.')
+    expect(result).toBe(true)
+  })
+  it('should matchPattern - pattern-4 - case 2', () => {
+    const result = processData(4, '3abcdsdf.')
+    expect(result).toBe(false)
+  })
 })

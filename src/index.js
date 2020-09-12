@@ -1,5 +1,7 @@
 const Regex_Pattern_1 = /^.{3}\..{3}\..{3}\..{3}/g
 const Regex_Pattern_2 = /\S{2}\s\S{2}\s\S{2}/g
+const Regex_Pattern_3 = /\w{3}\W\w{10}\W\w{3}/g
+const Regex_Pattern_4 = /^\d\w{4}.$/g
 // Do not delete '/' and 'g'. Replace __________ with your regex.
 
 export function processData(patternID, Test_String) {
@@ -10,10 +12,15 @@ export function processData(patternID, Test_String) {
       break
     case 2:
       matches = Test_String.match(Regex_Pattern_2)
-    default:
+      break
+    case 3:
+      matches = Test_String.match(Regex_Pattern_3)
+      break
+    case 4:
+      matches = Test_String.match(Regex_Pattern_4)
+      break
   }
   const result = matches != null && matches.length > 0
-  console.log(matches)
   return result
 }
 
