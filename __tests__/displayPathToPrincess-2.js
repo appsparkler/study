@@ -9,7 +9,9 @@ describe('displayPathtoPrincess-2', () => {
 -----
 ---p-
 -----`
+    const x = 'foo'
     const result = processData(input)
-    expect(result).toBe('DOWN')
+    expect(result)
+        .toBe('DOWN')
   })
 })
