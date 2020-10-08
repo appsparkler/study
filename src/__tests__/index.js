@@ -55,4 +55,10 @@ describe('MachAnythingButANewLine', () => {
     const result = processData(6, 'thi9k.s')
     expect(result).toBe(false)
   })
+
+  // Pattern 7
+  it('should matchPattern - pattern-7 - case 1', () => {
+    const result = processData(7, 'h4CkR')
+    expect(result).toBe(true)
+  })
 })
