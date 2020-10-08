@@ -1,4 +1,5 @@
 import {processData} from '../'
+// import txt from '../domain-name-input'
 
 describe('MachAnythingButANewLine', () => {
   // Pattern 1
@@ -65,4 +66,6 @@ describe('MachAnythingButANewLine', () => {
     const result = processData(7, 'z9$?ZWe')
     expect(result).toBe(true)
   })
+
+  console.log('www.w3.org/'.match(/[a-z]{3}\..*\.([^\/])/g))
 })
