@@ -61,4 +61,8 @@ describe('MachAnythingButANewLine', () => {
     const result = processData(7, 'h4CkR')
     expect(result).toBe(true)
   })
+  it('should matchPattern - pattern-7 - case 2', () => {
+    const result = processData(7, 'z9$?ZWe')
+    expect(result).toBe(true)
+  })
 })
