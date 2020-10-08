@@ -3,6 +3,7 @@ const Regex_Pattern_2 = /\S{2}\s\S{2}\s\S{2}/g
 const Regex_Pattern_3 = /\w{3}\W\w{10}\W\w{3}/g
 const Regex_Pattern_4 = /^\d\w{4}.$/g
 const Regex_Pattern_5 = /^[123][120][xs0][30Aa][xsu][.,]$/g
+const Regex_Pattern_6 = /^[^0-9][^aeiou][^bcDF][^\s][^AEIOU][^\.,]$/g
 // ^[123][120][xs0][30Aa][xsu][.,]$
 
 // Do not delete '/' and 'g'. Replace __________ with your regex.
@@ -24,6 +25,9 @@ export function processData(patternID, Test_String) {
       break
     case 5:
       matches = Test_String.match(Regex_Pattern_5)
+      break
+    case 6:
+      matches = Test_String.match(Regex_Pattern_6)
       break
   }
   const result = matches != null && matches.length > 0

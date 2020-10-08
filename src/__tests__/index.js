@@ -41,4 +41,18 @@ describe('MachAnythingButANewLine', () => {
     const result = processData(5, '21x3x.123')
     expect(result).toBe(false)
   })
+
+  // Pattern 6
+  it('should matchPattern - pattern-6 - case 1', () => {
+    const result = processData(6, 'thi9k?')
+    expect(result).toBe(true)
+  })
+  it('should matchPattern - pattern-6 - case 2', () => {
+    const result = processData(6, 'thi9k.')
+    expect(result).toBe(false)
+  })
+  it('should matchPattern - pattern-6 - case 3', () => {
+    const result = processData(6, 'thi9k.s')
+    expect(result).toBe(false)
+  })
 })
