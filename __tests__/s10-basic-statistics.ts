@@ -1,8 +1,7 @@
-import {getMedian, convertStringOfNumbersToArray} from '../utils'
-
-const getSum = numArray => numArray.reduce(
-  (loop, num) => loop + num, 0
-);
+import {
+  getMedian, 
+  convertStringOfNumbersToArray, getMean
+} from '../utils'
 
 const reduceArrToMode = (loop, num, idx, arr) => {
   if(!loop) {
@@ -30,15 +29,13 @@ const getMode = numArray => {
 }
 
 const processData = (input) => {
-  const [n,stringOfNumbers] = input.split('\n')
+  const [,stringOfNumbers] = input.split('\n')
   const numArray = convertStringOfNumbersToArray(stringOfNumbers);
-  const sum = getSum(numArray);
-  const mean = sum/n;
+  const mean = getMean(numArray)
   const median = getMedian(numArray);
   const mode = getMode(numArray);
   [mean,median,mode].forEach(item => console.log(item));
 }
-
 
 describe('reduceArrToMode', () => {
   it('should test to reducer to update the mode - case 0', () => {
