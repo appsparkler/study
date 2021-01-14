@@ -29,6 +29,17 @@ const getMode = numArray => {
   return mode;
 }
 
+const processData = (input) => {
+  const [n,stringOfNumbers] = input.split('\n')
+  const numArray = convertStringOfNumbersToArray(stringOfNumbers);
+  const sum = getSum(numArray);
+  const mean = sum/n;
+  const median = getMedian(numArray);
+  const mode = getMode(numArray);
+  [mean,median,mode].forEach(item => console.log(item));
+}
+
+
 describe('reduceArrToMode', () => {
   it('should test to reducer to update the mode - case 0', () => {
     const result = reduceArrToMode(undefined, 1, 0, [1,2,3]);
@@ -53,16 +64,6 @@ describe('getMode', () => {
     expect(mode).toBe(1);
   })
 })
-
-const processData = (input) => {
-  const [n,stringOfNumbers] = input.split('\n')
-  const numArray = convertStringOfNumbersToArray(stringOfNumbers);
-  const sum = getSum(numArray);
-  const mean = sum/n;
-  const median = getMedian(numArray);
-  const mode = getMode(numArray);
-  [mean,median,mode].forEach(item => console.log(item));
-}
 
 describe('s10-basic-statistics', () => {
   it('should correctly print mean, median mode', () => {

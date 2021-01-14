@@ -39,7 +39,18 @@ const processData = (input) => {
   [Q1,Q2,Q3].forEach(item => console.log(item))
 }
 
-xdescribe('getHalves', () => {
+{
+  let consoleLog;
+  beforeEach(() => {
+    consoleLog = console.log;
+    console.log = jest.fn();
+  })
+  afterEach(() => {
+    console.log = consoleLog
+  })
+}
+
+describe('getHalves', () => {
   it('should get 2 halves of an array with even items - case 0', () => {
     const input = [1,2,3,4];
     const [upperHalf, lowerHalf] = getHalves(input);
@@ -66,7 +77,7 @@ xdescribe('getHalves', () => {
   })
 })
 
-xdescribe('getMedian', () => {
+describe('getMedian', () => {
   it('should get median - case 0', () => {
     const arr = [1,2,3];
     const result = getMedian(arr);
@@ -79,16 +90,24 @@ xdescribe('getMedian', () => {
   })
 })
 
-xdescribe('s10-quartiles', () => {
+describe('s10-quartiles', () => {
   it('should correctly print quartiles - case 1', () => {
     const input = `9
 3 7 8 5 12 14 21 13 18`
-    const result = processData(input);
+    processData(input);
+    expect(console.log).toHaveBeenCalledTimes(3);
+    expect(console.log).toHaveBeenNthCalledWith(1, 6)
+    expect(console.log).toHaveBeenNthCalledWith(2, 12)
+    expect(console.log).toHaveBeenNthCalledWith(3, 16)
   })
 
   it('should correctly print the quartiles- case 2', () => {
     const input = `10
 3 7 8 5 12 14 21 15 18 14`;
-    const result = processData(input);
+    processData(input);
+    expect(console.log).toHaveBeenCalledTimes(3);
+    expect(console.log).toHaveBeenNthCalledWith(1, 7)
+    expect(console.log).toHaveBeenNthCalledWith(2, 13)
+    expect(console.log).toHaveBeenNthCalledWith(3, 15)
   })
 })
