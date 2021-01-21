@@ -1,4 +1,4 @@
-import {getMedian, getQuartiles} from '../utils'
+import {convertInputToArrayOfStrings, convertStringOfNumbersToArray, getQuartiles, getMean} from '../utils'
 
 {
   let consoleLog;
@@ -12,8 +12,11 @@ import {getMedian, getQuartiles} from '../utils'
 }
 
 const processData = (input) => {
-  const quartiles = getQuartiles(input)
-  quartiles.forEach(item => console.log(item))
+  const [, stringOfNumbers] = convertInputToArrayOfStrings(input)
+  const arr = convertStringOfNumbersToArray(stringOfNumbers)
+    .sort((a, b) => a - b)
+  const quartiles = getQuartiles(arr);
+  quartiles.forEach(q => console.log(q));
 }
 
 describe('s10-quartiles', () => {

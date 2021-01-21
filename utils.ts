@@ -44,10 +44,9 @@ const getHalves = (arr) => {
   }
 }
 
-const getQuartiles = (input) => {
-  const [, stringOfNumbers] = input.split('\n')
-  const arr = convertStringOfNumbersToArray(stringOfNumbers)
-    .sort((a, b) => a - b)
+const convertInputToArrayOfStrings = (input) => input.split('\n')
+
+const getQuartiles = (arr) => {
   const {length} = arr;
   const isEven = length % 2 === 0;
   const centerIndex = Math.floor(length/2) - 1;
@@ -58,7 +57,6 @@ const getQuartiles = (input) => {
   return [Q1,Q2,Q3];
 }
 
-
 const convertStringOfNumbersToArray = (str) => str
   .split(' ')
   .map(Number)
@@ -66,7 +64,8 @@ const convertStringOfNumbersToArray = (str) => str
 export {
   getMedian,
   convertStringOfNumbersToArray,
+  convertInputToArrayOfStrings,
   getMean,
   getQuartiles,
-  getHalves
+  getHalves,
 }
