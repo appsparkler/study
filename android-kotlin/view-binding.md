@@ -9,7 +9,7 @@ android {
 }
 ```
 
-## In the `AppCompat` class, lateinit the var so that it can be used with multiple methods, inflate the layout and set the content view
+## In the `AppCompat` class, lateinit the `viewBinding` var so that it can be used with multiple methods, inflate the layout and set the content view
 ```kt
 private lateinit var viewBinding: ActivityMainBinding
 override fun onCreate {
