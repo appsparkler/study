@@ -1,4 +1,5 @@
-# Primitive Types
+# Primitive Types 
+They are foundation for other data types in Java
 - Boolean - `true` or `false`
 - int - whole numbers (ex. number of siblings)
 - double - decimal number (ex. GPA - 3.4)
