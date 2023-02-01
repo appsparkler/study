@@ -31,7 +31,9 @@ System.out.println("Hello World")
 ```
 ## Getting input from console
 ```java
+System.out.print("Enter your age: ");
 Scanner ageInput = new Scanner(System.in);
 int age = ageInput.nextInt();
 System.out.println("Your age is " + age);
+ageInput.close();
 ```
