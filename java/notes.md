@@ -18,3 +18,8 @@ This file can then be run with
 ```sh
 java fileName # no need to add the suffix .class
 ```
+
+# Check Version
+```sh
+java --version
+```
