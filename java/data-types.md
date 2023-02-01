@@ -6,6 +6,7 @@ They are foundation for other data types in Java
 - char - single letter or symbol (for ex. first initial, last initial, hashtag, etc)
 
 # Reference Types
+- String - ex "Aakash"
 - 
 
 
