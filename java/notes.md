@@ -10,7 +10,7 @@ public class App {
 
 `public static void main` is required for any progam.  It is what goes inside the code block that makes it unique.
 
-# Compiling
+# Compiling to `bytecode`
 ```sh
 javac path/to/java-file # this will compile to a .class file with the same name as that of the file
 ```
