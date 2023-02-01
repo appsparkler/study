@@ -23,3 +23,15 @@ java fileName # no need to add the suffix .class
 ```sh
 java --version
 ```
+
+# Code Examples:
+## Printing in console
+```java
+System.out.println("Hello World")
+```
+## Getting input from console
+```java
+Scanner ageInput = new Scanner(System.in);
+int age = ageInput.nextInt();
+System.out.println("Your age is " + age);
+```
