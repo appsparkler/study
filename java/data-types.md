@@ -7,3 +7,22 @@ They are foundation for other data types in Java
 
 # Reference Types
 - 
+
+
+```java
+public class App {
+    public static void main(String[] args) throws Exception {
+        int studentAge = 15;
+        double GPA = 3.45;
+        char studentFirstInitial = 'A';
+        char studentLastInitial = 'S';
+        boolean hasPerfectAttendance = true;
+
+        System.out.println("My age is " + studentAge);
+        System.out.println("My GPA is " + GPA);
+        System.out.println("My first initial is " + studentFirstInitial);
+        System.out.println("My last initial is " + studentLastInitial);
+        System.out.println("Do I have perfect attendance? " + hasPerfectAttendance);
+    }
+}
+```
