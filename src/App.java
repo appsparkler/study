@@ -4,7 +4,6 @@ public class App {
     public static void main(String[] args) throws Exception {
         boolean isOnRepeat = true;
         while (isOnRepeat) {
-
             System.out.print("Type \"yes\" if you would like to take this song off repeat.");
             Scanner takeSongOffRepeatScanner = new Scanner(System.in);
             String takeSongOffRepeatInput = takeSongOffRepeatScanner.next();
