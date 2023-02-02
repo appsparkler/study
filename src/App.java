@@ -2,16 +2,21 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        boolean isOnRepeat = true;
-        while (isOnRepeat) {
-            System.out.print("Type \"yes\" if you would like to take this song off repeat.");
-            Scanner takeSongOffRepeatScanner = new Scanner(System.in);
-            String takeSongOffRepeatInput = takeSongOffRepeatScanner.next();
-            if (takeSongOffRepeatInput.equals("yes")) {
-                isOnRepeat = false;
+        String question = "What is 2 + 2?";
+        String firstChoice = "4";
+        String correctAnswer = firstChoice;
+        System.out.println(question);
+        boolean hasAnsweredCorrectly = false;
+        while (!hasAnsweredCorrectly) {
+            Scanner userAnswerScanner = new Scanner(System.in);
+            String userAnswer = userAnswerScanner.next();
+            if (userAnswer.equals(correctAnswer)) {
+                hasAnsweredCorrectly = true;
+                System.out.println("That's the right answer!! Congrats!!!");
+                userAnswerScanner.close();
+            } else {
+                System.out.println("Please try again...");
             }
-            takeSongOffRepeatScanner.close();
         }
-        System.out.println("Playing next song.");
     }
 }
