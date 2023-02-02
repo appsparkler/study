@@ -2,18 +2,17 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Enter a number: ");
-        Scanner numberInputScanner = new Scanner(System.in);
-        try {
-            int numberInput = numberInputScanner.nextInt();
-            if (numberInput < 5) {
-                System.out.println("Enjoy the good luck a friend brings you");
-            } else {
-                System.out.println("Enjoy the good luck a friend brings you");
+        boolean isOnRepeat = true;
+        while (isOnRepeat) {
+
+            System.out.print("Type \"yes\" if you would like to take this song off repeat.");
+            Scanner takeSongOffRepeatScanner = new Scanner(System.in);
+            String takeSongOffRepeatInput = takeSongOffRepeatScanner.next();
+            if (takeSongOffRepeatInput.equals("yes")) {
+                isOnRepeat = false;
             }
-        } catch (Exception e) {
-            System.out.println("java.util.InputMismatchException");
+            takeSongOffRepeatScanner.close();
         }
-        numberInputScanner.close();
+        System.out.println("Playing next song.");
     }
 }
