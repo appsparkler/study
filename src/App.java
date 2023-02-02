@@ -2,14 +2,18 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.print("Enter your age: ");
-        Scanner ageInput = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        Scanner numberInputScanner = new Scanner(System.in);
         try {
-            int age = ageInput.nextInt();
-            System.out.println("Your age is " + age);
-            ageInput.close();
+            int numberInput = numberInputScanner.nextInt();
+            if (numberInput < 5) {
+                System.out.println("Enjoy the good luck a friend brings you");
+            } else {
+                System.out.println("Enjoy the good luck a friend brings you");
+            }
         } catch (Exception e) {
-            // TODO: handle exception
+            System.out.println("java.util.InputMismatchException");
         }
+        numberInputScanner.close();
     }
 }
