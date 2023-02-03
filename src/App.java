@@ -4,46 +4,31 @@ import java.util.Scanner;
 
 public class App {
 
-    public static double calculateTotalMealPrice(double listedMealPrice, double taxRate, double tipRate) {
-        double finalMealPrice = (tipRate / 100) * listedMealPrice;
-        double finalTaxAmount = (taxRate / 100) * listedMealPrice;
-        double mealPrice = listedMealPrice + finalMealPrice + finalTaxAmount;
-        return mealPrice;
-    }
-
-    public static double getIndividualMealPrice(double totalMealPrice, int numberOfPeople) {
-        return totalMealPrice / numberOfPeople;
-    }
-
-    public static String interactWithUserToCalculateMealPrice(Scanner input) {
-        System.out.println("Enter the listed meal price:");
-        double listedMealPrice = input.nextDouble();
-        System.out.println("Enter the tax rate (between 1 and 100):");
-        double taxRate = input.nextDouble();
-        System.out.println("Enter the tip rate (between 1 and 100):");
-        double tipRate = input.nextDouble();
-        // 
-        double totalMealPrice = calculateTotalMealPrice(listedMealPrice, taxRate, tipRate);
-        int numberOfPeople = 5;
-        double individualMealPrice = getIndividualMealPrice(totalMealPrice, numberOfPeople);
-        System.out.println("Total meal price: $" + totalMealPrice + ".");
-        System.out.println("Per head meal price: $" + individualMealPrice + ".");
-        System.out.println("********************");
-        System.out.println("Would you like to calculate for another meal? Y/N");
-        String yOrN = input.next();
-        return yOrN;
+    public static double getEmployeeSalary(double salaryPerHour, double numberOfHoursPerWeek, double daysOff) {
+        double salary = salaryPerHour * numberOfHoursPerWeek;
+        double deductions = daysOff * 8 * salaryPerHour;
+        return salary - deductions;
     }
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        // interactWithUserToCalculateMealPrice(input);
-        // // String calculateForAnotherMeal = input.next();
-        String calculateForAnotherMeal = "y";
-        while (calculateForAnotherMeal.toLowerCase().equals("y")) {
-            calculateForAnotherMeal = interactWithUserToCalculateMealPrice(input);
+        String recalculateSalary = "y";
+        while (recalculateSalary.toLowerCase().equals("y")) {
+            salaryCalculatorAppFunction(input);
+            recalculateSalary = input.next();
         }
-        System.out.println("***Thank you for using meal invoice calculator***");
-        System.out.println("***Have A Good Day :)***");
         input.close();
+    }
+
+    private static void salaryCalculatorAppFunction(Scanner input) {
+        System.out.println("How much do you earn per hour?");
+        double salaryPerHour = input.nextDouble();
+        System.out.println("How many hours do you work per week?");
+        double numberOfHoursPerWeek = input.nextDouble();
+        System.out.println("How many days off do you take?");
+        double daysOff = input.nextDouble();
+        double salary = getEmployeeSalary(salaryPerHour, numberOfHoursPerWeek, daysOff);
+        System.out.println("Your salary is : $" + salary + ".");
+        System.out.println("Would you like to recalculate your salary?Y/N");
     }
 }
