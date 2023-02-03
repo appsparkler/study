@@ -37,3 +37,7 @@ int age = ageInput.nextInt();
 System.out.println("Your age is " + age);
 ageInput.close();
 ```
+
+# Scanner
+- Once a `Scanner` is created; we can re-use the `scanner.next...()` asynchronously (blocking execution) to get new input from user.
+- 
