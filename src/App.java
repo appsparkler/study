@@ -28,7 +28,7 @@ public class App {
         System.out.println("How many days off do you take?");
         double daysOff = input.nextDouble();
         double salary = getEmployeeSalary(salaryPerHour, numberOfHoursPerWeek, daysOff);
-        System.out.println("Your salary is : $" + salary + ".");
-        System.out.println("Would you like to recalculate your salary?Y/N");
+        System.out.println("Your salary is : $" + salary + " this week.");
+        System.out.println("Would you like to recalculate your salary? (Y/N)");
     }
 }
