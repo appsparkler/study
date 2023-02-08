@@ -1,12 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        Triangle triangleA = new Triangle(10, 12, 1.5, 2.5, 3.5);
-        Triangle triangleB = new Triangle(4, 5, 1.2, 1.8, 20);
-        double triangleAArea = triangleA.findArea();
-        double triangleBArea = triangleB.findArea();
-        System.out.println(triangleAArea);
-        System.out.println(triangleBArea);
+        Student student1 = new Student("Aakash", "Shah", 2037, 4.6, "Finance");
+        Student student2 = new Student("Malik", "Krupa", 1873, 5, "Spirituality");
 
-        System.out.println(Triangle.getNumberOfSides());
+        System.out.println("Previous expected year to graduate: " + student1.expetedYearToGraduate + ".");
+        
+        student1.decrementExpectedYearToGraduate(5);
+        student1.decrementExpectedYearToGraduate(5);
+        student1.decrementExpectedYearToGraduate(5);
+        student1.decrementExpectedYearToGraduate(5);
+
+        System.out.println("Current expected year to graduate: " + student1.expetedYearToGraduate);
     }
 }
