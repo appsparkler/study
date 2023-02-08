@@ -1,5 +1,14 @@
 # Classes
 
+# Construction function
+The constructor function is written with the same name as that of the class.  For ex.
+
+```java
+class Triangle {
+  public Triangle {/*...*/}
+}
+```
+
 # `static` function
 When a function doesn't use the attributes of a class but still relates to the overall theme or idea of the class.
 
