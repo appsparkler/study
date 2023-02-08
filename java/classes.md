@@ -4,7 +4,7 @@
 The constructor function is written with the same name as that of the class.  For ex.
 
 ```java
-class Triangle {
+public class Triangle {
   public Triangle {/*...*/}
 }
 ```
