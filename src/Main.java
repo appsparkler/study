@@ -1,15 +1,27 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
-    public static void main(String[] args) {
-        Student student1 = new Student("Aakash", "Shah", 2037, 4.6, "Finance");
-        Student student2 = new Student("Malik", "Krupa", 1873, 5, "Spirituality");
+    static String[] strArray = {"hello", "world"};
+    static int[] intArray = {};
+    static Character[] charArray = {};
+    static Boolean[] boolArray = {};
 
-        System.out.println("Previous expected year to graduate: " + student1.expetedYearToGraduate + ".");
-        
-        student1.decrementExpectedYearToGraduate(5);
-        student1.decrementExpectedYearToGraduate(5);
-        student1.decrementExpectedYearToGraduate(5);
-        student1.decrementExpectedYearToGraduate(5);
+    public static void main(String[] args)
+    {
+        {
+            // without generics
+            List strList = new ArrayList();
+            strList.add("Hello");
+            strList.add(1); // no error even though we want only strings in our list
 
-        System.out.println("Current expected year to graduate: " + student1.expetedYearToGraduate);
+        }
+        {
+
+            // with generics
+            List<String> strList = new ArrayList();
+            strList.add("Hello");
+            // strList.add(1); // type error since only Strings are allowed in the list
+        }
     }
 }
