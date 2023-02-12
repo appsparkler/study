@@ -1,13 +1,24 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String... args) {
-        Building building = new Building();
-        Office office = new Office();
+        List<Building> buildingList = new ArrayList<>();
+        buildingList.add(new Building());
+        buildingList.add(new Office());
 
-        build(building);
-        build(office);
+        printBuildings(buildingList);
+
+        List<Office> officeList = new ArrayList<>();
+        officeList.add(new Office());
+        officeList.add(new Office());
+
+        printBuildings(officeList);
     }
 
-    private static void build(Building building) { // substitution - any sub-type of Building can be passed to this method
-        System.out.println("Constructing a new " + building.toString());
+    private static void printBuildings(List<? extends Building> buildingList) {
+        for (int i = 0; i < buildingList.size(); i++) {
+            System.out.println("Building " + buildingList.get(i));
+        }
     }
 }
