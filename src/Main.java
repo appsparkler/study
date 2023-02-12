@@ -1,20 +1,14 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class Main {
-    static Integer[] intArray = { 1, 2, 3 };
-
-    // with generics
-    public static <T> List<T> arrayToList(T[] array) {
-        List<T> list = new ArrayList<>();
-        for (T eachIntem : array) {
-            list.add(eachIntem);
+    public static void printShoppingList(String... items) {
+        System.out.println("\n");
+        System.out.println("SHOPPING LIST");
+        for (int i = 0; i < items.length; i++) {
+            System.out.println((i + 1) + ". " + items[i]);
         }
-        return list;
     }
 
-    public static void main(String[] args) {
-        List<Integer> intList = arrayToList(intArray);
-        System.out.println(intList.get(0));
+    public static void main(String... args) {
+        printShoppingList("Orange", "Banana", "Apple");
+        printShoppingList("Hybrid Tomato");
     }
 }
