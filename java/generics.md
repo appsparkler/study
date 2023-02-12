@@ -41,6 +41,7 @@ public class Main {
 ```
 
 ```java
+// with generics
 import java.util.ArrayList;
 import java.util.List;
 
