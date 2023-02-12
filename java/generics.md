@@ -64,3 +64,16 @@ public class Main {
 }
 
 ```
+
+# `extends` and `super`
+## Extends
+There are many times we would like to pass a `List` of sub-types too instead
+
+```java
+// without extends generic
+public static void printBuildings(List<Building> buildings){...} // this will not allow to pass any List type other than Building
+
+// with extends generic
+public static void printBuildings(List<? extends Building> buildings){...} // this allows to pass Building or any of its subtype 😎
+
+```
