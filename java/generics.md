@@ -14,6 +14,7 @@ strList.add(1); // type error since only Strings are allowed in the list
 
 # Methods
 ```java
+// Without generics
 import java.util.ArrayList;
 import java.util.List;
 
