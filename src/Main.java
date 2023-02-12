@@ -2,28 +2,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-    static String[] strArray = {};
-    static Integer[] intArray = {1,2,3};
-    static Boolean[] boolArray = {true, false, true};
+    static Integer[] intArray = { 1, 2, 3 };
 
-    public static <T>List<T> arrayToList(T[] arr) {
-        List<T> list = new ArrayList<T>();
-        for (T obj : arr) {
-            list.add(obj);
+    // without generics
+    public static List arrayToList(Object[] object) {
+        List list = new ArrayList();
+        for (Object eachItem : object) {
+            list.add(eachItem);
         }
         return list;
     }
-
-    public static void main(String[] args)
-    {
-        List<String> strList = arrayToList(strArray);
-        List<Integer> intList = arrayToList(intArray);
-        List<Boolean> boolList = arrayToList(boolArray);
-
-        strList.add("Yo!");
-
-        System.out.println(strList.get(0));
-        System.out.println(intList.get(0));
-        System.out.println(boolList.get(0));
+    
+    public static void main(String[] args) {
+        arrayToList(intArray);
     }
 }
