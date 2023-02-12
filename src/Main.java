@@ -13,7 +13,11 @@ public class Main {
         return list;
     }
     
+    // Running this throws an exception eventhough there's no
+    // compile time error
     public static void main(String[] args) {
-        arrayToList(intArray);
+        List<String> intList = arrayToList(intArray);
+        int size = intList.size();
+        System.out.println(intList.get(size - 1));
     }
 }
