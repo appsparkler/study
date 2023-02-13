@@ -77,3 +77,19 @@ public static void printBuildings(List<Building> buildings){...} // this will no
 public static void printBuildings(List<? extends Building> buildings){...} // this allows to pass Building or any of its subtype 
 
 ```
+
+## Super
+Sometimes we would like to add a `House` (which is a sub-type of Building) to a `List<Building>` or `List<Office>`
+```java
+// without generics
+public static void addHouseToList(List<House> houseList) {
+    houseList.add(new House());
+}
+// addHouseToList(buildingList);  // will throw compile error
+
+// with generics
+public static void addHouseToList(List<? super House> houseList {
+    houseList.add(new House());
+}
+addHouseToList(buildingList);  // will not throw compile error
+```
