@@ -14,3 +14,21 @@
 
 
 <img width="300" alt="image" src="https://user-images.githubusercontent.com/12084821/218350225-72aeefde-1b1d-4762-8698-83eb46382962.png">
+
+### Sets
+- Do not allow duplicates
+- Are unordered
+
+### List
+- Allow duplicate entries
+- Order is significant
+
+### Queue
+- Lets us add items to the head of the collection
+- They typically use FIFO operations
+- The are similiar to real-life queues in stores
+
+### Maps
+- Does not extend the `Collection` interface
+- Implement `Key, Value` pairs
+- 
