@@ -67,7 +67,7 @@ public class Main {
 
 # `extends` and `super`
 ## Extends
-There are many times we would like to pass a `List` of sub-types too instead
+There are many times we would like to pass a `List` of sub-types too instead of a `List` of only a particular type
 
 ```java
 // without extends generic
