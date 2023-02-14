@@ -7,5 +7,5 @@
 - Write a function that accepts `varargs` - for ex. a method that can accepts any number of String parameters - print each parameter
 - Demonstrate the substitution principle - i.e. a method that accepts `Building` and also any of it sub-types.
 - Substituion principle doesn't work directly for List - for ex. if a method accepts List of Building; it will not accept List of Office even though it 
-is a sub-type of Building.  Use generics, to the method to accept List of both - sub and super type - of a type.
+is a sub-type of Building.  Use generics so that the method can accept List of both - sub and super type - of a type.
 
