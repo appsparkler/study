@@ -31,3 +31,9 @@
 ### Maps
 - Does not extend the `Collection` interface
 - Implement `Key, Value` pairs
+
+### Linked Lists
+- Items can be inserted anywhere in the list very efficiently (fast)
+- Not very common - most of what it can do can be achieved by ArrayList
+- Can be used when we want to insert a large number of items somewhere in between the list.
+- 
