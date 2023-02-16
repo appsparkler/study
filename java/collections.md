@@ -38,6 +38,11 @@
 - Can be used when we want to insert a large number of items somewhere in between the list.
 - Take up more memory than ArrayList
 - They can be used to implement arrays that behave like queues - FIFO for ex.
+- Few important methods:
+```java
+.poll() // return the "HEAD" of the list
+.add() // adds a new item to the bottom of the list
+```
 
 ### HashMaps
 
