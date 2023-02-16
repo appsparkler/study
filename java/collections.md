@@ -45,4 +45,12 @@
 ```
 
 ### HashMaps
+- Do not allow duplicates
+- Can be used to implement structures like phonebook - for ex. name and number
+- Few important methods:
+- ```java
+.clear(); // to remove all entries
+.put(); // to add an entry
+.containsKey(); // to get the entry that contains a key
+```
 
