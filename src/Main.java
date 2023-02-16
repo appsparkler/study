@@ -2,13 +2,20 @@ import java.util.LinkedList;
 
 public class Main {
     public static void main(String[] args) {
-        LinkedList<String> myList = new LinkedList<>();
-        myList.add("A");
-        myList.add("B");
-        myList.add(1, "C");
-        System.out.println(myList);
+        LinkedList<Customer> customers = new LinkedList<Customer>();
+        customers.add(new Customer("Ben"));
+        customers.add(new Customer("Sally"));
+        customers.add(new Customer("Emma"));
+        customers.add(new Customer("Brian"));
+        System.out.println(customers);
+        serveCustomer(customers);
+        System.out.println(customers);
+        serveCustomer(customers);
+        System.out.println(customers);
+    }
 
-        myList.remove("C");
-        System.out.println(myList);
+    static void serveCustomer(LinkedList<Customer> queue) {
+        Customer currentCustomer = queue.poll();
+        currentCustomer.serveCustomer();
     }
 }
