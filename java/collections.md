@@ -48,9 +48,13 @@
 - Do not allow duplicates
 - Can be used to implement structures like phonebook - for ex. name and number
 - Few important methods:
-- ```java
+```java
 .clear(); // to remove all entries
 .put(); // to add an entry
 .containsKey(); // to get the entry that contains a key
 ```
+
+### LinkedHashMaps
+- Similar to HashMaps but has an option to have the entries in the order that they were added (unlike HashMaps)
+- Takes in three arguments - the initial capacity of the list before it is increased, the  
 
