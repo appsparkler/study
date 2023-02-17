@@ -12,8 +12,5 @@ public class Main {
         for(Map.Entry<String,Integer> entry: lhm.entrySet()) {
             System.out.println(entry.getKey());
         }
-
-
-        // System.out.println(lhm);
     }
 }
