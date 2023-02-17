@@ -11,4 +11,7 @@
 is a sub-type of Building.  Use generics so that the method can accept List of both - sub and super type - of a type.
 
 ### Collections
+- Structure data with a LinkedList - add items to a list, conditionally remove items, insert items in between other items in the list.
 - Demonstrate an application that serves customers in a queue - use LinkedLists to achieve this. 
+- Demonstrate a phonebook implementation with HashMap
+- Demonstrate a phonebook implementation with LinkedHashMap
