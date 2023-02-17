@@ -18,4 +18,4 @@ is a sub-type of Building.  Use generics so that the method can accept List of b
 
 ### Functional Programming
 - Implement a simple FunctionalInterface `GreetingMessage` that exposes a `greet` method.  Use it in the main method of the app.
-- 
+- Use lambda function to implement the functional interface
