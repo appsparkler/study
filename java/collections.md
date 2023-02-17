@@ -57,7 +57,7 @@
 ### LinkedHashMaps
 - Similar to HashMaps but has an option to have the entries in the order that they were added (unlike HashMaps)
 - Takes in three arguments - the initial capacity of the list before it is increased, boolean to use-access-order.
-- By default they are not stored in any order; they are stored as per the content in them.
+- By default the members are not stored in any order; they are stored as per their content.
 ```
 LinkedHashMap lhm = new LinkedHashMap(4, .75f, true); // initial capacity of 4, will expand after the list is 75% full and store with access order
 ```
