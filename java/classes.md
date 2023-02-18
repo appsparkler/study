@@ -5,7 +5,7 @@ The constructor function is written with the same name as that of the class.  Fo
 
 ```java
 public class Triangle {
-  public Triangle {/*...*/}
+  public Triangle {/*...*/} // not that there's no return type as well - for ex public void ...
 }
 ```
 
