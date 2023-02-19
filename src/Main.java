@@ -10,7 +10,7 @@ public class Main {
         };
 
         books
-            .stream()
+            .parallelStream()
             .filter(filter_titleStartsWithPAndAuthorStartsWithT)
             .forEach(System.out::println);
     }
