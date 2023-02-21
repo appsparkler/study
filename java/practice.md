@@ -22,3 +22,7 @@ is a sub-type of Building.  Use generics so that the method can accept List of b
 - Use method references instead of Lambda for implementing a Functional Interface
 - Use stream with `filter` and `forEach` to print an array-list of books.
 - Use parallelStream instead of stream
+
+### Modular Programming
+- Create a modular Java project
+- Create a modular project with 2 modules and each module to have 2 packages, each package to have 1 class.  Module 1 should expose package1.Class1 which needs to be used in Module 2.
