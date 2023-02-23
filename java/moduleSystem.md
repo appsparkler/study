@@ -9,7 +9,7 @@ By adding the `module-info.java` file; the project becomes modular.  It can use 
 with the `requires` keyword.
 
 ## Modules & Packages
-Modules hold logic for a specific functionality.
+Modules hold logic for a specific functionality - Encapsulation.
 Packages are like sub-modules that can be added to modules.  It helps to break
 the functionality into more granular chunks.
 
