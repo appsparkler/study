@@ -69,3 +69,26 @@ public class Main {
 }
 
 ```
+
+# Synchronized Methods
+Methods that are not `synchronized` will be allowed to execute simultaneously
+by multiple threads.  This can be dangerous for applications which have methods
+whose logic depends on the one another - for ex. an ATM's withdraw cash method; if
+executed simultaneously, will allow to withdraw cash before updating the balance
+affected by one of the executions.
+To avoid this situation; we can make that method `synchronized` - i.e. it can
+execute only by one thread at any given time.
+```java
+// ATM class
+public class ATM {
+    public synchronized void withdrawCash(Integer amountRequested, BankAccount account) {
+        if (account.getWithdrawableAmount() >= amountRequested) {
+            account.withdraw(amountRequested);
+            System.out.println("Transaction Successful!!");
+        } else {
+            System.out.println("The amount you requested is more than your withdrawable limit.");
+        }
+    }
+}
+
+```
