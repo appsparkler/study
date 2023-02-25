@@ -30,3 +30,9 @@ is a sub-type of Building.  Use generics so that the method can accept List of b
 
 ### Multithreading in Java
 - Create a simple multi threaded application
+- Implement Runnable instead of extending a Thread with the following three approaches
+    - Separate `Runny` class
+    - With new Runnable() in the main function
+    - Same as above but with lambdas
+
+    
