@@ -38,4 +38,5 @@ is a sub-type of Building.  Use generics so that the method can accept List of b
 - Demonstrate how threads could go into a deadlock.
 
 
-    
+### Streams
+- Build a `Person Creator` app that requests info from the user in the terminal - name, age and phonenumber and creates a person with it - Use `Scanner` with `System.in`
