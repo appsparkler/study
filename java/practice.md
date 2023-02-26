@@ -35,6 +35,7 @@ is a sub-type of Building.  Use generics so that the method can accept List of b
     - With new Runnable() in the main function
     - Same as above but with lambdas
 - Create a synchronized method for ATM class's `withdrawCash` so that only one thread is using the method at any given time.
+- Demonstrate how threads could go into a deadlock.
 
 
     

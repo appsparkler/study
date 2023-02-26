@@ -92,3 +92,76 @@ public class ATM {
 }
 
 ```
+
+# Deadlocks
+Sometimes 2 or more threads could end up in a deadlock - for ex. when all threads are waiting on the
+same object.  To avoid deadlocks; we can consider:
+- avoiding nested synchronized methods
+- if nested synchronized methods cannot be avoided; its best to have threads work with the objects in
+the same sequence.
+```java
+// deadlock
+public class Main {
+    public static Object spoon = new Object();
+    public static Object bowl = new Object();
+    public static void main(String[] args) {
+       Thread cook1 = new Thread(() -> {
+        synchronized(spoon) {
+            System.out.println("Cook 1: Holding the spoon");
+            System.out.println("Cook 2: Waiting for the bowl");
+
+            synchronized(bowl) {
+                System.out.println("Cook 1: Holding the spoon & the bowl.");
+            }
+        }
+       });
+
+       Thread cook2 = new Thread(() -> {
+        synchronized(bowl) {
+            System.out.println("Cook 1: Holding the bowl");
+            System.out.println("Cook 2: Waiting for the spoon");
+
+            synchronized(spoon) {
+                System.out.println("Cook 1: Holding the bowl & the spoon.");
+            }
+        }
+       });
+
+       cook1.start();
+       cook2.start();
+    }
+}
+
+// breaking the deadlock
+public class Main {
+    public static Object spoon = new Object();
+    public static Object bowl = new Object();
+    public static void main(String[] args) {
+       Thread cook1 = new Thread(() -> {
+        synchronized(bowl) {
+            System.out.println("Cook 1: Holding the bowl");
+            System.out.println("Cook 2: Waiting for the spoon");
+
+            synchronized(bowl) {
+                System.out.println("Cook 1: Holding the spoon & the bowl.");
+            }
+        }
+       });
+
+       Thread cook2 = new Thread(() -> {
+        synchronized(bowl) {
+            System.out.println("Cook 1: Holding the bowl");
+            System.out.println("Cook 2: Waiting for the spoon");
+
+            synchronized(spoon) {
+                System.out.println("Cook 1: Holding the bowl & the spoon.");
+            }
+        }
+       });
+
+       cook1.start();
+       cook2.start();
+    }
+}
+
+```
