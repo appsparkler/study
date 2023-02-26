@@ -21,12 +21,15 @@ public class PersonCreator {
         return userData;
     }
 
-    public PersonCreator(Map<String, Object> userInfo) 
-    {
-
+    public void createPerson(Map<String, Object> userInfo) {
         this.name = userInfo.get("name").toString();
         this.age = Integer.parseInt(userInfo.get("age").toString());
         this.phoneNumber = Long.parseLong(userInfo.get("phoneNumber").toString());
         System.out.println("Person created: \n  - Name: " + name + " \n  - Age: " + age + " \n  - Phone Number: " + phoneNumber);
+    }
+
+    public void create() {
+        Map<String, Object> userInfo = requestInfoInTerminal();
+        createPerson(userInfo);
     }
 }
