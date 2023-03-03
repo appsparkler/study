@@ -15,3 +15,8 @@ in data.  Output streams write out data.
 - FilterOutputStream
 - etc...
 
+## Scanner
+Scanner can be used to read input - from terminal, etc.
+
+## BufferedReader
+Can be used to read a file in the system.
