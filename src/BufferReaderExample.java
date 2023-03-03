@@ -12,6 +12,7 @@ public class BufferReaderExample {
             while ((line = reader.readLine()) != null) {
                 System.out.println(line);
             }
+            reader.close();
         } catch (IOException e) {
             
         }
