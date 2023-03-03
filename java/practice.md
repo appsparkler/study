@@ -42,3 +42,7 @@ is a sub-type of Building.  Use generics so that the method can accept List of b
 - Build a `Person Creator` app that requests info from the user in the terminal - name, age and phonenumber and creates a person with it - Use `Scanner` with `System.in`
 - Build an app that can read a file `example.txt` and output its content in the terminal using the `BufferedReader`.
 - Wrap the resources in `try` method
+
+### Working with files and directories
+- Build an app that creates a file in project folder
+- Build an app that lists directories content, creates new directory and lists files with specific extension (i.e. with a filter)
