@@ -52,3 +52,12 @@ class ParametrizedMathTest(val a: Int, val b:Int, val expectedValue:Int) {
 val context = ApplicationProvider.getApplicationContext<Context>()
 ```
 
+## Expecting a test to throw
+```kt
+@Test(expected = JsonSyntaxException::class)
+fun populateQuoteFromAssets_invalidJson() {
+    val quoteManager = QuoteManager()
+    val context = ApplicationProvider.getApplicationContext<Context>()
+    quoteManager.populateQuoteFromAsset(context, "malformed.json" )
+}
+```
