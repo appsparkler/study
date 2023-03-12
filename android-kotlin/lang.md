@@ -1,3 +1,9 @@
+# Constants v/s Variables
+```kt
+val pi: Double = 3.14 // constant due to "val" keyword
+var age: Int = 10 // variable due to "var" keywrod
+```
+
 # String Literals
 ```kt
 fun main() {
