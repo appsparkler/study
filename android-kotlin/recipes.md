@@ -9,3 +9,18 @@
 - Add the `Density` qualifier and select `No Density` value.
 - Finally, `Next > Import`.  You can check the details before finally clicking on `Import`.
 - Now you can access your image with `R.drawable.<imageName>`
+
+## Composables
+
+### Image to fill the background of the container
+
+```kt
+Image(
+    painter = image,
+    contentDescription = null,
+    modifier = Modifier
+        .fillMaxHeight()
+        .fillMaxWidth(),
+    contentScale = ContentScale.Crop
+)
+```
