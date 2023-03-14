@@ -16,7 +16,7 @@ fun Greeting(name: String) {
 ## `@Preview` with `@Composable` to preview the component we are building
 
 ```kt
-@Preview(showBackground = true)
+@Preview(showBackground = true) // pass arguments to annotation
 @Composable
 fun DefaultPreview() {
     GreetingCardTheme {
