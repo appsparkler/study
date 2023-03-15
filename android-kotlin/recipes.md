@@ -24,3 +24,20 @@ Image(
     contentScale = ContentScale.Crop
 )
 ```
+
+### Aligning Text content
+
+```kt
+// align to the right
+Text(
+    message,
+    fontSize = 36.sp,
+    modifier = Modifier.fillMaxWidth().wrapContentWidth(align = Alignment.Start)
+)
+// align to the left
+Text(
+    text = from,
+    fontSize = 24.sp,
+    modifier = Modifier.fillMaxWidth().wrapContentWidth(align = Alignment.End)
+)
+```
