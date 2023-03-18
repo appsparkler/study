@@ -75,7 +75,7 @@ when(-12) {
 }
 ```
 
-## Nullable Variables
+### Nullable Variables
 
 > Note: While you should use nullable variables for variables that can carry null, you should use non-nullable variables for variables that can never carry null because the access of nullable variables requires more complex handling. You learn about various techniques to handle nullable variables in the next section.
 
@@ -86,3 +86,49 @@ favouriteActor = "Amitabh Bachan"
 println(favouriteActor)
 ```
 
+#### Handling nullable variables
+
+When we want to derive values from nullable variables, we need to do it conditionally.  For ex:
+
+- Safe-call operator (`?.`)
+
+```kt
+var favouriteActor: String? = null // note the "?" here
+println(favouriteActor?.length) // deriving the length of the favourite actor string
+favouriteActor = "Amitabh Bachan"
+println(favouriteActor?.length)
+```
+
+- not-null assertion operator
+
+> When we are sure that the type is not `null`, we can use `!!` operator
+
+```kt
+println(favouriteActor!!.length)
+```
+
+- `if-else` expressions for assigning values
+
+```kt
+var favouriteActor:String? = "Amitabh Bachan"
+
+val lengthOfFavouriteActor:Number = if (favouriteActor != null) {
+    favouriteActor.length
+} else{
+    0
+}
+
+favouriteActor = null
+```
+
+- An easier approach with the Elvis operator `?:`
+
+```kt
+var favouriteActor:String? = "Amitabh Bachan"
+val favActorLength:Number = favouriteActor?.length ?: 0 // Elvis operator
+println(favActorLength)
+// 
+favouriteActor = null
+val favActorLength2:Number = favouriteActor?.length ?: 0 // Elvis operator
+println(favActorLength2)
+```
