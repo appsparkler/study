@@ -14,7 +14,10 @@
 
 ### Image to fill the background of the container
 
+https://developer.android.com/jetpack/compose/graphics/images/customize#content-scale
+
 ```kt
+val image = painterResource(R.drawable.androidparty)
 Image(
     painter = image,
     contentDescription = null,
