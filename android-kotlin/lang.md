@@ -51,6 +51,21 @@ fun main() {
 
 ## Conditionals
 
+### When
+
+Simple implmenetation:
+
+```kt
+when("Amber") {
+    "Red" -> println("STOP")
+    "Yellow", "Amber" -> println("SLOW")
+    "Green" -> println("GO")
+    else -> println("INVALID TRAFFIC LIGHT COLOR")
+}
+```
+
+More complex one:
+
 ```kt
 when(-12) {
     2, 3, 5, 7 -> println("Its a prime number")
