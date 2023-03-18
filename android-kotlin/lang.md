@@ -1,10 +1,14 @@
-# Constants v/s Variables
+# Lang
+
+## Constants v/s Variables
+
 ```kt
 val pi: Double = 3.14 // constant due to "val" keyword
 var age: Int = 10 // variable due to "var" keywrod
 ```
 
-# String Literals
+## String Literals
+
 ```kt
 fun main() {
     val unreadCount: Int = 2;
@@ -15,8 +19,10 @@ fun main() {
 }
 ```
 
-# Functions
-## Named Arguments
+## Functions
+
+### Named Arguments
+
 ```kt
 fun birthdayGreeting(name:String, age: Int) {
     println("Happy Birthday, $name!! You have turned $age! Wow!")
@@ -27,7 +33,9 @@ fun main() {
     birthdayGreeting(age = 42, name = "Aakash")
 }
 ```
-## Default Arguments
+
+### Default Arguments
+
 ```kt
 fun birthdayGreeting(name: String = "Aakash", age: Int = 42) {
     println("Happy Birthday, $name!! You have turned $age! Wow!")
@@ -38,5 +46,16 @@ fun main() {
     birthdayGreeting("Aakash") // only one argument 
     birthdayGreeting(age = 42) // named argument
     birthdayGreeting(name = "Aakash") // named argument
+}
+```
+
+## Conditionals
+
+```kt
+when(-12) {
+    2, 3, 5, 7 -> println("Its a prime number")
+    in 1..10 -> println("Its a number between 1 and 10 but not a prime number")
+    is  Int -> println("It is an integer but not a prime number nor is it between 1 and 10")
+    else -> println("x is not an integer")
 }
 ```
