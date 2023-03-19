@@ -1,5 +1,13 @@
 # Lang
 
+## Types
+
+### `IntRange`
+
+```kt
+val x:IntRange = 1..6; // x can take only one of the 6 values - 1,2,3,4,5 or 6
+```
+
 ## Constants v/s Variables
 
 ```kt
@@ -132,3 +140,5 @@ favouriteActor = null
 val favActorLength2:Number = favouriteActor?.length ?: 0 // Elvis operator
 println(favActorLength2)
 ```
+
+### Ranges

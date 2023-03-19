@@ -1,5 +1,7 @@
 # Classes
 
+`class` are like blueprint of house (it is not house itself).  The `class instance` is the house
+
 ## Construction function
 
 The constructor function is written with the same name as that of the class.  For ex.
@@ -26,4 +28,6 @@ the lifecycle of the class.
 
 ## `private` v/s `public` properties
 
-- private properties are only accessible inside the class whereas `public` are accessible both inside and outside the class.
+- private properties are only accessible inside the class whereas `public` are accessible both inside and outside the class
+
+

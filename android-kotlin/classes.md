@@ -51,7 +51,42 @@ trigger an infinite loop and freeze the system
 
 ## Constructors
 
-Its purpose is to specifiy how the object of the class are created. For ex.
+Its purpose is to specifiy how the object of the class are created. There are two types of constructors:
+
+### Primary Constructor
+
+Constructors that have only parameters but don't have any initialization logic are 
+primary constructors.
+
 class ParameterizedSmartDevice(val type: String, val category: String) {
   // ...
 }
+
+### Secondary Constructor
+
+A class can have any number of secondary constructors so that we can create instances by passing
+different number as well as types of arguments
+
+```kt
+class Pizza(
+    var crustSize: String,
+    var crustType: String,
+    val toppings: MutableList<String> = mutableListOf<String>()
+) {
+    constructor(): this("SMALL", "THIN")
+    constructor(crustSize: String, crustType: String): this(crustSize, crustType, mutableListOf<String>())
+
+    override fun toString(): String {
+        return "This is $crustSize size, $crustType crust pizza with these toppings : ${toppings.toString()} :)"
+    }
+}
+
+fun main() {
+    val pizza1:Pizza = Pizza()
+    val pizza2:Pizza = Pizza("LARGE", "CHEESE BURST")
+    val pizza3:Pizza = Pizza("MEDIUM", "PAN", mutableListOf("Mushrooms", "Capsicum", "Onions"))
+    println(pizza1)
+    println(pizza2)
+    println(pizza3)
+}
+```
