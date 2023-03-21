@@ -1,5 +1,7 @@
 # Classes
 
+https://developer.android.com/codelabs/basic-android-kotlin-compose-classes-and-objects?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-2-pathway-1%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-classes-and-objects#7
+
 ## Basic Concepts
 
 - Encapsulation - enclosing implementations
@@ -286,6 +288,7 @@ open class SmartDevice(val name: String, val category: String) {
 
 Then, we can override it:
 
+
 ```kt
 class SmartLightDevice(deviceName: String, deviceCategory: String) :
     SmartDevice(name = deviceName, category = deviceCategory) {
@@ -294,5 +297,146 @@ class SmartLightDevice(deviceName: String, deviceCategory: String) :
     override val deviceType = "Smart Light"
     ...
 
+}
+```
+
+## Visibility Modifiers
+
+- In a class, these modifier let us hide properties and methods from 
+unauthorized access outside the class
+- In a packge, they let us hide the classes and interfaces from unauthorized access
+outside the package
+
+Kotlin provides 4 visibility modifiers:
+
+- public - it is the default.  makes the declaration accessible everywhere
+- private - makes the declaration accessible in the same class or source file
+- protected - makes the declaration accessible in subclasses
+- internal - makes the declaration accessible in the same module - similar to private except
+that these are accessible outside the class as long as they are being accessed in the same 
+module
+
+Just like in a car, the details of various 
+complexities are hidden so that we don't get
+overwhelmed by the complexity; as a developer
+we need to hide the complexities of logic - abstraction or encapsulation
+
+### Visibility modifier for properties
+
+For the getter and setter:
+
+```kt
+open class SmartDevice(val name: String, val category: String) {
+
+    ...
+    private var deviceStatus = "online"
+    ...
+}
+```
+
+For the setter only:
+
+```kt
+open class SmartDevice(val name: String, val category: String) {
+
+    ...
+    var deviceStatus = "online"
+        protected set(value){
+           field = value
+       }
+      
+    ...
+}
+```
+
+Since we aren't performing any logic, we can simply:
+
+```kt
+open class SmartDevice(val name: String, val category: String) {
+
+    ...
+    var deviceStatus = "online"
+        protected set      
+    ...
+}
+```
+
+### Visibility modifiers for methods
+
+```kt
+class SmartTvDevice(deviceName: String, deviceCategory: String) :
+    SmartDevice(name = deviceName, category = deviceCategory) {
+
+    ...
+    protected fun nextChannel() {
+        channelNumber++
+    }      
+    ...
+}
+```
+
+### Visibility modifiers for constructors
+
+```kt
+open class SmartDevice protected constructor (val name: String, val category: String) {
+
+    ...
+
+}
+```
+
+### Visibility modifiers for classes
+
+```kt
+internal open class SmartDevice(val name: String, val category: String) {
+
+    ...
+
+}
+```
+
+> Ideally, you should strive for strict visibility of properties and methods, so declare them with the private modifier as often as possible. If you can't keep them private, use the protected modifier. If you can't keep them protected, use the internal modifier. If you can't keep them internal, use the public modifier.
+
+## Property delegates
+
+Many a times, we need to write the same functionality for few properties - for ex. `speakerVolume, brightnessLevel, channelNumber, etc.` - all these have a value, a min-value and max-value and we had to write `if (value in 1..100)...` for each of them - this is the same format which is repeated - for such logic; we could use delegates to reuse the code
+
+### Interfaces
+
+Interface is a protocol to which classes that implement it need to adhere.  Basically, interfaces help us achieve abstraction
+
+Thus, we create a RangeRegulator:
+
+```kt
+class RangeRegulator(
+    initialValue: Int,
+    private val minValue: Int,
+    private val maxValue: Int
+) : ReadWriteProperty<Any?, Int> {
+    var fieldData = initialValue
+
+    override fun getValue(thisRef: Any?, property: KProperty<*>): Int {
+        return fieldData
+    }
+
+    override fun setValue(thisRef: Any?, property: KProperty<*>, value: Int) {
+        if (value in minValue..maxValue) {
+            fieldData = value
+        }
+    }
+}
+```
+
+Now, we can re-write ourcode as follows:
+
+```kt
+class SmartTvDevice(deviceName: String, deviceCategory: String) :
+    SmartDevice(name = deviceName, category = deviceCategory) {
+
+    private var speakerVolume by RangeRegulator(initialValue = 0, minValue = 0, maxValue = 100)
+
+    private var channelNumber by RangeRegulator(initialValue = 1, minValue = 0, maxValue = 200)
+
+    ...
 }
 ```
