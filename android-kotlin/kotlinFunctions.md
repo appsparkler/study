@@ -71,3 +71,14 @@ repeat(4, {
     println("Hello $it") // basically, we can move the lambda outside of the parenthesis
 })
 ```
+
+## Multiple arguments
+
+```kt
+val x:(Int, String) -> Unit = {
+    quantity,
+    message ->
+        println(quantity)
+        println(message)
+}
+```
