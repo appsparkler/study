@@ -61,6 +61,7 @@ val coins:(Int) -> String = {
 ```
 
 ## Trailing lambda syntax
+If a function's last parameter is a function type, you can use trailing lambda syntax to move the lambda expression after the last parenthesis when you call a function
 ```kt
 // repeat takes a function as the 2nd argument.  We can pass it like so:
 repeat(4) {
@@ -69,6 +70,16 @@ repeat(4) {
 // instead of
 repeat(4, {
     println("Hello $it") // basically, we can move the lambda outside of the parenthesis
+})
+```
+
+## Higher order functions
+
+Higher-order functions are functions that take other functions as parameters or return a function
+```kt
+// repeat is a higher order function
+repeat(4, {
+    println("Hello World, $it");
 })
 ```
 
