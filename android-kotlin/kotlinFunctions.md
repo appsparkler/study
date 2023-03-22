@@ -60,7 +60,7 @@ val coins:(Int) -> String = {
 }
 ```
 
-## Trailing functions
+## Trailing lambda syntax
 ```kt
 // repeat takes a function as the 2nd argument.  We can pass it like so:
 repeat(4) {
