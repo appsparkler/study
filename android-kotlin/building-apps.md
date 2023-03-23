@@ -1,0 +1,3 @@
+- Include the app in the main activity
+- Pass `Modifier` to the App function
+- Use `Modifier.fillMaxSize()` in top level element to fill the full screen
