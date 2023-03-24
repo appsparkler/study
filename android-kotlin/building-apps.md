@@ -11,4 +11,5 @@ var abc by remember {
     mutableStateOf(1)
 }
 ```
+
 - Center align with `Modifier.wrapContentSize(Alignment.Center)`
