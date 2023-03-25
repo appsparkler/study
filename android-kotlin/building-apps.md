@@ -32,11 +32,33 @@ stringResource(id = R.string.tip_amount, tip) // this will render Tip Amount: $ 
     string-formatting - %s
 -->
 
-## Keyboard Options
+## Keyboard Options & Actions
 
 - Configure keyboard opened with `keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)`
 - `IME` - Input Method Editor - it is a control that enables user to enter text.  So we can edit the `imeAction` with
 `imeAction = ImeAction.Next` to go to the next field or `imeAction = ImeAction.Done` which will bascially close the keyboards.
+- `KeyboardOptions` allow us to setup the actions, select type of keyboard, etc; however, it is the `KeyboardActions` that allow us to to handle the actions these buttons will perform.  For ex:
 
+```kt
+val focusManager = LocalFocusManager.current
 
+TextField(
+    ...
+    keyboardOptions = ...
+    keyboardActions = KeyboardActions(
+        onNext = {
+            focusManager.moveFocus(FocusDirection.DOWN)
+        }
+    )
+)
 
+TextField(
+    ...
+    keyboardOptions = ...
+    keyboardActions = KeyboardActions(
+        onDone = {
+            focusManager.clearFocus()
+        }
+    )
+)
+```
