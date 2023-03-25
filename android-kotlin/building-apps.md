@@ -3,8 +3,16 @@
 - **First Step** should be to add the strings in `strings.xml`
 - Include the app in the main activity
 - Pass `Modifier` to the App function
+
+## Spacing
+
 - Use `Modifier.fillMaxSize()` in top level element to fill the full screen
+- Use `Arrangement.spacedBy(8.dp)` for `gap` between elements
 - Consider using `Spacer` for space between elements
+- Center align with `Modifier.wrapContentSize(Alignment.Center)`
+
+## State Management
+
 - Use for state-management:
 
 ```kt
@@ -13,7 +21,6 @@ var abc by remember {
 }
 ```
 
-- Center align with `Modifier.wrapContentSize(Alignment.Center)`
 - Add `clickable` modifier to make any element (not just buttons) clickable
 - To get value formatted in local currency - `NumberFormat.getCurrencyInstance().format(tip)`
 - Sometimes `toDouble()` on a string could cause run-time errors - for ex. if the string is empty or has an invalid number like `abc`.  To avoid that we could use `stringValue.toDoubleOrNull() ?: 0.00` - this way it will always return a double value.
@@ -61,4 +68,20 @@ TextField(
         }
     )
 )
+```
+
+## Colors
+
+For ex. to `Switch Component`
+
+```kt
+Switch(
+    colors = SwitchDefaults.colors(uncheckedThumbColor = Color.DarkGray)
+)
+```
+
+## Math
+
+```kt
+kotlin.math.ceil()
 ```
