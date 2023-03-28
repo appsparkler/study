@@ -440,3 +440,128 @@ class SmartTvDevice(deviceName: String, deviceCategory: String) :
     ...
 }
 ```
+
+## Generics
+
+We can create generic classes so that they can accept similar but different types
+trying to achieve the same functionality.
+
+```kt
+// a generic class
+class Search<T> (var input: T)
+
+// instantiating the class
+var stringSearch = Search<String>("Who is Cher?")
+var numberSearch = Search<Int>(1998)
+```
+
+## Enums
+
+When there are fixed number of values that can be assigned to a property - for ex. Language;
+we can use Enums
+
+```kt
+// defining enum
+enum class Language {
+    English, Indonesian, Spanish,
+    Portugese, Japanese
+}
+
+// using the enum
+class Search<T>(var input: T, var language: Language)
+```
+
+## Data class
+
+We can create data class for defining a schema
+
+```kt
+data class SearchResult (
+    val title: String,
+    val source: String,
+    val snippet: String,
+    val isAds: Boolean
+)
+```
+
+## Singleton Object
+
+Classes are to create innumerable instances having similar properties; however,
+we can have an `object` for unique or specific representation - for ex:
+
+```kt
+package moreKotlinFundamentals
+
+object EiffelTower {
+    val floors = 3
+    var isLightOn = false
+
+    fun switchLight() {
+        isLightOn = !isLightOn
+    }
+}
+
+fun main() {
+    println(EiffelTower.isLightOn)
+    println(EiffelTower.floors)
+    EiffelTower.switchLight()
+    println(EiffelTower.isLightOn)
+}
+```
+
+## Companion Object
+
+We can have a companion object inside a class.  Members of this object 
+can be referenced without instantiating the class
+
+```kt
+package moreKotlinFundamentals
+
+
+enum class Language {
+    Spanish, English, Indonesian,
+    Hindi, Gujarati
+}
+
+class Search<T>(
+    var input: T,
+    var languageSelected: Language
+) {
+
+    companion object SearchPage {
+        val mainBanner: String = "Google"
+        val searchButtonLabel: String = "Search"
+    }
+}
+
+fun main() {
+    println(Search.mainBanner)
+    println(Search.searchButtonLabel)
+}
+```
+
+## Extension Properties
+
+Its a way to extend a class without the parent class being `open`
+
+```kt
+package moreKotlinFundamentals
+
+fun Search<String>.isFestiveTime():Boolean {
+    val isHolidayLocally = true
+    return isHolidayLocally
+}
+
+fun Search<String>.launchFestiveMainPage() {
+    val displayConfettiAnimation = {
+        println("Launching Confetti!!!🎉")
+    }
+    displayConfettiAnimation()
+}
+
+fun main() {
+    val search = Search<String>("hello world", Language.English)
+    search.launchFestiveMainPage()
+    println(search.isFestiveTime())
+}
+```
