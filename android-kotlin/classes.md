@@ -542,7 +542,8 @@ fun main() {
 
 ## Extension Properties
 
-Its a way to extend a class without the parent class being `open`
+Its a way to extend a class without the parent class being `open`.
+We can add both method and properties to a existing class
 
 ```kt
 package moreKotlinFundamentals
