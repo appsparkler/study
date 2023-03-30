@@ -29,5 +29,3 @@ the lifecycle of the class.
 ## `private` v/s `public` properties
 
 - private properties are only accessible inside the class whereas `public` are accessible both inside and outside the class
-
-

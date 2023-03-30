@@ -566,3 +566,66 @@ fun main() {
     println(search.isFestiveTime())
 }
 ```
+
+## Interfaces for Classes
+
+If we'd like a class to confirm to a data structure; we can use Interfaces - i.e. have a class confirm to an interface
+
+```kt
+
+interface ProgressPrintable {
+    val progressText: String
+    fun printProgressBar()
+}
+
+class Quiz : ProgressPrintable {
+    override val progressText: String
+        get() = "$answered of $total answered."
+
+    override fun printProgressBar() {
+        repeat(Quiz.answered) { print("▓") }
+        repeat(Quiz.total - Quiz.answered) { print("▒") }
+        println()
+        println(progressText)
+
+    }
+
+    companion object {
+        val total = 3
+        val answered = 10
+    }
+}
+
+fun main() {
+    Quiz.printProgressBar()
+}
+
+```
+
+## Scoped Functions
+
+Scoped functions let us easily use the object with a shorter-name than the name it has.
+Examples are the `let` and `apply` scoped functions
+
+```kt
+// let example
+question1.let {
+    println(it.question)
+    println(it.answer)
+    println(it.difficulty)
+}
+// instead of 
+println(question1.question)
+println(question1.answer)
+println(question1.difficulty)
+```
+
+```kt
+// apply example
+Quiz().apply {
+    printQuiz()
+}
+// instead of
+val quiz = Quiz()
+quiz.printQuiz()
+```
