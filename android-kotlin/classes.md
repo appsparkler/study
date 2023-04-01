@@ -545,6 +545,8 @@ fun main() {
 Its a way to extend a class without the parent class being `open`.
 We can add both method and properties to a existing class
 
+Methods:
+
 ```kt
 package moreKotlinFundamentals
 
@@ -565,6 +567,17 @@ fun main() {
     search.launchFestiveMainPage()
     println(search.isFestiveTime())
 }
+```
+
+Properties:
+
+```kt
+val Event.durationOfEvent:String
+    get() = if (this.durationInMinutes < 60) {
+        "short"
+    } else {
+        "long"
+    }
 ```
 
 ## Interfaces for Classes

@@ -24,9 +24,9 @@ quoteList = gson.fromJson(json, Array<Quote>::class.java)
 
 `Map, List and Set` are three basic types of collections.  Each one have specific features
 
-- Map - key value pairs - key and value can have any type - for ex. Set<String, Int> or Set<Building, Car>
 - List - an ordered list of some type - someSet[2] will always return the same value
-- Set - an unordered list - so someSet[2] may not always return the same value and all members must be unique
+- Set - an unordered list - so sets do not have indices.
+- Map - key value pairs - key and value can have any type - for ex. Set<String, Int> or Set<Building, Car>. Their keys need to be unique but their values don't.  Accessing the value from a map by its key is generally faster instead of iterating over it.
 
 ### Size
 
@@ -35,12 +35,12 @@ We can check the size property with `.size` for all three
 ```kt
 // Map
 val monthsToDays: Map<String, Int> =
-        mapOf(
-            "January" to 31,
-            "February" to 28,
-            "March" to 31,
-            "April" to 30
-        )
+    mapOf(
+        "January" to 31,
+        "February" to 28,
+        "March" to 31,
+        "April" to 30
+    )
 
 println(monthsToDays)
 
@@ -64,6 +64,22 @@ println(flavours.size)
             "Vanilla" // will not get added :/
         )
 println(flavors.size)
+```
+
+### Iteration
+
+```kt
+// both accomplish the same purpose
+
+// for-in loop
+for (value in flavors) {
+    println(value)
+}
+
+// forEach
+flavors.forEach{
+    println(it)
+}
 ```
 
 ### Mutablity
@@ -91,5 +107,23 @@ println(flavors) // [Chocolate, Vanilla, Strawberry, Blueberry]
 
 ### Higher Order Functions for collections
 
-We can use the following `forEach`, `map`, `filter`, `sortedBy`, etc. on this collections 
+We can use the following `forEach`, `map`, `filter`, `sortedBy`, `groupBy`, etc. on this collections
 
+## Arrays
+
+```kt
+val rockPlanets = arrayOf<String>("Mercury", "Venus", "Earth", "Mars")
+val gasPlanets = arrayOf("Jupiter", "Saturn", "Uranus", "Neptune")
+
+// concatenation
+val solarSystem = rockPlanets + gasPlanets
+
+// accessing members
+println(solarSystem[0])
+println(solarSystem[7])
+
+// editing members
+solarSystem[3] = "Little Earth"
+```
+
+One of the major concerns with array is that they are difficult to access
