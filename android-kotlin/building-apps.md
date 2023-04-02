@@ -85,3 +85,55 @@ Switch(
 ```kt
 kotlin.math.ceil()
 ```
+
+## Annotations
+
+- `@StringRes` for string resource id types
+- `@DrawableRes` for drawable resource id types
+
+``` kt
+data class Affirmation(
+    @StringRes val stringResourceId: Int,
+    @DrawableRes val imageResourceId: Int
+)
+```
+
+## Data class for lists
+
+List works great for primitive data such as strings or numbers but for more complex
+structures such as image and string, we need a data class
+
+```kt
+data class Affirmation(
+    @StringRes val stringResourceId: Int,
+    @DrawableRes val imageResourceId: Int
+)
+```
+
+## Displaying Images in a card
+
+It is best to set a fixed height and `ContentScale.Crop`.  For ex:
+
+```kt
+Image(
+    painter = painterResource(affirmation.imageResourceId),
+    contentDescription = stringResource(affirmation.stringResourceId),
+    modifier = Modifier
+        .fillMaxWidth()
+        .height(194.dp),
+    contentScale = ContentScale.Crop
+    )
+```
+
+## Lazy Columns and Rows for lists
+
+```kt
+@Composable
+private fun AffirmationList(affirmationList: List<Affirmation>, modifier: Modifier = Modifier) {
+  LazyColumn {
+    items(affirmationList){ // items() is how we pass data to a lazy column
+        AffirmationCard(affirmation = it)
+    }
+  }
+}
+```
