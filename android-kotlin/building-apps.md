@@ -137,3 +137,18 @@ private fun AffirmationList(affirmationList: List<Affirmation>, modifier: Modifi
   }
 }
 ```
+
+## Images with round border (circle image)
+
+- Since images are not shapes; we need to explicitly define its shape
+
+```kt
+Image(
+    modifier = modifier
+        .size(64.dp)
+        .padding(8.dp)
+        .clip(RoundedCornerShape(50)),
+    contentScale = ContentScale.Crop
+)
+```
+
