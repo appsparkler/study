@@ -61,3 +61,20 @@ fun WoofTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable (
 
 ## Shapes
 
+The most common one is `RoundedCornerShape` - they give border-radius to an element.  Ex:
+
+```kt
+val Shapes = Shapes(
+    small = RoundedCornerShape(4.dp),
+    medium = RoundedCornerShape(16.dp),
+    large = RoundedCornerShape(0.dp)
+)
+```
+
+## Component Categories
+
+- In material UI, the components are categorized in three parts - small, medium and large.  The shape that
+we assign to each category will apply to all components in that category.
+
+
+
