@@ -140,7 +140,8 @@ private fun AffirmationList(affirmationList: List<Affirmation>, modifier: Modifi
 
 ## Images with round border (circle image)
 
-- Since images are not shapes; we need to explicitly define its shape
+- Since images are not shapes; we need to explicitly define its shape, and also set the `ContentScale.Crop`
+to have the image fit it the circle.
 
 ```kt
 Image(

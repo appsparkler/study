@@ -61,6 +61,7 @@ fun WoofTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable (
 
 ## Shapes
 
+By default all the shapes in an app are rectangular..
 The most common one is `RoundedCornerShape` - they give border-radius to an element.  Ex:
 
 ```kt
@@ -73,8 +74,60 @@ val Shapes = Shapes(
 
 ## Component Categories
 
-- In material UI, the components are categorized in three parts - small, medium and large.  The shape that
+- In material UI, the components are shape-categorized in three - small, medium and large.  The shape that
 we assign to each category will apply to all components in that category.
 
+## Fonts
 
+- Click on `New > Android Resource Directory` and select `Resource type:` as `font`.
+- Download custom fonts and copy the `.ttf` files from the static folder of the downloaded fonts to the `font` directory in the project.
+- rename the fonts in snake_case - for ex. `Montserrat_bold` > `montserrat_bold`.
+- Now, in the `Type.kt` file, define the fonts:
 
+```kt
+val AbrilFatface = FontFamily(
+   Font(R.font.abril_fatface_regular)
+)
+
+val Montserrat = FontFamily(
+   Font(R.font.montserrat_regular),
+   Font(R.font.montserrat_bold, FontWeight.Bold)
+)
+```
+
+- Now, add these fonts to the `Typography`, like this:
+
+```kt
+val Typography = Typography(
+   h1 = TextStyle(
+       fontFamily = AbrilFatface,
+       fontWeight = FontWeight.Normal,
+       fontSize = 30.sp
+   ),
+   h2 = TextStyle(
+       fontFamily = Montserrat,
+       fontWeight = FontWeight.Bold,
+       fontSize = 20.sp
+   ),
+   h3 = TextStyle(
+       fontFamily = Montserrat,
+       fontWeight = FontWeight.Bold,
+       fontSize = 14.sp
+   ),
+   body1 = TextStyle(
+       fontFamily = Montserrat,
+       fontWeight = FontWeight.Normal,
+       fontSize = 14.sp
+   )
+)
+```
+
+- This defined `Typography` will be passed to `Material Theme` and the fonts will be applied.
+- We can configure any `Text` element to have the styles we have defined.  For ex.
+
+```kt
+ Text(
+    text = stringResource(R.string.years_old, dogAge),
+    style = MaterialTheme.typography.body1 // this will use body1 styles we defined above.
+)
+```
