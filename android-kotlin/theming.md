@@ -131,3 +131,12 @@ val Typography = Typography(
     style = MaterialTheme.typography.body1 // this will use body1 styles we defined above.
 )
 ```
+
+## Using the `Scaffold`
+
+- `Scaffold` provides slots for various parts of an app - for ex. topAppBar, bottomAppBar, etc. and it autmoatically 
+positions these components without us having to manually positioning them.
+
+## Accessibility
+
+add a content description to any element that add any semantic information for users with impaired vision

@@ -153,3 +153,77 @@ Image(
 )
 ```
 
+## Changing the color of the status bar to match the app's header
+
+### Light Status Bar
+
+- Since we don't use colors in the `app > res > values > colors.xml` file; we can replace the values between
+`<resources>` tags with the background colors we want for the app-bar for each theme - light and dark.
+
+```xml
+<!-- app/res/values/colors.xml -->
+<resources>
+   <style name="Theme.Woof" parent="android:Theme.Material.Light.NoActionBar">
+       <item name="android:statusBarColor">@color/grey_50</item> <!-- the background color of status bar  -->
+        <item name="android:windowLightStatusBar">true</item> <!-- so that the icons, time, etc. too -->
+   </style>
+</resources>
+```
+
+> When you get an error message for `requires API level 23 (current min is 21)`, we can `Override Resoures in values-v23`
+
+### Dark Status Bar
+
+- For dark-status bar; we need to create a new resource directory - we'll call this `values-night`.
+
+> this directory is not easily visible in the "android" project folder structure.  So we need to
+switch to "Project Files" structure and find the directory inside the res folder - `app > src > main > res > values-night`
+
+- Add a `Values Resource File` called `themes.xml`
+
+```xml
+<resources>
+   <style name="Theme.Woof" parent="android:style/Theme.Material.NoActionBar">
+       <item name="android:statusBarColor">@color/grey_900</item>
+   </style>
+</resources>
+```
+
+## Managing columns with `.weight()`
+
+We can use the `.weight()` property in sub-elements of row/column.  It allows us to distribute the total width for each sub-element as per our requirement.
+For ex.
+
+```kt
+@Preview
+@Composable
+fun WeightExample() {
+    Column(
+        modifier = Modifier.fillMaxWidth()
+    ) {
+        Box(
+            modifier = Modifier
+                .weight(1f)
+                .background(Color.Blue)
+                .fillMaxWidth()
+        )
+        Box(
+            modifier = Modifier
+                .weight(1f)
+                .background(Color.Red)
+                .fillMaxWidth()
+        )
+        Box(
+            modifier = Modifier
+                .weight(2f)
+                .background(Color.Cyan)
+                .fillMaxWidth()
+        )
+    }
+}
+```
+
+An important note is that only the elements that
+have the `.weight()` configured will adjust proportionately to the available space.  The remaining elements will take the space as per the content in them.
+
+Considering this, we can use `Spacer` element to adjust the space for elements.
