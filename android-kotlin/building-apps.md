@@ -295,3 +295,26 @@ Row(
 }
 ```
 
+## Scaffold
+- `Scaffold` is a pre-defined layout provided by Android compose so that we can easily scaffold our app by neatly arranging
+the `topBar` and `bottomBar`.
+> When we use `Scaffold`, it provides `PaddingValues` which we need to use to set the padding for the `item/s` within the content.
+
+For ex:
+```kt
+Scaffold(
+    topBar = {
+        TopBar(
+            modifier = Modifier.fillMaxWidth()
+        )
+    }
+) {
+    HeroCards(
+        modifier = Modifier.padding(it), // this is important to avoid scaffold components overlapping the content structured here
+        herosList = data.superHeros
+    )
+}
+```
+
+
+
