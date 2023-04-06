@@ -176,6 +176,8 @@ Image(
 
 - For dark-status bar; we need to create a new resource directory - we'll call this `values-night`.
 
+> It's important to name it `values-night`.  Other names such as `values-dark` will not work 😝
+
 > this directory is not easily visible in the "android" project folder structure.  So we need to
 switch to "Project Files" structure and find the directory inside the res folder - `app > src > main > res > values-night`
 
