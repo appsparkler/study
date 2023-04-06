@@ -227,3 +227,69 @@ An important note is that only the elements that
 have the `.weight()` configured will adjust proportionately to the available space.  The remaining elements will take the space as per the content in them.
 
 Considering this, we can use `Spacer` element to adjust the space for elements.
+
+
+
+## Images Playground
+
+### Images with fixed-width
+- Sometimes we want to set a fixed width on images - for ex. `64.dp X 64.dp` - for this we can wrap the image with a `Box` and
+set the dimensions on the `Box`.  Lets see it in action:
+
+```kt
+Box(
+    modifier = modifier
+        .size(84.dp)
+) {
+    Image(
+        modifier = Modifier
+            .clip(RoundedCornerShape(8.dp))
+            .wrapContentSize(),
+        painter = painterResource(id = imageId),
+        contentDescription = null,
+        contentScale = ContentScale.FillWidth,
+    )
+}
+```
+
+### `Images` in a `Row` without applying a fixed weight
+Sometimes, we have a structure in which there's a `Row` with the first element as `Text` and the next one as `Image`.
+The image takes the space only if `Text` is short enough to accomodate it.  For ex. if we have a long text like this:
+
+```kt
+Row {
+   Text(
+       text = "It seems to your image size is less than the screen max width, for that reason the container of the image fill the width, but the image remains small, if you fill the height on the image it scales correctly but the image container fills all space leaving below the list. You could try setting and aspect ratio to the modifier to prevent container from filling all available space:"
+    )
+    Image(
+        painter = painterResource(id = R.drawable.android_superhero1),
+        contentDescription = null
+    )
+}
+```
+the image will not show up.  This is because the first element in the row doesn't leave any space for the image.
+
+So what do we do?
+
+We can set a weight of `1f` on the elements that are expected to have a dynamic width like so:
+
+```kt
+Row(
+    verticalAlignment = Alignment.CenterVertically,
+    horizontalArrangement = Arrangement.SpaceBetween
+) {
+   Text(
+       modifier = Modifier
+           .weight(1f), // set a weight on the Text element that's expected to wrap around the image
+       text = "It seems to your image size is less than the screen max width, for that reason the container of the image fill the width, but the image remains small, if you fill the height on the image it scales correctly but the image container fills all space leaving below the list. You could try setting and aspect ratio to the modifier to prevent container from filling all available space:"
+   )
+    Image(
+        modifier = Modifier
+            .size(64.dp) // fix the size of the image so that it doesn't take its original size.
+            .clip(RoundedCornerShape(12.dp)), // we can also give the image a shape we prefer :) 
+        painter = painterResource(id = R.drawable.android_superhero1),
+        contentDescription = null
+    )
+}
+```
+
