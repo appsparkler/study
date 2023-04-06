@@ -85,6 +85,8 @@ we assign to each category will apply to all components in that category.
 - Now, in the `Type.kt` file, define the fonts:
 
 ```kt
+import androidx.compose.ui.text.font.Font
+
 val AbrilFatface = FontFamily(
    Font(R.font.abril_fatface_regular)
 )
