@@ -54,17 +54,20 @@ class GameViewModel:ViewModel() {
     val userGuess by mutableStateOf("")
         private set
     
-    // other variables 
+    // other variables (state) and methods (reducers & helper methods), for ex:
+    private lateinit var currentWord: String
+    private var usedWords: MutableSet<String> = mutableSetOf()
+    
+    fun updateUserGuess(guessedWord: String) {}
+    fun checkUserGuess() {}
+    fun skipWord() {}
+    //...etc
 }
 ```
 
-- Add a `data class` 
+- Access the `ViewModel` and `UiState` in the UI
 
 ```kt
-data class GameUiState(
-   val currentScrambledWord: String = ""
-)
+val gameUiViewModel:GameViewModel = viewModel()
+val gameUiState:GameUiState by gameViewModel.uiState.colleactAsState()
 ```
-
-- Pass the data
-- 
