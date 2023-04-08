@@ -20,11 +20,24 @@ Data Layer
 ## Tips
 - we should never modify the UI state in the UI directly, unless the UI itself is the sole source of its data
 
-## `ViewModel`
+## `ViewModel` Setup
+
 - Add the following dependency:
 
 ```gradle
 implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1"
+```
+
+- Create a `data class` which will hold the state for the game
+
+```kt
+data class GameUiState(
+    val currentScrambledWord: String = "",
+    val currentWordCount: Int = 1,
+    val score: Int = 0,
+    val isGuessedWordWrong: Boolean = false,
+    val isGameOver: Boolean = false
+)
 ```
 
 - Extend the `ViewModel` class for the Game's view model:
@@ -34,7 +47,14 @@ implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1"
 import androidx.lifecycle.ViewModel
 
 class GameViewModel:ViewModel() {
+    private val _uiState = MutableStateFlow(GameUiState()) // keep it private to avoid direct change
+    val uiState: StateFlow<GameUiState> = _uiState.asStateFlow() // uiState is to access the values in the UI
     
+    // additional mutable states
+    val userGuess by mutableStateOf("")
+        private set
+    
+    // other variables 
 }
 ```
 
@@ -44,5 +64,7 @@ class GameViewModel:ViewModel() {
 data class GameUiState(
    val currentScrambledWord: String = ""
 )
-
 ```
+
+- Pass the data
+- 
