@@ -16,3 +16,6 @@ Data Layer
 ## UI
 
 <img src="https://developer.android.com/static/codelabs/basic-android-kotlin-compose-viewmodel-and-state/img/ce7ffbb6e5a6bffe_1440.png" width="300" />
+
+## Tips
+- we should never modify the UI state in the UI directly, unless the UI itself is the sole source of its data
