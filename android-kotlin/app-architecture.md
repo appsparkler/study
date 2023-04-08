@@ -25,3 +25,12 @@ Data Layer
 ```gradle
 implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1"
 ```
+- Extend the `ViewModel` class for the Game's view model:
+```kt
+// GameViewModel.kt
+import androidx.lifecycle.ViewModel
+
+class GameViewModel:ViewModel() {
+    
+}
+```
