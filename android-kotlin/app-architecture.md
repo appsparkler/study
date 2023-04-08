@@ -19,3 +19,9 @@ Data Layer
 
 ## Tips
 - we should never modify the UI state in the UI directly, unless the UI itself is the sole source of its data
+
+## `ViewModel`
+- Add the following dependency:
+```gradle
+implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1"
+```
