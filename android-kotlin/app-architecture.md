@@ -68,6 +68,6 @@ class GameViewModel:ViewModel() {
 - Access the `ViewModel` and `UiState` in the UI
 
 ```kt
-val gameUiViewModel:GameViewModel = viewModel()
+val gameUiViewModel:GameViewModel = viewModel() // it is important to import it as `viewModel` instead of `GameViewModel()`
 val gameUiState:GameUiState by gameViewModel.uiState.colleactAsState()
 ```
