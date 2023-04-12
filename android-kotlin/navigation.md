@@ -49,3 +49,20 @@ We can use `navControllers` `.navigate()` method to navigate.  We need to pass t
 ```kt
     navController.navigate(CupcakeScreen.Start.name)
 ```
+
+## Special Navigation
+
+The usual navigation we can accomplish with `.navigate`; howerver, if we want to accomplish something extra, we need to use other methods:
+
+### `popBackStack`
+
+The first argument is straightforward, it is the route.  The second argument `inclusive` - if false, popBackStack() will remove all destinations on top of—but not including—the start destination, leaving it as the topmost screen visible to the user.
+
+```kt
+navController
+    .popBackStack(
+        CupcakeScreen.Start.name, 
+        inclusive = false // 
+    )
+```
+
