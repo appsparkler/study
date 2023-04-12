@@ -1,4 +1,5 @@
 # View Binding
+
 ## Update `app build.gradle` to activate `viewBinding` feature (at the end of the `android {...}`
 
 ```gradle
@@ -10,6 +11,7 @@ android {
 ```
 
 ## In the `AppCompat` class, lateinit the `viewBinding` var so that it can be used with multiple methods, inflate the layout and set the content view
+
 ```kt
 private lateinit var viewBinding: ActivityMainBinding
 override fun onCreate {

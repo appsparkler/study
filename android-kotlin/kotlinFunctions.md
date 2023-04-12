@@ -2,15 +2,14 @@
 
 Functions are treated as first class in Kotlin.
 
-
-## Two ways to define and assign a function.
+## Two ways to define and assign a function
 
 ```kt
 fun someFn() {
 
 }
 // or
-val someFun = { // if not parameters
+val someFun = { // if no parameters
 
 }
 
@@ -20,12 +19,14 @@ val someFun = (param1:String, param2:String) -> { // it it has parameters
 ```
 
 ## Assigning a function to a variable
+
 ```kt
 val x = ::someFn // if the function is defined with fun keyword
 val y = someFn // if the function is defined using lambda syntax
 ```
 
 ## Function returning a function
+
 ```kt
 fun trickOrTreat(isTrick:Boolean):() -> Unit { // a function that accepts a boolean and return a function that return Unit (void)
     if(isTrick) {
@@ -37,6 +38,7 @@ fun trickOrTreat(isTrick:Boolean):() -> Unit { // a function that accepts a bool
 ```
 
 ## Optional Parameters
+
 ```kt
 fun trickOrTreat(isTrick: Boolean, ):(Boolean) -> Unit {
     if(isTrick) {
@@ -61,7 +63,9 @@ val coins:(Int) -> String = {
 ```
 
 ## Trailing lambda syntax
+
 If a function's last parameter is a function type, you can use trailing lambda syntax to move the lambda expression after the last parenthesis when you call a function
+
 ```kt
 // repeat takes a function as the 2nd argument.  We can pass it like so:
 repeat(4) {
@@ -76,6 +80,7 @@ repeat(4, {
 ## Higher order functions
 
 Higher-order functions are functions that take other functions as parameters or return a function
+
 ```kt
 // repeat is a higher order function
 repeat(4, {

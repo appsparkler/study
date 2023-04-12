@@ -127,3 +127,16 @@ solarSystem[3] = "Little Earth"
 ```
 
 One of the major concerns with array is that they are difficult to access
+
+# `Pair`
+
+A pair is pair of 2 values and we can access either the `first` or `second` value with `.first` or `.second`
+
+```kt
+
+val hello:Pair<Int, Int> = Pair(1,2)
+
+println(hello.first) // 1
+println(hello.second) // 2
+```
+
