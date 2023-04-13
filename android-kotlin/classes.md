@@ -471,6 +471,29 @@ enum class Language {
 class Search<T>(var input: T, var language: Language)
 ```
 
+### We can also use the `name` which is the name of the enum as string values where needed
+
+```kt
+println(Language.English.name) // "English"
+println(Language.Japanese.name) // "Japanese"
+```
+
+### We can add more values to associate the enum item.  For ex.
+
+```kt
+enum class CupcakeScreen(@StringRes val title: Int) {
+    Start(title = R.string.app_name),
+    Flavor(title = R.string.choose_flavor),
+    Pickup(title = R.string.choose_pickup_date),
+    Summary(title = R.string.order_summary)
+}
+
+// and use it where needed
+
+println(CupcakeScreen.Start.title) // "Cupcake"
+println(CupcakeScreen.Pickup.title) // "Pickup"
+```
+
 ## Data class
 
 We can create data class for defining a schema
