@@ -66,3 +66,15 @@ navController
     )
 ```
 
+### Accessing the current route name 
+
+Create a `backStackEntry` variable using the navController.  This has the information needed.
+
+```kt
+val backStackEntry by navController.currentBackStackEntryAsState()
+
+val currentScreen = CupcakeScreen.valueOf(
+   backStackEntry?.destination?.route ?: CupcakeScreen.Start.name
+)
+```
+
