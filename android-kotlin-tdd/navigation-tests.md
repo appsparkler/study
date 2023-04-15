@@ -58,8 +58,95 @@ class CupcackeScreenNavigationTest {
 }
 ```
 
-## Tests for Navigation
+## Navigation Tests
+
+### navigating to various routes
 
 We can write the following tests for navigaton
 
 - Assert the start-screen/landing-screen - for ex `cupcakeNavHost_verifyStartDestination`
+
+```kt
+    @Test
+    fun cupcakeHost_verifyStartDestination() {
+        val route = navController.currentBackStackEntry?.destination?.route
+        assertEquals(CupcakeScreen.Start.name, route)
+    }
+```
+
+- Next, navigate to a route and assert the route
+
+```kt
+
+    @Test
+    fun cupcakeHost_clickOneCupcake_navigatesToSelectFlavorScreen() {
+        // go to flavor screen
+        composeTestRule
+            .onNodeWithText("One Cupcake")
+            .performClick()
+        navController.assertCurrentRouteName(CupcakeScreen.Flavor
+            .name)
+    }
+
+    @Test
+    fun cupcakeHost_clickNextOnFlavorScreen_navigatesToPickupScreen() {
+        // go to flavor screen
+        composeTestRule
+            .onNodeWithText("One Cupcake")
+            .performClick()
+        // click on chocolate flavor
+        composeTestRule
+            .onNodeWithText("Chocolate")
+            .performClick()
+        //        click on Next
+        composeTestRule
+            .onNodeWithText("Next")
+            .performClick()
+        navController.assertCurrentRouteName(CupcakeScreen.Pickup
+            .name)
+    }
+```
+
+## Abstracting out common functionality to re-use code:
+
+### ScreenAssertions with `NavController`
+
+We come across that code that we would like to levarage.  We could use the Kotlin syntax for extending classes.  For ex:
+
+```kt
+// ScreenAssertions.kt
+
+// lets extend the NavController
+fun NavController.assertCurrentRouteName(expectedRouteName: String) {
+    Assert.assertEquals(
+        expectedRouteName,
+        currentBackStackEntry?.destination?.route
+    )
+}
+
+// now we can use this in the test
+navController.assertCurrentRouteName(CupcakeScreen.Start.name)
+navController.assertCurrentRouteName(CupcakeScreen.Flavor.name)
+```
+
+### Node utils with `AndroidComposeTestRule`
+
+```kt
+fun <A : ComponentActivity> AndroidComposeTestRule<ActivityScenarioRule<A>, A>.onNodeWithStringId(
+   @StringRes id: Int
+): SemanticsNodeInteraction = onNodeWithText(activity.getString(id))
+```
+
+### Private functions for repetetive code:
+
+```kt
+private fun navigateToFlavorScreen() {}
+private fun navigateToPickupScreen() {}
+private fun navigateToSummaryScreen() {}
+```
+
+## Assertions
+
+- `assertDoesNotExist`
+- `assertCurrentRouteName` - custom assertion
+- `assertEquals`
