@@ -50,12 +50,15 @@ class ParametrizedMathTest(val a: Int, val b:Int, val expectedValue:Int) {
 ```
 
 ## Instrumentation Test
+
 ### Getting the application context in the test
+
 ```kt
 val context = ApplicationProvider.getApplicationContext<Context>()
 ```
 
 ## Expecting a test to throw
+
 ```kt
 @Test(expected = JsonSyntaxException::class)
 fun populateQuoteFromAssets_invalidJson() {
