@@ -78,3 +78,16 @@ val currentScreen = CupcakeScreen.valueOf(
 )
 ```
 
+### To navigate up the routes
+
+```kt
+navController.navigateUp()
+```
+
+### To conditionally navigate back (previous screen/route)
+
+```kt
+val canNavigateBack = navController.previousBackStackEntry != null
+```
+
+
