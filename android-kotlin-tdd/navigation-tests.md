@@ -150,3 +150,12 @@ private fun navigateToSummaryScreen() {}
 - `assertDoesNotExist`
 - `assertCurrentRouteName` - custom assertion
 - `assertEquals`
+
+
+## Accessing App Resource (`R`)
+
+We can access the apps resources with `composeTestRule.activity.getString(R.string.hello_world)`
+
+```kt
+
+```
