@@ -14,7 +14,7 @@ debugImplementation "androidx.compose.ui:ui-tooling"
 In our previous instrument tests we were only testing a screen or a component but now we want to test the navigation
 too which requires a `nav host controller` that takes care of the navigation.
 
-So, we cannot simply call `val composeTestRule = createComposeRule()`.  We will need to set it up with the 
+So, we cannot simply call `val composeTestRule = createComposeRule()`.  We will need to set it up with the
 nav host controller:
 
 For navigation, we'll not have access to the same `NavHostController` that we had in the app code.
@@ -107,7 +107,7 @@ We can write the following tests for navigaton
     }
 ```
 
-## Abstracting out common functionality to re-use code:
+## Abstracting out common functionality to re-use code
 
 ### ScreenAssertions with `NavController`
 
@@ -137,7 +137,7 @@ fun <A : ComponentActivity> AndroidComposeTestRule<ActivityScenarioRule<A>, A>.o
 ): SemanticsNodeInteraction = onNodeWithText(activity.getString(id))
 ```
 
-### Private functions for repetetive code:
+### Private functions for repetetive code
 
 ```kt
 private fun navigateToFlavorScreen() {}
@@ -151,11 +151,11 @@ private fun navigateToSummaryScreen() {}
 - `assertCurrentRouteName` - custom assertion
 - `assertEquals`
 
-
 ## Accessing App Resource (`R`)
 
 We can access the apps resources with `composeTestRule.activity.getString(R.string.hello_world)`
 
 ```kt
-
+val composeTestRule = createAndroidComposeRule<ComponentActivity>()
+val helloWorld = composeTestRule.activity.getString(R.string.hello_world)
 ```
