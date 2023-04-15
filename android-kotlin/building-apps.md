@@ -4,6 +4,20 @@
 - Include the app in the main activity
 - Pass `Modifier` to the App function
 
+## Dynamic Strings
+
+If we have more than one variable to pass to a compose a string, we could do something like this:
+
+```xml
+<string name="order_details">Quantity: %1$s \nFlavor: %2$s \nPickup date: %3$s\nTotal: %4$s\n\n Thank you!</string>
+```
+
+and then:
+
+```kt
+stringResource(R.string.order_details, qty, flavor, date, total)
+```
+
 ## Spacing
 
 - Use `Modifier.fillMaxSize()` in top level element to fill the full screen
