@@ -15,7 +15,6 @@
 - Ensure that the name clearly describes what the test tests for and what the expected result is - for ex. `fun calculate_20_percent_tip_no_roundup`
 - AAAC - Arrange, Act, Assert, Clean up
 
-
 ### Examples
 
 ```kt
