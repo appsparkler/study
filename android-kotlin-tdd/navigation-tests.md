@@ -58,7 +58,13 @@ class CupcackeScreenNavigationTest {
 }
 ```
 
-## Navigation Tests
+## Navigation & Instrumentation Tests
+
+### Various elements on the screen
+
+- verify has/doesn't have back button
+- verify the buttons are clickable or not
+- verify 
 
 ### navigating to various routes
 
