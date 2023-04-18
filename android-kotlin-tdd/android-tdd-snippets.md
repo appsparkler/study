@@ -1,8 +1,6 @@
 # Snippets
 
-## Testing
-
-### Create Android Test Rule
+## Create Android Test Rule
 
 ```kt
     @get:Rule val androidComposeTestRule = createAndroidComposeRule<ComponentActivity>()
