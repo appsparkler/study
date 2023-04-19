@@ -91,3 +91,7 @@ val canNavigateBack = navController.previousBackStackEntry != null
 ```
 
 
+### Setting up navigation
+- Setup the `navController NavHostController`
+
+
