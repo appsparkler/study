@@ -14,3 +14,4 @@ A frame is usually a rectangle of the size of a screen we are developing for - m
 - select icons by searching `free Figma icons` or a resource like this one : figma.com/resources/assets/evericons-for-figma/
 - <kbd>CMD + \</kbd> to hide/show UI controls
 - feel free to copy/paste elements from one Figma to another
+- easily copy/paste images to a Figma file
