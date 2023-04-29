@@ -15,3 +15,4 @@ A frame is usually a rectangle of the size of a screen we are developing for - m
 - <kbd>CMD + \</kbd> to hide/show UI controls
 - feel free to copy/paste elements from one Figma to another
 - easily copy/paste images to a Figma file
+- Add text by pressing <kbd>T</kbd>
