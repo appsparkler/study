@@ -13,3 +13,4 @@ A frame is usually a rectangle of the size of a screen we are developing for - m
 - move an element in any direction with the arrow keys (hold `option` simultaneously to keep a track of the distance from its constraints)
 - select icons by searching `free Figma icons` or a resource like this one : figma.com/resources/assets/evericons-for-figma/
 - <kbd>CMD + \</kbd> to hide/show UI controls
+- feel free to copy/paste elements from one Figma to another
