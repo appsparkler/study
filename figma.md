@@ -10,3 +10,4 @@ A frame is usually a rectangle of the size of a screen we are developing for - m
 - press <kbd>E</kbd> to select elliptical mode draw the ellipses and circles for our design.
 - double click mouse twice to select an element inside another element
 - hold `option` to see the distance of an element from its constraints.
+- move an element in any direction with the arrow keys (hold `option` simultaneously to keep a track of the distance from its constraints)
