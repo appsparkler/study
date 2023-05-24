@@ -7,4 +7,4 @@
 - `+/-` - Zoom in/out 
 - `o` - Ellipse tool
 - `keep SHIFT pressed` - to maintain constraints for images, shapes, etc.
-- 
+- `CMD + G` - group selection
