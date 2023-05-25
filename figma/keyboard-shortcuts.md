@@ -10,3 +10,5 @@
 - `CMD + G` - group selection
 - `keep SHIFT pressed` - to select all elements between first and next selection
 - `keep CMD pressed` - to keep adding elements to a selection
+- `spacebar` - for the hand tool
+- 
