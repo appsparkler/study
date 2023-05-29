@@ -1,9 +1,16 @@
 # App Architecture
 
+## Flow
+
+1. Update app icon
+1. Update strings (to start with, atleast the app name)
+1. Update status-bar and nav-bar colors
+
 ## Separation of concerns
+
 ## UDF - Uni Direction Flow
 
-UI Layer   
+UI Layer
 ⬆️      ⬇️  
 Data Layer  
 
