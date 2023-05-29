@@ -2,8 +2,10 @@
 
 ## Flow
 
+1. Figma work - choose the UI Kit, theme, etc.
 1. Update app icon
 1. Update strings (to start with, atleast the app name)
+1. export the theme and integrate it with code
 1. Update status-bar and nav-bar colors
 
 ## Separation of concerns
@@ -15,6 +17,7 @@ UI Layer
 Data Layer  
 
 ## Dependency
+
 `UI Layer` depends on `Domain Layer (optional)` which in turn depends on `Data Layer`
 
 <img src="https://developer.android.com/static/codelabs/basic-android-kotlin-compose-viewmodel-and-state/img/df6ce8b662eb792b_1440.png" width="300" />
