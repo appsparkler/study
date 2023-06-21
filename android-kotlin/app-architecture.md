@@ -2,11 +2,14 @@
 
 ## Flow
 
-1. Figma work - choose the UI Kit, theme, etc.
+1. Figma work 
+    - choose the UI Kit, theme, etc.
+    - design the application
 1. Update app icon
 1. Update strings (to start with, atleast the app name)
 1. export the theme and integrate it with code
 1. Update status-bar and nav-bar colors
+1. update all the strings
 
 ## Separation of concerns
 

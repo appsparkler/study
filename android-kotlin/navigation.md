@@ -66,7 +66,7 @@ navController
     )
 ```
 
-### Accessing the current route name 
+### ⭐️ Accessing the current route
 
 Create a `backStackEntry` variable using the navController.  This has the information needed.
 
