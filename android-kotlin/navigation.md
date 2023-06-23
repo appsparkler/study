@@ -44,7 +44,7 @@ NavHost(
 
 - Navigate as needed
 
-We can use `navControllers` `.navigate()` method to navigate.  We need to pass the name of the route 
+We can use `navControllers` `.navigate()` method to navigate.  We need to pass the name of the route
 
 ```kt
     navController.navigate(CupcakeScreen.Start.name)
@@ -90,8 +90,6 @@ navController.navigateUp()
 val canNavigateBack = navController.previousBackStackEntry != null
 ```
 
-
 ### Setting up navigation
+
 - Setup the `navController NavHostController`
-
-
