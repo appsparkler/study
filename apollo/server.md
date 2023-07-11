@@ -68,3 +68,13 @@ const { url } = await startStandaloneServer(server, {
 console.log(`🚀  Server ready at: ${url}`);
 ```
 
+## We can now easily query the server for data from the client.  For ex:
+
+```ts
+// this query will return only authors for all the books
+query GetBooks {
+  books {
+    author
+  }
+}
+```
