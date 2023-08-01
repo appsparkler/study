@@ -1,5 +1,22 @@
-# Attributes for Classes & Constructors
+# Enums
+## Enums with variables:
+```kt
+private enum class DetectionMode(val titleResId: String, val subtitleResId: String) {
+        BARCODE_LIVE("Barcode Scanning", "Read data encoded in most standard barcode formats"),
+    }
+```
+## Accessing Enum values:
+```kt
+val detectionModeValues = DetectionMode.values();
+detectionModeValues.forEach{detectionMode ->
+    detectionMode.titleResId // "Barcode Scanning"
+    detectionMode.subtitleResId // "Read data encoded in most standard barcode formats"
+}
+```
 
+# Classes & Constructors
+
+## Attributes:
 - `private` - The private access modifier restricts the visibility of a class only to the enclosing class
 - `inner` - indicates that this class is an inner class and can access members of the outer class.
 - `internal` - restricts the visibility of the constructor to within the same module
