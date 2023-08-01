@@ -1,3 +1,8 @@
+# Attributes for Classes & Constructors
+
+- `private` - The private access modifier restricts the visibility of a class only to the enclosing class
+- `inner` - indicates that this class is an inner class and can access members of the outer class.
+- `internal` - restricts the visibility of the constructor to within the same module
 
 # AppCompat
 
