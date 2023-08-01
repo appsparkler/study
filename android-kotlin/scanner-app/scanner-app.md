@@ -21,4 +21,27 @@ AppCompatDelegate.setCompatVectorFromResourcesEnabled(true)
 >
 ```
 
+# Theme
+
+## How to change the theme
+- Add a `res > values > styles.xml` android resource file.  In that file we can select a theme we want with the `parent` attribute.
+- Assign a `name` to the theme - for ex. `AppTheme`. 
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+    </style>
+</resources>
+```
+- Now, change the theme in the `<application>` tag in the `AndroidManifest.xml` file:
+
+```xml
+<application
+    ...
+    android:theme="@style/AppTheme"
+    ...
+>
+```
+
 
