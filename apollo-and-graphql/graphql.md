@@ -2,11 +2,11 @@
 It gives us a way of taking all our data sources and put it into some sort of user interface.
 
 ## Parts of GraphQL:
-- Query
-- Mutations
-- Subscriptions
+- Query - allows us to get data
+- Mutations - allows us to mutate data
+- Subscriptions - 
 - Resolvers (resolver functions)
-- Fragments
+- Fragments - allows us to club multiple fields together
 
 ## GraphQL Playgounds
 Allows us to play with our queries, mutations, subscriptions, etc. either with mocks or real data
