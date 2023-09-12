@@ -130,3 +130,21 @@ mutation CloseAstraExpress{
   }
 }
 ```
+
+## Example of `Fragment` on https://snowtooth.moonhighway.com
+Here we group `id` and `name` field so that whenever we want this we can just use `...CommonLiftFields`
+
+```graphql
+fragment CommonLiftFields on Lift {
+  id
+  name
+}
+
+query GetAllLifts {
+  allLifts {
+    ...CommonLiftFields
+  }
+}
+```
+
+
