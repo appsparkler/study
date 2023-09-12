@@ -78,3 +78,33 @@ query {
 }
 ```
 
+### more than one query...
+```graphql
+query AllLifts {
+  allLifts {
+    id
+    name
+    status
+    trailAccess {
+      id
+      name
+      accessedByLifts {
+        name
+        elevationGain
+      }
+    }
+  }
+}
+
+query AllTrails {
+  allTrails {
+    id
+    name
+    accessedByLifts {
+      id
+      name
+    }
+  }
+}
+```
+
