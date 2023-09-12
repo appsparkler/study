@@ -6,6 +6,7 @@ It gives us a way of taking all our data sources and put it into some sort of us
 - Mutations
 - Subscriptions
 - Resolvers (resolver functions)
+- Fragments
 
 ## GraphQL Playgounds
 Allows us to play with our queries, mutations, subscriptions, etc. either with mocks or real data
@@ -109,3 +110,23 @@ query AllTrails {
 }
 ```
 
+
+
+## Example of `Mutation` on https://snowtooth.moonhighway.com
+This shows that we can perform mutations as well:
+```graphql
+mutation OpenAstraExpress{
+  setLiftStatus(id: "astra-express", status: OPEN) {
+    name
+    id
+    status
+  }
+}
+mutation CloseAstraExpress{
+  setLiftStatus(id: "astra-express", status: CLOSED) {
+    name
+    id
+    status
+  }
+}
+```
