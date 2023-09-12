@@ -23,6 +23,7 @@ query {
 }
 ```
 
+
 ### `liftCount` with dynamic `LiftStatus (status)`
 ```graphql
 query($status: LiftStatus) {
