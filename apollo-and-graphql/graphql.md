@@ -16,7 +16,7 @@ Example: https://snowtooth.moonhighway.com
 ### `liftCount` query with and without arguments in a single query:
 ```graphql
 query {
-  	liftCount
+  	allLifts: liftCount
     openLifts: liftCount(status: OPEN)
     closedLifts: liftCount(status: CLOSED)
     holdLifts: liftCount(status: HOLD)
