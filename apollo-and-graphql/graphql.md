@@ -59,3 +59,22 @@ query {
 }
 ```
 
+### `allLifts` query with trail access and `trailAccess` with list of lifts that can access it
+```graphql
+query {
+  allLifts {
+    id
+    name
+    status
+    trailAccess {
+      id
+      name
+      accessedByLifts {
+        name
+        elevationGain
+      }
+    }
+  }
+}
+```
+
