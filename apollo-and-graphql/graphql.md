@@ -215,7 +215,7 @@ type Query {
 ```js
 const {ApolloServer, gql} = require("apollo-server")
 const {readFileSync} = require('fs')
-const query = readFileSync("./query.graphql", {encoding: "utf-8"})
+const query = readFileSync("./query.graphql", {encoding: "utf-8"}) // we can have syntax highlighting in query.graphql
 const typeDefs = gql(query.toString())
 const server = new ApolloServer({
   typeDefs,
@@ -224,4 +224,22 @@ const server = new ApolloServer({
 server
   .listen()
   .then(() => console.log("listening..."))
+```
+
+### The `.graphql` file
+- Mostly, everything in a `.graphql` file is a `type`
+- `type Query` is where we define all our queries
+- We can define custom types too with the `type` keyword - for ex. `type SkiDay {...}`
+
+```graphql
+type SkiDay {
+  id: ID!
+  date: String!
+  mountain: String!
+}
+
+type Query {
+  totalDays: Int!
+
+}
 ```
