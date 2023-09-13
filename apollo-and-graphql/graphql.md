@@ -203,4 +203,25 @@ type Query {
 }
 ```
 
+## Setting up a GraphQL Server
 
+### Install dependencies:
+- graphql
+- apollo-server
+- nodemon
+
+### Setup the Server
+
+```js
+const {ApolloServer, gql} = require("apollo-server")
+const {readFileSync} = require('fs')
+const query = readFileSync("./query.graphql", {encoding: "utf-8"})
+const typeDefs = gql(query.toString())
+const server = new ApolloServer({
+  typeDefs,
+  mocks: true
+})
+server
+  .listen()
+  .then(() => console.log("listening..."))
+```
