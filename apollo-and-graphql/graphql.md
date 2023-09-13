@@ -7,6 +7,7 @@ It gives us a way of taking all our data sources and put it into some sort of us
 - Subscriptions - 
 - Resolvers (resolver functions)
 - Fragments - allows us to club multiple fields together
+- GraphQL scalar types
 
 ## GraphQL Playgounds
 Allows us to play with our queries, mutations, subscriptions, etc. either with mocks or real data
@@ -172,6 +173,33 @@ mutation HoldAstraExpress {
   setLiftStatus(id: "astra-express", status: HOLD) {
     status
   }
+}
+```
+
+## Scalar Types
+
+### Inbuilt Scalar Types
+- Int
+- Float
+- String
+- Boolean
+- ID
+
+## Null v/s Non-Nullable
+- If a fields type has suffix `!` in its schema, it is a non-nullable field.
+- For an array; there are three possibilities:
+    - [Car] - field and array members, both can be null
+    - [Car]! - field cannot be null but its members can be `Car` or `null`
+    - [Car!]! - field cannot be null nor can its members be null
+
+## Defining Queries
+All queries will be wrapped in `type Query {}`
+
+```graphql
+type Query {
+    allLifts
+    liftCount
+    ...
 }
 ```
 
