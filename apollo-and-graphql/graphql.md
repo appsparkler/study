@@ -204,6 +204,7 @@ type Query {
 ```
 
 ## Setting up a GraphQL Server
+Example server created here : https://stackblitz.com/edit/graphql-apollo-server-appsparkler
 
 ### Install dependencies:
 - graphql
@@ -211,7 +212,8 @@ type Query {
 - nodemon
 
 ### Setup the Server
-
+- if we don't have a DB setup; we can use `mocks: true` for the `ApolloServer`
+- we can put all our `graphql` syntax in a `.graphql` file and then read the file and pass the contents to `gql`
 ```js
 const {ApolloServer, gql} = require("apollo-server")
 const {readFileSync} = require('fs')
@@ -226,10 +228,18 @@ server
   .then(() => console.log("listening..."))
 ```
 
-### The `.graphql` file
+### The `.graphql` file and `type Query {}`
 - Mostly, everything in a `.graphql` file is a `type`
-- `type Query` is where we define all our queries
-- We can define custom types too with the `type` keyword - for ex. `type SkiDay {...}`
+- `type Query {}` is where we define all our queries
+
+```graphql
+type Query {
+  totalDays: Int!
+}
+```
+
+### Custom Types
+We can define custom types too with the `type` keyword - for ex. `type SkiDay {...}`
 
 ```graphql
 type SkiDay {
@@ -237,9 +247,53 @@ type SkiDay {
   date: String!
   mountain: String!
 }
-
 type Query {
   totalDays: Int!
-
+  allSkiDays: [SkiDay!]!
 }
 ```
+
+### Enum Type
+```graphql
+enum Conditions {
+  POWDER
+  HEAVY
+  ICE
+  THIN
+}
+type SkiDay {
+  id: ID!
+  date: String!
+  mountain: String!
+  condition: Conditions
+}
+type Query {
+  totalDays: Int!
+  allSkiDays: [SkiDay!]!
+}
+```
+
+### `Mutation` Type
+we need `Mutation` types to edit data on database
+```graphql
+type Mutation {
+  removeDay(id: ID!): SkiDay!
+}
+```
+
+### `input` Type for `Mutation`
+`input` types are used for `mutations` - to club 2 or more fields together and provide a schema for mutation arguments
+
+```graphql
+input AddDayDetails {
+  mountain: String!
+  date: String!
+  conditions: Conditions
+}
+
+type Mutation {
+  addDay(dayDetails: AddDayDetails!): SkiDay!
+  editDay(id:ID! dayDetails: AddDayDetails): SkiDay!
+}
+```
+
