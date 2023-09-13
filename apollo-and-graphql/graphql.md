@@ -4,7 +4,7 @@ It gives us a way of taking all our data sources and put it into some sort of us
 ## Parts of GraphQL:
 - Query - allows us to get data
 - Mutations - allows us to mutate data
-- Subscriptions - 
+- Subscriptions - allows us to subscribe to changes in data
 - Resolvers (resolver functions)
 - Fragments - allows us to club multiple fields together
 - GraphQL scalar types
