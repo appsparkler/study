@@ -147,4 +147,32 @@ query GetAllLifts {
 }
 ```
 
+## Example of `Subscription` on https://snowtooth.moonhighway.com
+
+```graphql
+subscription LiftStatusChange {
+  liftStatusChange {
+    id
+    name
+    status
+  }
+}
+```
+
+Once we run the subscription, we can change the lift status and notice the subscription deliver the change.
+
+```graphql
+mutation OpenAstraExpress {
+  setLiftStatus(id: "astra-express", status: OPEN) {
+    status
+  }
+}
+
+mutation HoldAstraExpress {
+  setLiftStatus(id: "astra-express", status: HOLD) {
+    status
+  }
+}
+```
+
 
