@@ -297,3 +297,100 @@ type Mutation {
 }
 ```
 
+### Custom `scalar`
+Many a times we want a date, url, email etc. which is also a type String.  For such cases; we need to define a custom `scalar` type
+
+```graphql
+scalar Date
+
+type SkiDay {
+  id: ID!
+  mountain: String!
+  date: Date!
+  conditions: Conditions!
+}
+
+enum Conditions {
+  POWDER # lot of snow
+  HEAVY # thick wet snow
+  ICE 
+  THIN 
+}
+
+type Query {
+  totalDays: Int!
+  allSkiDays: [SkiDay!]!
+}
+
+input AddDayDetails {
+  mountain: String!
+  date: Date!
+  conditions: Conditions
+}
+
+type Mutation {
+  addDay(dayDetails: AddDayDetails!): SkiDay!
+  removeDay(id: ID!): SkiDay!
+}
+```
+
+### Custom Mocks
+- the mock data usually returns strings like `"Hello World"` for `String` type so we can customize the mocks if we want some other data
+- also, for custom scalars like `scalar Date`; we need to define the mock else we'll get an error
+
+```js
+const mocks = {
+  Date() {
+    return '2023-12-12';
+  },
+  String() {
+    return 'Cool Data...';
+  },
+};
+
+// now, we can pass this to ApolloServer
+new ApolloServer({typeDefs, mocks})
+```
+
+### Custom Mocks - configuring the number of items in a list
+
+```js
+const mocks = {
+  Query: () => ({
+    allSkiDays: () => new MockList(8),// will return 8 items
+    allSkiDays: () => new MockList(8, 10),// will return between 8 and 10 items
+  }),
+}
+```
+
+### Subscription Type
+We can setup subscription type which can be used by clients to listen to data changes:
+
+```graphql
+type Subscription {
+  skiDay: SkiDay!
+}
+```
+
+### Documenting your spec
+- We can add documentation for each of the `types, input, scalar, etc.`.  We simply need to wrap them in `"""<documentation>"""` just above it.
+- to document each property; we can wrap the documentation in `"<documentation>"` just above the it.
+
+```grapql
+"""
+An object that describes a ski day
+"""
+type SkiDay {
+  "A unique identifier for a ski day"
+  id: ID!
+  mountain: String!
+  date: Date!
+  conditions: Conditions!
+}
+```
+
+## More resources
+- https://graphql.org/code
+
+
+
