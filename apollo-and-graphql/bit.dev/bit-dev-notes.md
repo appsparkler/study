@@ -6,7 +6,7 @@
 |install missing deps | `bit install --add-missing-deps`|N.A.
 |show env summary|`bit show <env-path>`|`bit show envs/my-react-env`|
 | install a dependency | `bit install <package-name>` | `bit install @teambit/react.react-env`|
-|list all templates for an aspect | `bit templates --show-all -a <aspect-id>`| `bit templates --show-all -a teambit.angular/angular`|
+|list all templates for an aspect **(works only inside a bit workspace)** | `bit templates --show-all -a <aspect-id>`| `bit templates --show-all -a teambit.angular/angular`|
 
 
 
