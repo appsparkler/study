@@ -20,6 +20,20 @@
 - First we can list all the templates that are available with `bit templates`
 - Next, we can create a component with any of the listed template with `bit create <template-name> <path/to/component>` for ex. `bit create react-env name/spaces/my-react-env` - this will create `my-react-env` component with `react-env` template.
 
+## Change environement of a component
+- We can get an existing environment from the cloud - for ex. `bit fork teambit.react/v17/react-env` will fork component-environment for version 17 of React.
+- Now we can use this environment for our component with `bit env set pages/welcome v17/react-env`
+
+## Change react or any other library version for our component
+- We can edit the `peers` property `env.jsonc` file
+```json
+{
+    "name": "react",
+    "version": "16.0.0", // use this version
+    "supportedRange": "^16.0.0" // support ^16.0.0
+}
+```
+
 
 # Scope
 - A scope is like a namespace for a module.  We can create a new scope by visiting https://bit.cloud in our user account or use an existing one.
