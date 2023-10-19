@@ -8,6 +8,11 @@
 | install a dependency | `bit install <package-name>` | `bit install @teambit/react.react-env`|
 |list all templates for an aspect **(works only inside a bit workspace)** | `bit templates --show-all -a <aspect-id>`| `bit templates --show-all -a teambit.angular/angular`|
 |list alltemplates available to a workspace| `bit templates`|N.A.
+|configure a component to use a specific environment|`bit env set </path/to/component> <env>` | `bit envs set ui/form my-org.my-scope/envs/my-react-env`
+
+# SHORT FORMS
+- `COMPONENT_PATTERN` - ex. `pages/welcome` or `forms/signin-form`, etc.
+
 
 # Actions
 
