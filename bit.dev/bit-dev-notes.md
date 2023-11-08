@@ -34,6 +34,12 @@
 }
 ```
 
+# Dependency Management
+There are three types of dependencies:
+- dev (used only by dev files such as test, preview, compositions, etc.)
+- peer - used by the production component
+- runtime - used during runtime.
+
 
 # Scope
 - A scope is like a namespace for a module.  We can create a new scope by visiting https://bit.cloud in our user account or use an existing one.
