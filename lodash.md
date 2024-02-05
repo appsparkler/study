@@ -4,7 +4,6 @@
 - works cross-browser
 - easy to understand
 - declarative
-- 
 
 - try to use sugar wherever possible
 - `reject` and `filter` are methods to refine a list
@@ -36,3 +35,7 @@ There are many such utilities we'll find with "is" in the docs - for ex: `isDate
 
 ## Important points
 - `clone` will not work on nested objects.  Use `cloneDeep` to be safer
+
+## Throttle & Debounce
+- Throttle allows us to trigger the function only after a specific time has passed after the previous trigger.
+- Debounce allows us to trigger the function only after a specific time has passed irrespective of a previous trigger.
