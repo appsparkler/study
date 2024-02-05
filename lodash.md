@@ -20,3 +20,4 @@
 
 # Array methods
 - `flatten` - helps us flatten an array for ex. `[[1,2],[3,4]]` > `flatten(arr)` > `[1,2,3,4]`
+- `compact` - removes all `falsy` values from an array 
