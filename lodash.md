@@ -16,3 +16,7 @@
    - `random(from, to)` will give a random number between two numbers
    - `random(from, to, true)` will return a floating number
    - `random(to)` will assume to `from` to be `0`.
+- Unique Id - `uniqeId` method generates unique ids
+
+# Array methods
+- `flatten` - helps us flatten an array for ex. `[[1,2],[3,4]]` > `flatten(arr)` > `[1,2,3,4]`
