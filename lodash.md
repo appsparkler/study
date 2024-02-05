@@ -30,8 +30,9 @@
 ## Object
 - `assign` - this allows us to create new objects from existing objects
 
-## Utilities
+## Basic Type Checking
 - `isNil` - this method to check if a variable is `null` or `undefined`
+There are many such utilities we'll find with "is" in the docs.
 
 ## Important points
 - `clone` will not work on nested objects.  Use `cloneDeep` to be safer
