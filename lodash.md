@@ -8,4 +8,6 @@
 
 # String utils
 - `toLower` and `toUpper` are to change the case.  The unique thing about these methods is that they can be used with `chain`
+- `split` and `join` methods are to split/join a string/array with a delimitter.
+- `camelCase` and `snakeCase` are to convert strings to camel or snake case
 
