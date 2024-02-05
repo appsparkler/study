@@ -11,3 +11,8 @@
 - `split` and `join` methods are to split/join a string/array with a delimitter.
 - `camelCase` and `snakeCase` are to convert strings to camel or snake case
 
+
+- Random Number - 
+   - `random(from, to)` will give a random number between two numbers
+   - `random(from, to, true)` will return a floating number
+   - `random(to)` will assume to `from` to be `0`.
