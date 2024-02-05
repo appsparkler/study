@@ -39,3 +39,7 @@ There are many such utilities we'll find with "is" in the docs - for ex: `isDate
 ## Throttle & Debounce
 - Throttle allows us to trigger the function only after a specific time has passed after the previous trigger.
 - Debounce allows us to trigger the function only after a specific time has passed irrespective of a previous trigger.
+
+## Creating Lodash Mixins
+- Mixins are a great way to extend lodash utils to create custom utils
+For ex. `_.mixin({customMethod: customMethod})`.  Now we can use `_.customMethod(...)`
