@@ -1,5 +1,11 @@
 # Lodash
 
+## Why Lodash
+- works cross-browser
+- easy to understand
+- declarative
+- 
+
 - try to use sugar wherever possible
 - `reject` and `filter` are methods to refine a list
 - `groupBy` is a great way to group data
@@ -21,3 +27,9 @@
 # Array methods
 - `flatten` - helps us flatten an array for ex. `[[1,2],[3,4]]` > `flatten(arr)` > `[1,2,3,4]`
 - `compact` - removes all `falsy` values from an array 
+
+# Object
+- `assign` - this allows us to create new objects from existing objects
+
+# Utilities
+- `isNil` - this method to check if a variable is `null` or `undefined`
