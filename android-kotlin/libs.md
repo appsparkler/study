@@ -9,3 +9,6 @@
 
 ## Image Loaders
 - `implementation("io.coil-kt:coil:2.5.0")`
+
+## Splash Screen
+- `androidx.`
