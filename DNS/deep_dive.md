@@ -57,6 +57,7 @@ A fully qualified domain name is one that has the root, top-level domain, second
 ## The Root Server
 - When the DNS resolver receives a query, for ex. for www.google.com, it first queries one of the root servers to find out which name servers are authoritative for the .com TLD.
 - The root server then responds with the IP addresses of the authoritative name servers for ".com."
+- https://root-server.org
 
 
 user enters google.com in url bar > dns resolver > root servers > authoritative name servers for ".com" > dns resolver > 
@@ -90,5 +91,8 @@ Once the DNS resolver returns the DNS records which contains the ip address via 
 - wild card entries are not supported
 - the file can contain any number of entries
 - ip address can be IPv4 or an IPv6 address
+
+### DNS Resolver
+- `/etc/resolv.conf` on our system displays the DNS resolver used by our computer
 
 
