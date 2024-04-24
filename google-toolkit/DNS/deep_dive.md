@@ -54,5 +54,16 @@ A fully qualified domain name is one that has the root, top-level domain, second
 - authority is distributed
 - name uniqueness is guaranteed
 
+## The Root Server
+- When the DNS resolver receives a query, for ex. for www.google.com, it first queries one of the root servers to find out which name servers are authoritative for the .com TLD.
+- The root server then responds with the IP addresses of the authoritative name servers for ".com."
+
+
+user enters google.com in url bar > dns resolver > root servers > authoritative name servers for ".com" > dns resolver > 
+
+## The DNS Resolver fetching the DNS Record
+![alt text](image.png)
+
+
 
 
