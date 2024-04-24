@@ -64,6 +64,8 @@ user enters google.com in url bar > dns resolver > root servers > authoritative 
 ## The DNS Resolver fetching the DNS Record
 ![alt text](image.png)
 
+#
+
 
 
 
