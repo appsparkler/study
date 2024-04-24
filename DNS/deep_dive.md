@@ -4,8 +4,8 @@
 - it has evolved more than just a phonebook though :D
 
 ## Main Functions of DNS
-- name resolution
 - name space
+- name resolution
 - name registration
 
 ## Domain Name Format
@@ -73,5 +73,22 @@ user enters google.com in url bar > dns resolver > root servers > authoritative 
 - A governing authority can have authority over more than one name server.
 - For ex. if I purchased example.com, I have authority over example.com and all sub domains.
 
+# Name Resolution
+Once the DNS resolver returns the DNS records which contains the ip address via name servers; its time for our application to connect to that server and get the necessary data.
+
+## Local Name Resolution (`/etc/hosts` resolution)
+- typically `/etc/hosts` file takes prcedence over external DNS resolutions.
+- the DNS resolver kicks in only if correponding IP is not found in the `/etc/hosts` file.
+- we can add entries here - `ip-address` and `domain name`.  This way we can access local server with a domain name.
+- Example of 
+```txt
+192.168.1.43 mycolorprinter.com
+192.168.1.1 myrouter.com
+```
+
+### `/etc/hosts/`
+- wild card entries are not supported
+- the file can contain any number of entries
+- ip address can be IPv4 or an IPv6 address
 
 
