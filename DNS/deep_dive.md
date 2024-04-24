@@ -96,4 +96,9 @@ Once the DNS resolver returns the DNS records which contains the ip address via 
 - DNS resolver is the middleware that helps to fetch the DNS record associated with the domain name we are looking for.
 - `/etc/resolv.conf` on our system displays the DNS resolver used by our computer
 
+#### Iterative resolution
+- the DNS resolver sends a request to a server and receives either a referral or an answer.
+- if it receives an answer, its stops sending further requests.
+- on the other hand, if it receives a referral, it sends a request to the referred name server until it receives an authoritative name server.
+- it is the clients responsibility to keep querying servers for the answer.
 
