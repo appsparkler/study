@@ -68,5 +68,10 @@ user enters google.com in url bar > dns resolver > root servers > authoritative 
 1. Generic TLD (gTLD) - com, arpa, edu, gov, org, etc
 2. Country Code TLD (ccTLD) - in, ca, us, eu, etc.
 
+## Authoritative Name Servers
+- Within the DNS Tree, every node has a governing authority name server - thus known as authoritative name server.
+- A governing authority can have authority over more than one name server.
+- For ex. if I purchased example.com, I have authority over example.com and all sub domains.
+
 
 
