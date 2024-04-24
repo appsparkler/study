@@ -102,3 +102,6 @@ Once the DNS resolver returns the DNS records which contains the ip address via 
 - on the other hand, if it receives a referral, it sends a request to the referred name server until it receives an authoritative name server.
 - it is the clients responsibility to keep querying servers for the answer.
 
+#### Recursive resolution
+- it is the servers responsibility to obtain the DNS information requested by the original client.
+- its like calling an agent who; on our behalf, finds the person we need to get in touch with and connects them to us.
