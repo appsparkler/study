@@ -64,8 +64,9 @@ user enters google.com in url bar > dns resolver > root servers > authoritative 
 ## The DNS Resolver fetching the DNS Record
 ![alt text](image.png)
 
-#
-
+## TLD - Top Level Domains
+1. Generic TLD (gTLD) - com, arpa, edu, gov, org, etc
+2. Country Code TLD (ccTLD) - in, ca, us, eu, etc.
 
 
 
