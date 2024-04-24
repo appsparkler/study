@@ -93,6 +93,7 @@ Once the DNS resolver returns the DNS records which contains the ip address via 
 - ip address can be IPv4 or an IPv6 address
 
 ### DNS Resolver
+- DNS resolver is the middleware that helps to fetch the DNS record associated with the domain name we are looking for.
 - `/etc/resolv.conf` on our system displays the DNS resolver used by our computer
 
 
