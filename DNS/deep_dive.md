@@ -111,3 +111,7 @@ Once the DNS resolver returns the DNS records which contains the ip address via 
 - `ipconfig /flushdns` - to clear the cache
 - the client as well as DNS resolver may cache resolutions so that the name resolution is more efficient.
 - the cache has a Time To Live (TTL) on it to avoid outdated domain name resolutions  
+
+## Reverse Name Resolution (rDNS)
+- how about getting the domain name for an ip address?
+- 
