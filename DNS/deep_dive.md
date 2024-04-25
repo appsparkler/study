@@ -148,4 +148,8 @@ This involves the registration of domains. To ensure unique names, name registra
 - availability and budget
 - https://www.dnstwist.it can help us locate impersonating DNS names.
 
-
+## points to consider when choosing a registrar
+- pricing - renewal fee, cost benefits, registration fee, other charges,
+- policies - domain transfer, expiration, etc.
+- add on services - email hosting, wordpress hosting, email hosting, domain privacy, brokerage service, etc.
+- supported TLDs etc.
