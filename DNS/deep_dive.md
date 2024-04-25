@@ -193,4 +193,9 @@ for the servers to provide us with answers or referrals, it does need to store t
 - it points to the authoritative name servers for a zone and it is these name servers that hold the actual DNS information for a domain so that the domain can be accessible to internet users
 - If these records are missing, the servers wouldn't be able to return an authoritative name server for our domain and users will never be able to get to our zone.
 - thus it is important that every ZONE must have at least two NS records of which each one points to a different name server for redundancy.
- 
+
+## A Record & AAAA Record
+- These are the `Address Record`
+- it needs to be an IP address
+- A record is 32 bit whereas AAAA record can have upto 128 bit (4 times that of A record)
+- Both may point to the same ip address where dual stack is required.
