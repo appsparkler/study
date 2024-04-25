@@ -124,5 +124,5 @@ This involves the registration of domains. To ensure unique names, name registra
 - below ICANN are 5 regional Internet REGISTRY.  Each registry is responsible for obtaining IP ranges from ICANN in order to allocate them to ISP across specific geographic region
 - Next in the hierarchy are REGISTRAR - examples are GoDaddy, NameCheap, BlueHost
 - Next are RESELLERS - they are 3rd party companies that offer DNS services through registrars. - examples are Route53
-
+- finally are the REGISTRANT i.e. customers like us who purchase from REGISTRARs or RESELLERS
 
