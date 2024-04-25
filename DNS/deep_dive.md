@@ -59,7 +59,6 @@ A fully qualified domain name is one that has the root, top-level domain, second
 - The root server then responds with the IP addresses of the authoritative name servers for ".com."
 - https://root-server.org
 
-
 user enters google.com in url bar > dns resolver > root servers > authoritative name servers for ".com" > dns resolver > 
 
 ## The DNS Resolver fetching the DNS Record
