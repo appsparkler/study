@@ -105,3 +105,9 @@ Once the DNS resolver returns the DNS records which contains the ip address via 
 #### Recursive resolution
 - it is the servers responsibility to obtain the DNS information requested by the original client.
 - its like calling an agent who; on our behalf, finds the person we need to get in touch with and connects them to us.
+
+## Caching
+- `ipconfig /displaydns` - on windows, to get dns cache
+- `ipconfig /flushdns` - to clear the cache
+- the client as well as DNS resolver may cache resolutions so that the name resolution is more efficient.
+- the cache has a Time To Live (TTL) on it to avoid outdated domain name resolutions  
