@@ -217,3 +217,8 @@ for the servers to provide us with answers or referrals, it does need to store t
   - CNAME must always point to another domain name and never to an IP address
   - it cannot point to an NS or MX record
   - duplicates are not allowed.
+
+## TXT Record
+- This is the Text Record
+- it associates textual information with an FQDN
+- format is <domain-name> <IN> TXT <TTL> <textual-data>
