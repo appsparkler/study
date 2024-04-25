@@ -146,6 +146,6 @@ This involves the registration of domains. To ensure unique names, name registra
 - ensure it is easy to remember
 - avoid hyphens, numbers or acronyms
 - availability and budget
-
+- https://www.dnstwist.it can help us locate impersonating DNS names.
 
 
