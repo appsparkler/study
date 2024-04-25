@@ -159,3 +159,5 @@ This involves the registration of domains. To ensure unique names, name registra
 - there are two different kind of codes - client codes and server codes
 - ex. EPP client codes are clientHold, clientTransferProhibited, clientUpdateProhibited, etc.
 - ex. EPP server codes are ok, autoRenewPreriod, serverTransferProhibited
+- we can get the EPP codes for a domain on https://lookup.icann.org/en/lookup
+
