@@ -161,3 +161,23 @@ This involves the registration of domains. To ensure unique names, name registra
 - ex. EPP server codes are ok, autoRenewPreriod, serverTransferProhibited
 - we can get the EPP codes for a domain on https://lookup.icann.org/en/lookup
 
+# DNS Data Storage
+for the servers to provide us with answers or referrals, it does need to store the data somewhere.  That brings us to this chapter of DNS Data Storage
+
+## DNS Zone and Resources
+- DNS data is stored in a database that is known as ZONE.  There are two types of ZONE:
+  - Forward Lookup - typically used for looking up ip addresses with domain names
+  - Reverse Lookup - typically used for looking up domain names with ip addresses
+- each ZONE is a collection of Resource Records - known as RRs
+- There are many types of RRs in DNS and each one contains a specific set of data
+  - for ex. `A record` contains a domain name and is associated with IPv4 address
+  - the `AAAA record` (aka quadruple A record) associates the domain name to its IPv6 address.
+- All RRs share common format - 
+  1. NAME - @, www for a CNAME record, etc. 
+  1. TYPE - A, AAAA, CNAME, etc.
+  1. CLASS - (IN/CH/HS) - most "IN" in most cases.
+  1. TTL - Time To Live
+  1. RDLength - size of the resource in bytes
+  1. RData - the actual data that the RR stores
+
+
