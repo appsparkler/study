@@ -180,4 +180,9 @@ for the servers to provide us with answers or referrals, it does need to store t
   1. RDLength - size of the resource in bytes
   1. RData - the actual data that the RR stores
 
-
+## SOA Record
+- Start Of Authority record - it indicates the beginning of a zone and should be the first record specified.
+- the format - <domain name> <TTL> <INT> SOA <m-name> <r-name>
+- <r-name> - signifies the email address of the administrator responsible for the zone.
+- within a pair of brackets we have other information (<serial-number> <refresh-interval> <retry-interval> <expire-interval> <minimum>)
+- we can use `dig` on Mac or `nslookup` on Windows to find the SOA record.
