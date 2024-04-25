@@ -204,3 +204,16 @@ for the servers to provide us with answers or referrals, it does need to store t
 - it points IP address to a host name
 - it features a reverse domain name (which really is the IP address) and the FQDN of the domain name that the 
 - this record particularly helps with rDNS
+
+## CNAME Record
+- Canonical Name Record
+- it maps one domain name to another
+- consists of <alias> <class> <CNAME> <TTL> <canonical-name>
+- map subdomains to their apex domains
+- uses 
+  - redirect multiple TLDs to the same second-level-domain
+  - validate ownership or control of a domain
+- restrictions
+  - CNAME must always point to another domain name and never to an IP address
+  - it cannot point to an NS or MX record
+  - duplicates are not allowed.
