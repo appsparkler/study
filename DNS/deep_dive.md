@@ -113,4 +113,9 @@ Once the DNS resolver returns the DNS records which contains the ip address via 
 
 ## Reverse Name Resolution (rDNS)
 - how about getting the domain name for an ip address?
-- 
+- if DNS servers are setup based on names and not IP address, how is it possible to get domain name from ip address?
+- So, there's a parallel heirarchy based on IP address as well under the `in-addr.arpa.` domain.
+- So if; for ex. facebook.com has an IP address of 69.171.250.35; it will be stored in this hierarchy in the DNS tree in this namespace: `35.250.171.69.in-addr.arpa.`.  Though this looks as per how the domain name spaces are arranged (i.e. starting from right); it is not so.  Here, the left most number - 69 - which is first - appears first in the left whereas we would expect it to be 35 since thats the structure of the hierarchy - `69.171.250.35.in-addr.arpa.` is what we would expect in the rtl direction structure.
+- we can do reverse look ups for ip addresses with this tool : https://mxtoolbox.com/ReverseLookup.aspx
+
+
