@@ -129,11 +129,23 @@ This involves the registration of domains. To ensure unique names, name registra
 ## Domain Zone File
 - When registrant/customer buys a domain name from registrar or reseller the registrar will send all the techincal information to the registry.  The registry will then add our domain zone file to the master service which will tell other services on the internet where our website is located - www.appsparkler.com -> xx.xx.xx.xx
 
-## points to consider which choosing a domain name
+## points to consider when choosing a TLD
 - DNSSEC support? a security mechanism - .pro, .travel and .aero are the only ones that don't provide this security mechanism
 - IDNs support? - support for non ASCII characters like Arabic, Korean, etc.
 - privacy protection? - if privacy is important, we can consider the 
 - target audience? - for ex.  .wales, etc.
 - relevant field? - for ex. .cafe or .coffee, etc.
 - local presence requirements? - for ex. .ca, .in or .us
+
+## points to consider when choosing a Second Level Domain
+- use keywords that reflect our industry
+- use localised keywords if applicable
+- try to keep it short with less than 10 characters
+- ensure it is easy to spell
+- ensure it is easy to pronounce
+- ensure it is easy to remember
+- avoid hyphens, numbers or acronyms
+- availability and budget
+
+
 
