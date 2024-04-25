@@ -154,7 +154,7 @@ This involves the registration of domains. To ensure unique names, name registra
 - add on services - email hosting, wordpress hosting, email hosting, domain privacy, brokerage service, etc.
 - supported TLDs etc.
 
-## EPP codes
+## EPP (Extensible Provisioning Protocol) codes
 - every domain name has atleast one EPP code
 - there are two different kind of codes - client codes and server codes
 - ex. EPP client codes are clientHold, clientTransferProhibited, clientUpdateProhibited, etc.
