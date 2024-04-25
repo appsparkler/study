@@ -199,3 +199,8 @@ for the servers to provide us with answers or referrals, it does need to store t
 - it needs to be an IP address
 - A record is 32 bit whereas AAAA record can have upto 128 bit (4 times that of A record)
 - Both may point to the same ip address where dual stack is required.
+
+## PTR Record
+- it points IP address to a host name
+- it features a reverse domain name (which really is the IP address) and the FQDN of the domain name that the 
+- this record particularly helps with rDNS
