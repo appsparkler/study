@@ -118,4 +118,11 @@ Once the DNS resolver returns the DNS records which contains the ip address via 
 - So if; for ex. facebook.com has an IP address of 69.171.250.35; it will be stored in this hierarchy in the DNS tree in this namespace: `35.250.171.69.in-addr.arpa.`.  Though this looks as per how the domain name spaces are arranged (i.e. starting from right); it is not so.  Here, the left most number - 69 - which is first - appears first in the left whereas we would expect it to be 35 since thats the structure of the hierarchy - `69.171.250.35.in-addr.arpa.` is what we would expect in the rtl direction structure.
 - we can do reverse look ups for ip addresses with this tool : https://mxtoolbox.com/ReverseLookup.aspx
 
+# Name Registration
+This involves the registration of domains. To ensure unique names, name registration has to be processed within a globally distributed framework designed to enforce a certain set of rules.
+- ICANN - Internet Corporation for Assigned Names and Number - is at the top of the hierarchy which is responsible for maintaing and managing the framework from root label, TLD label - gTLD and ccTLD, etc.
+- below ICANN are 5 regional Internet REGISTRY.  Each registry is responsible for obtaining IP ranges from ICANN in order to allocate them to ISP across specific geographic region
+- Next in the hierarchy are REGISTRAR - examples are GoDaddy, NameCheap, BlueHost
+- Next are RESELLERS - they are 3rd party companies that offer DNS services through registrars. - examples are Route53
+
 
