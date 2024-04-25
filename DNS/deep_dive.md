@@ -186,3 +186,11 @@ for the servers to provide us with answers or referrals, it does need to store t
 - <r-name> - signifies the email address of the administrator responsible for the zone.
 - within a pair of brackets we have other information (<serial-number> <refresh-interval> <retry-interval> <expire-interval> <minimum>)
 - we can use `dig` on Mac or `nslookup` on Windows to find the SOA record.
+
+## NS Record
+- one of the most important records
+- NS is the Name Server record
+- it points to the authoritative name servers for a zone and it is these name servers that hold the actual DNS information for a domain so that the domain can be accessible to internet users
+- If these records are missing, the servers wouldn't be able to return an authoritative name server for our domain and users will never be able to get to our zone.
+- thus it is important that every ZONE must have at least two NS records of which each one points to a different name server for redundancy.
+ 
