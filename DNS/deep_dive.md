@@ -126,3 +126,6 @@ This involves the registration of domains. To ensure unique names, name registra
 - Next are RESELLERS - they are 3rd party companies that offer DNS services through registrars. - examples are Route53
 - finally are the REGISTRANT i.e. customers like us who purchase from REGISTRARs or RESELLERS
 
+## Domain Zone File
+- When registrant/customer buys a domain name from registrar or reseller the registrar will send all the techincal information to the registry.  The registry will then add our domain zone file to the master service which will tell other services on the internet where our website is located - www.appsparkler.com -> xx.xx.xx.xx
+
