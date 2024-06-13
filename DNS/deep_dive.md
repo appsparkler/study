@@ -222,3 +222,9 @@ for the servers to provide us with answers or referrals, it does need to store t
 - This is the Text Record
 - it associates textual information with an FQDN
 - format is <domain-name> <IN> TXT <TTL> <textual-data>
+
+## MX Record
+- This is the Mail Exchange Record (MX)
+- it maps a domain to an email server
+- <domain-name> <IN> MX <TTL> <preference-value> <email-server>
+- the lower the preference-value/priority
