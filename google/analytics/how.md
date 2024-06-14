@@ -1,4 +1,6 @@
-# How to integrate GA in our app/web-site?
+# How, etc...
+
+## How to integrate GA in our app/web-site?
 
 To collect data from our app/website, we need to add a small piece of code to our website/app.
 This "small piece of code" is also called a "tag" in the Google Analytics world.
@@ -8,3 +10,9 @@ Tags can be added directly to our website or by using a tag management system li
 
 
 It is this tag that will connect the information about users like device type, location, interaction, etc.
+
+## Analytics Account Structure
+- https://youtu.be/pNfD4jDF8TE?si=3Ru9A8Doj2RYKyQo
+- Top level account, nested under accounts are properties and nested under properties are data streams.
+- **data-streams** - web will have a web data stream, android and ios too will have separate data streams.
+- **best-practice** - setup account structure with one account per company and one property per brand or business unit.
