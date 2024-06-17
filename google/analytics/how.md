@@ -15,4 +15,7 @@ It is this tag that will connect the information about users like device type, l
 - https://youtu.be/pNfD4jDF8TE?si=3Ru9A8Doj2RYKyQo
 - Top level account, nested under accounts are properties and nested under properties are data streams.
 - **data-streams** - web will have a web data stream, android and ios too will have separate data streams.
-- **best-practice** - setup account structure with one account per company and one property per brand or business unit.
+- **best-practice** - setup account structure with one account per company and one property per brand or business unit (for ex. customer and delivery drivers).
+- **examples** - 
+
+![alt text](image.png)
