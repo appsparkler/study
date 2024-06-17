@@ -29,3 +29,9 @@ It is this tag that will connect the information about users like device type, l
 - **Events** - ex. "Subscribe, Recite, Scroll Gem, Practice Recitation, Contribute"
 - **Event Parameters** - "Gem Number" 
 - **User Properties** - ex. country, device category, etc. (notice the dimensions - "which country are users coming from?", "what device are they using?")
+
+## 3 foundational metrics of GA
+1. Users
+1. Sessions
+1. Events
+
