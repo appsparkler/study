@@ -24,3 +24,8 @@ It is this tag that will connect the information about users like device type, l
 - **dimensions**: these, usually, are made up of letters.  They answer the questions such as "who", "what", or "where?".  
 - **metrics**: these are always made up of numbers. They answer the question "how many?" 
 - **Example** - I noticed that 10% weighted average of users visit my app from India.  Here "country" would be the dimension, "India" would be the dimension value. "Weighted average" would be the metric and "10%" would be the metric value.
+
+## Data sent to GA
+- **Events** - ex. "Subscribe, Recite, Scroll Gem, Practice Recitation, Contribute"
+- Event Parameters - "Gem Number" 
+- User Properties - ex. country, device category, etc.
