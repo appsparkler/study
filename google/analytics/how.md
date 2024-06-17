@@ -27,5 +27,5 @@ It is this tag that will connect the information about users like device type, l
 
 ## Data sent to GA
 - **Events** - ex. "Subscribe, Recite, Scroll Gem, Practice Recitation, Contribute"
-- Event Parameters - "Gem Number" 
-- User Properties - ex. country, device category, etc.
+- **Event Parameters** - "Gem Number" 
+- **User Properties** - ex. country, device category, etc. (notice the dimensions - "which country are users coming from?", "what device are they using?")
