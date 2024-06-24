@@ -33,3 +33,6 @@
     1. event - add_billing_info
     1. event - purchase 
 - Now, observe this funnel - it shows the abandonment rate at each step
+
+## Key Events
+Key events are defined by the Analyast as events that are most useful for the business.  For an online-store,  it could be a "purchase" event, for a blog, it could be a "subscription", for a learn to recite app, it could be a recitation.
