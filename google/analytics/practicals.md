@@ -36,3 +36,7 @@
 
 ## Key Events
 Key events are defined by the Analyast as events that are most useful for the business.  For an online-store,  it could be a "purchase" event, for a blog, it could be a "subscription", for a learn to recite app, it could be a recitation.  We can use these key events to understand the performance of our ad-campaigns, etc.
+
+## Customized Reports
+We can create customise reports unique to our business needs by changing the dimensions, metrics, charts, filters, summary cards, linking/unlinking reports, etc.
+- We can click the "pencil" icon on the upper-right hand corner to edit/customize the report.
