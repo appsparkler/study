@@ -40,3 +40,9 @@ Key events are defined by the Analyast as events that are most useful for the bu
 ## Customized Reports
 We can create customise reports unique to our business needs by changing the dimensions, metrics, charts, filters, summary cards, linking/unlinking reports, etc.
 - We can click the "pencil" icon on the upper-right hand corner to edit/customize the report.
+
+## Collections
+Collections helps us to group reports for easier access:
+https://youtu.be/aZbehHVoG2s?si=DvjIX8I7h0Lb6lEQ
+
+
