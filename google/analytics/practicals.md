@@ -45,4 +45,21 @@ We can create customise reports unique to our business needs by changing the dim
 Collections helps us to group reports for easier access:
 https://youtu.be/aZbehHVoG2s?si=DvjIX8I7h0Lb6lEQ
 
+## Segments
+Segments allows us to view and analyze a specific set of users from our target audience who are are of significance for our business.  For ex:
+- customers who spent over $100
+- segment users who came from paid searches and thus see the performance of paid searches
+
+Important Notes:
+- segments are created and viewed within "Explore"
+- "Segment Overlaps" helps us to see overlap upto 3 segments. 
+
+### Audience
+- a set of users from our site that share one or more characteristics - for ex. "mobile users", "Users from India", "KSV Users", etc.
+- we can also compare audiences to understand how various sets of users are interacting with the app.
+
+### Predictive Audience
+- 
+
+### Predictive Audience
 
