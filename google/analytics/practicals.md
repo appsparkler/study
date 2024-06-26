@@ -59,7 +59,6 @@ Important Notes:
 - we can also compare audiences to understand how various sets of users are interacting with the app.
 
 ### Predictive Audience
-- 
+- A predictive audience has atleast one metric based on predictive metric.
 
-### Predictive Audience
 
