@@ -57,6 +57,11 @@ Important Notes:
 ### Audience
 - a set of users from our site that share one or more characteristics - for ex. "mobile users", "Users from India", "KSV Users", etc.
 - we can also compare audiences to understand how various sets of users are interacting with the app.
+- audiences are more relevant when sharing in Google Ads and/or the Google Marketing Platform
+
+### Audience Triggers
+- triggers each time user is added to audience
+- this helps us with additional insights into user behavior, mark key events or create conversions...need to see how this works.
 
 ### Predictive Audience
 - A predictive audience has atleast one metric based on predictive metric.
