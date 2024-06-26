@@ -60,5 +60,5 @@ Important Notes:
 
 ### Predictive Audience
 - A predictive audience has atleast one metric based on predictive metric.
-
+- basically, this audience gives us information on well an ad-campaing is expected to perform
 
