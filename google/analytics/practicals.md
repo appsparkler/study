@@ -67,3 +67,14 @@ Important Notes:
 - A predictive audience has atleast one metric based on predictive metric.
 - basically, this audience gives us information on well an ad-campaing is expected to perform
 
+## Linking Google Analytics to Google Ads
+https://youtu.be/Mof7-OW201M?si=cvi0s_0Ogb9K5JU5
+- We can link Google Analytics with Google Ads for host of benefits.
+Linking your Google Ads to your Google Analytics property can help you answer business questions like "If I link Google Analytics to Google Ads, how can I:
+- Inform and optimize my targeting and bidding strategies?
+- Better understand how users interact with my ads and assess campaign performance?
+- Analyze the performance of my Google Ads conversions to make informed decisions?
+- Measure ROAS?
+- Analyze attribution and understand user journey paths?
+- Reengage users based on their behavior in my app or on my website?
+
