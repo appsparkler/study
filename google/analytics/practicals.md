@@ -78,3 +78,15 @@ Linking your Google Ads to your Google Analytics property can help you answer bu
 - Analyze attribution and understand user journey paths?
 - Reengage users based on their behavior in my app or on my website?
 
+## How can our website be discovered by others?
+- Organic Search - by improving our sites SEO features, this will work great
+- Referrals - other webistes, blogs, posts review and post our website link via which users reach us
+- Social - WhatsApp, Facebook, Instagram, Twitter, etc.
+- Paid search ads - paying search engines to post our add on their search engine when user searches products similar to what we offer.
+- Paid Display Ads - show our ads on various websites (this is not something we want to do)
+- Email Campaigns - for customers who have subscribed to our store mailing list, we can send them updates and new features
+
+## Conversions
+Some customer activities are very important to your business, and in Google Analytics these are called conversions
+
+
