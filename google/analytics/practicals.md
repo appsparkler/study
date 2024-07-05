@@ -89,4 +89,14 @@ Linking your Google Ads to your Google Analytics property can help you answer bu
 ## Conversions
 Some customer activities are very important to your business, and in Google Analytics these are called conversions
 
+## Attributions
+Attribution can help us see how a customer gets to and completes a key-event on our app.
+There are many cross-channel models for attribution.  Examples:
+1. last click - as the name suggests, attributes 100% traffic to the last click before the key event.
+1. first click - as the name suggests, attributes 100% traffic to the first channel that user clicked
+1. linear - attributes the credit equally to all channels
+1. position based - attributes 40% to first and last channel and 20% to the remaining channels in between
+1. time decay - attributes more credit to touchpoints that happen closer in time to the key-event (conversion). credit is distributed using a 7 day half-life.  In other words, a click 8 days before a conversion gets half as much credit as a click 1 day before a conversion.
+1. data driven attribution - attributes credit for the conversion based on observed data for each conversion type
+
 
