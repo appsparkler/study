@@ -98,5 +98,6 @@ There are many cross-channel models for attribution.  Examples:
 1. position based - attributes 40% to first and last channel and 20% to the remaining channels in between
 1. time decay - attributes more credit to touchpoints that happen closer in time to the key-event (conversion). credit is distributed using a 7 day half-life.  In other words, a click 8 days before a conversion gets half as much credit as a click 1 day before a conversion.
 1. data driven attribution - attributes credit for the conversion based on observed data for each conversion type
+1. Ads preferred last-click model - Ads-preferred last click attributes 100% of the conversion value to the last Google Ads channel a customer interacted with before converting. If there's no Google Ads interaction in the path, the attribution model falls back to cross-channel last click.
 
 
