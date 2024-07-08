@@ -124,6 +124,7 @@ Google Ads can be placed in:
 ### Smart Bidding
 - Smart Bidding is a set of automated bid strategies in Google Ads that use machine learning to optimize for conversions or conversion value in every auction.
 
-
+### Leveraging Audiences
+- we can target specific audiences (defined in GA) for our campaigns
 
 
