@@ -63,6 +63,14 @@ Important Notes:
 - triggers each time user is added to audience
 - this helps us with additional insights into user behavior, mark key events or create conversions...need to see how this works.
 
+Audiences creation can be based on various features:
+1. Scope - the scope when user is added to an audience - for ex. across all sessions, during a single session or a single event.
+1. Static v/s Dynamic Evaluation 
+    - static is when the audience will include users that met the condition and they won't be removed even when the condition is no longer true for them
+    - dynamic is when new users will be added to audience as soon as they meet the condition and users that no longer meet the condition will be removed from it.
+1. Time Windowed - time based conditions - for ex. metric condition must be true during any point in the lifetime of a user or that it must be true during a specific number of days - for ex. less than five during any seven day period.
+1. Sequences - lets us specify the order in which the condition must be met for the user to be added to an audience.
+
 ### Predictive Audience
 - A predictive audience has atleast one metric based on predictive metric.
 - basically, this audience gives us information on well an ad-campaing is expected to perform
@@ -99,5 +107,23 @@ There are many cross-channel models for attribution.  Examples:
 1. time decay - attributes more credit to touchpoints that happen closer in time to the key-event (conversion). credit is distributed using a 7 day half-life.  In other words, a click 8 days before a conversion gets half as much credit as a click 1 day before a conversion.
 1. data driven attribution - attributes credit for the conversion based on observed data for each conversion type
 1. Ads preferred last-click model - Ads-preferred last click attributes 100% of the conversion value to the last Google Ads channel a customer interacted with before converting. If there's no Google Ads interaction in the path, the attribution model falls back to cross-channel last click.
+
+## Linking Googles Ads with Google Analytics
+Google Ads can be placed in:
+- search
+- display ads
+- video ads
+- shopping ads
+
+### What happens when we link?
+- ...the data automatically generates campaign releated metrics (like clicks and costs) and dimensions (like campaign name).  These metrics and dimensions are available throughout the reports and explore workspaces.
+- ...the Advertising workspace becomes available - the reports here can provide a strong understanding of the return on investment for our spends, help us evaluate attribution models and make informed decisions about budget allocation in Google Ads.
+- Conversion events can be imported into Google Ads and this data can be used to understand how much we're bidding for different placements.
+- Google Ads uses your chosen conversion window(s) to determine which conversion events to import from Analytics. For example, if you use the 30-day default window for a conversion event, Google Ads only imports conversions that occurred within 30 days of that click (https://support.google.com/google-ads/answer/2375435)
+
+### Smart Bidding
+- Smart Bidding is a set of automated bid strategies in Google Ads that use machine learning to optimize for conversions or conversion value in every auction.
+
+
 
 
