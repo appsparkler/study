@@ -8,9 +8,27 @@
 
 ## Types of Disabilities:
 - Visual
-- Deaf or Hard of hearing
+    - Types
+        - fully impared - screen readers are very helpful
+        - partially impared - screen magnifiers are very helpful
+        - color blindness - they rely heavily on proper UX
+    - Tools 
+        - screen readers, screen magnifiers, 
+- Audatory
+    - Types - deaf, hard of hearing
+    - Tools 
+        - open captions - fixed and cannot be turned off or modified
+        - closed captions - dynamic, can be modified or turned on/off
+        - transcription - these are written description of the scene
 - Cognitive
-- Motor
+    - Types
+        - Functional - ignores medical caused, instead focus on the disability - for ex. memory, problem solving, reading, learning, etc.
+        - Clinical - autism, down syndrome, alzhiemers, ADD, etc.
+    - Tools - 
+- Motor/Physical
+    - Types - spinal cord injuries, lost or damaged limbs, disease, etc.
+    - Tools - keyboard browsing, eye tracking, voice recognition,  joysticks etc.
+
 
 Disability can be temperory or permenant - for ex. a person working in a loud workspace has temporary hearing problem.
 
