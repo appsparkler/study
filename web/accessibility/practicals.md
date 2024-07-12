@@ -15,6 +15,7 @@ Best Practice
 
 
 ## Tips
+- Avoid flashing or blinking content - WCAG mandate
 
 ### Colors
 - Print a color in B/W and see if it is understandable to us - this is how we could step in the shoes of someone who is color blind.
@@ -22,4 +23,10 @@ Best Practice
 
 ### Audios And Videos
 - Avoid auto-play on videos
+
+## Keyboard Goals
+- Getting through navigational links and sections
+- Getting into and out of search and form fields easily
+- Navigating through forms
+
 
