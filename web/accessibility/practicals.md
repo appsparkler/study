@@ -29,4 +29,11 @@ Best Practice
 - Getting into and out of search and form fields easily
 - Navigating through forms
 
-
+## Form Best Practices
+- ensure page focus is always visible - i.e. user needs to be able to track their current location on the site visually or in some other manner
+- clearly identify input error and suggest fixes
+- avoid only color to indicate error
+- provide guidance on how to fix the error
+- clearly label elements and give instructions
+- labels on top, instructions on bottom
+- provide help option
