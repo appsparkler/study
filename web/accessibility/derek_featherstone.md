@@ -1,5 +1,11 @@
 # Accessibility for web design
 
+## Gestures on touch screens
+- Google, Microsoft and Apple's documentation for assistive technology gestures.
+- for ex.
+    - dexterity issues - we can make a larget slider
+- use gestures, but make sure there's another mechanism to do the same thing
+
 ## Accessible Web Design
 - Think about the varios personas while building your site.  How would they navigate or complete tasks on the site?  For ex. on an ecomm site, it would be helpful to a keyboard user to be able to tab to the order-summary before entering the billing information even though the billing information comes first in the layout.
 - improve spacing and size so that its easier to click on targets - for ex. pagination-buttons and radio buttons are either too small or too closely arrange to click on the right target.
