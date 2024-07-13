@@ -1,4 +1,36 @@
 # Accessibility for web design
+## Structured Content
+- Ensure structure is meaningfully arranged on a page.  For ex. main headings to have `<h1>`, sub headings to have `<h2>`, and so on.
+- Ensure each page on the site has a unique title.
+- Ensure the titles are properly written - for ex. "Bhagavad Gita, Shloka 2.77 - Lets Recite" instead of "Lets Recite - Bhagavad Gita, Shloka 2.77" - this will help people confirm quicker that they are where they expect to be.
+- Use symantic HTML elements like
+    - `<header>`
+    - `<footer>`
+    - `<aside>`
+    - `<form>`
+    - `<article>`
+    - `<paragraph>`
+    - `<main>`
+    - `<nav>`
+    - `<button>`
+    - `<table>`
+    - `<dl>`
+    - `<ul>`
+    - `<ol>`
+- Ensure minimum use of least meaningful markup - use them ONLY when there's no other appropriate element
+    - `<span>`
+    - `<div>`
+    - `<section>`
+
+
+## Flexibility
+- avoid assuming that that less than desktop size is "touch".  For ex. for someone who uses 800 X 600 screen resolution on desktop will see the design we made for tablets.  So if we designed only for touch on tablets, this user would have a problem.
+
+### Text Resizing Cautions
+- text disappears
+- overlaps
+- lacks meaning or functionality
+- content block becomes too narrow
 
 ## Accessible Forms
 - add `<label>` tag to every form fields
