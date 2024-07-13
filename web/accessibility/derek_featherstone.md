@@ -1,5 +1,8 @@
 # Accessibility for web design
 
+## Accessible Web Design
+- Think about the varios personas while building your site.  How would they navigate or complete tasks on the site?  For ex. on an ecomm site, it would be helpful to a keyboard user to be able to tab to the order-summary before entering the billing information even though the billing information comes first in the layout.
+
 ## Accessible Design
 - Color should not be the only method to communicate our message or the indicator - use shapes, patterns, labels, text, etc. along with color to improve accessiblility
 - maintain contrast ratios - 4.5:1 is ideal, 5:1 is great, less than 3:1 is difficult for people
@@ -14,11 +17,6 @@
     1. Password (label)
     1. show/hide password (label)
     1. secret key (label)
-
-
-
-
-
 
 ## Accessibility is all about
 1. Accessible Design
