@@ -1,5 +1,10 @@
 # Accessibility for web design
 
+## Different types of content
+1. Informational - valuable in and of its own right (these need an equivalent - for ex. a podcast ought to have a transcript which is easily accessible.
+1. Functional - useful to execute a task - play/pause, etc.
+1. Decorative - unimportant, only for decoration
+
 ## Gestures on touch screens
 - Google, Microsoft and Apple's documentation for assistive technology gestures.
 - for ex.
