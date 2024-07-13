@@ -2,6 +2,7 @@
 
 ## Accessible Web Design
 - Think about the varios personas while building your site.  How would they navigate or complete tasks on the site?  For ex. on an ecomm site, it would be helpful to a keyboard user to be able to tab to the order-summary before entering the billing information even though the billing information comes first in the layout.
+- improve spacing and size so that its easier to click on targets - for ex. pagination-buttons and radio buttons are either too small or too closely arrange to click on the right target.
 
 ## Accessible Design
 - Color should not be the only method to communicate our message or the indicator - use shapes, patterns, labels, text, etc. along with color to improve accessiblility
