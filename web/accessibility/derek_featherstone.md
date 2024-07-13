@@ -32,5 +32,6 @@
     - can a person complete all tasks on the app with keyboard instead of mouse?
         - for someone who is blind, they cannot see where the cursor is on the screen.  They use screen reader.
     - can a person who can see the screen, locate where the mouse is from a distance?
+    - how can you offer the same functionality to people who can't touch the screen?
 
 ![alt text](personas.png)
