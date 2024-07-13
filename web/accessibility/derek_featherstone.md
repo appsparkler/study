@@ -1,5 +1,30 @@
 # Accessibility for web design
 
+## Accessible Forms
+- add `<label>` tag to every form fields
+- ensure each form field has one-to-one relationship (i.e. one label for each field).  If there are two fields for multi-line address, ensure we add a "hidden" label (`aria-label`) for the second line.
+- Use the HTML5 form types - these greatly improve the UX on mobile devices where the keyboards that come up are optimized for each type
+    - tel
+    - url or email
+    - number
+    - date
+    - search
+- Accessible error messages 
+    - consistent placement - it shouldn't be placed above the field for some fields and below the fields for others.  It should be consistently placed
+    - visually close to the field 
+    - simple, plain message
+    - error icon (for people with color blindness)
+    - programatically connected to the field - use `aria-describedby`
+
+
+## Text Equivanlets for audio and videos (Very Important!)
+1. transcripts for podcasts,
+1. captions or transcriptions for videos
+1. for `<img>` tags, we need to use the `alt` attribute to describe the image which the screen-reader will read out.
+1. meaningful `aria-label` for elements which the screen reader can read out to the user.
+1. if a selection has the corresponding text, avoid duplication by using `aria-hidden="true"` 
+1. audio description for important things that are happening on the screen.
+
 ## Different types of content
 1. Informational - valuable in and of its own right (these need an equivalent - for ex. a podcast ought to have a transcript which is easily accessible.
 1. Functional - useful to execute a task - play/pause, etc.
@@ -34,6 +59,12 @@
 1. Accessible Design
 1. Accessible Development
 1. Accessible Content
+
+## Tools that user use for accessibility 
+1. Magnifier
+1. Screen Reader
+1. Voice assist - for ex. Dragon accessibility software 
+1. Eye movement recognition
 
 ## Think in terms of personas
 - Its a good practice to build the application having in mind a few personas. It will put us in their shoes and develop an application that is accessible for everyone.  These personas have low vision, blind, deaf, arthritis and autism (ADD).
