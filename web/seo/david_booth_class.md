@@ -43,9 +43,9 @@ Every page in a website has different content.  Thus it is important to perform 
     - `<h1>` header
 ![alt text](image.png)
 
-## Content
+## Content Optimization (Human Aspects)
 - **Quality Content** - content needs to be clear and of good quality - both people and search engines look for this.  Just like, we would bin a page that doesn't give us information we need, search engines don't index pages that are not of good quality.
-- **Clean Site Structure** - always have a clean and clear site structure which will help SEs easily understand it.
+- **Clean Site Structure and elements** - always have a clean and clear site structure which will help SEs easily understand it.
     - URL should contain usable information about the page itself - for ex. https://letsrecite.app/the-essence-of-the-bhagavad-gita/chapter-02-verse-47
     - use `-` instead of spaces or underscores
     - Page title needs to be clear - for ex. `<title>Chapter 2, Verse 47 - Lets Recite App<title>`
@@ -61,5 +61,8 @@ Every page in a website has different content.  Thus it is important to perform 
     - Structured Data - use Google's Structured Data
     - Also, look at https://schema.org/imageObject to 
 
-
+## Content Optimization (Technical Aspects)
+SE doesn't see the same webpage that we see.  They see the code.
+- **Clean Compatible Code** - we need to ensure that our code is clean and free from bugs of any sort.
+- 
 
