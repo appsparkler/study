@@ -7,7 +7,10 @@
 - Moz
 - https://answerthepublic.com
 - Google Search Central - https://developers.google.com/search
-
+- Site Maps - https://sitemaps.org - to create sitemaps for our website
+- robotstxt.org - for adding a `robots.txt` file
+- Google Search Console
+- Bing Search Console
 
 ## SEO Terms
 - SERPs - Search Engine Results Pages
@@ -62,7 +65,41 @@ Every page in a website has different content.  Thus it is important to perform 
     - Also, look at https://schema.org/imageObject to 
 
 ## Content Optimization (Technical Aspects)
-SE doesn't see the same webpage that we see.  They see the code.
+SE doesn't see the same webpage that we see.  They see the code (HTML).
 - **Clean Compatible Code** - we need to ensure that our code is clean and free from bugs of any sort.
-- 
+- **Sitemap & Links** - SEs click on every link on the HTML.  
+    - create a HTML site map for our website.
+    - create a XML site map - easier for SEs and these can be submitted directly to the SE
+    - add a `robots.txt` file to control how easily SEs crawl our site 
+    - add `<meta name="robots" content="noindex" />` to ensure pages are never returned in search results and don't block the page in `robots.txt` else the page will never be found
+    - visit robotstxt.org for how to configure the robots
+- **Canonical URLs and redirects** - 
+    - **Canonical URLs**: we need to tell the SE to index the correct page especially for pages that turn up the same content for different URLs.  For ex
+        - http://somedomain.com/index.php?id=200
+        - http://somedomain.com/index.php?id=200&code=82823
+        - http://somedomain.com/index.php?id=200&code=828211&country=in
+        - though all 3 URL have the same URL, their parameters are different and they could render different content confusing the SE and users.
+        - thus, we need to inform the SE to index "http://somedomain.com/index.php?id=200" as the canonical URL - i.e. no matter what URL is in the address bar, we need to index the one mentioned as the primary URL.  This is the tag that will help us do that:
+            - ```html
+                <link rel="canonical" href="http://somedomain.com/index.php?id=200%27" />
+                ```
+        - We can also specifiy the effect URL parameters will have on the Google or Bing Search Console
+    - **Redirect URLs** - use redirect rules for webpages when content has moved
+        - 301 - Permanent Redirect - use this when the page has moved permenantly
+        - 302 - Temporary Redirect - use this when the page has moved temporarily - should be used only for short term
+        - avoid other techs such as:
+        -    ```html
+                <script > window.location.href =
+                "https://www.example.com"; </script>
+            ```
+        - or
+        - ```html
+                <meta http-equiv="refresh" content="0;url=http://www.example.com/"
+                />
+            ```
+    
+        
+
+
+
 
