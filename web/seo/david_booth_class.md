@@ -132,7 +132,8 @@ SE doesn't see the same webpage that we see.  They see the code (HTML).
         - it maps out content development process
         - it has a timetable of who will update content, etc.
         - example: ![alt text](image-1.png)
-        - 
+        - plan and follow the schedule rigourously.
+        
         
 3. Manage
     - a sound CMS helps a great deal
