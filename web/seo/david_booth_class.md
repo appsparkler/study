@@ -118,7 +118,6 @@ SE doesn't see the same webpage that we see.  They see the code (HTML).
     - **get more POVs** - involve everyone in our org
     - **define content policies** - ensure the appropriate content is posted by all users of the app as once its on the internet, it could be there forever (almost).
     - **monitor trends and stay relevant** - ensure content and keyword research is up to date and relevant (E role)
-    - 
 2. Create
     - quality is more important than quantity
     - ensure users find what they are looking for on your page.
@@ -133,8 +132,16 @@ SE doesn't see the same webpage that we see.  They see the code (HTML).
         - it has a timetable of who will update content, etc.
         - example: ![alt text](image-1.png)
         - plan and follow the schedule rigourously.
-        
-        
+    - **using social media** - add buttons only for social media your app presence is active on.
+        - build your social media presence
+        - use social share buttons
+        - use hash-tags and innovate hash-tags unique to your app
+        - have a strategy
+            - which networks will it go out on?
+            - what will the message say?
+            - which hash tags will it it use?
+            - who will do it?
+            - who will monitor and respond to the activity?
 3. Manage
     - a sound CMS helps a great deal
 
