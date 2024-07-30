@@ -107,9 +107,25 @@ SE doesn't see the same webpage that we see.  They see the code (HTML).
 ## Using Goolge Search Console
 - we can learn this as a separate module
 
+## Long Term Content Strategy (Content is king)
+1. Plan 
+    - who is the target audience
+    - what is their need
+    - where they hangout and converse online
+    - coupled with excellent keyword research, it makes up for good plan.
+    - **clearly define the goals and objectives** - they should tie back to your bottom line (business objective)
+    - **clearly define market personas** - this will help us understand our target audiences and their needs
+    - **get more POVs** - involve everyone in our org
+    - **define content policies** - ensure the appropriate content is posted by all users of the app as once its on the internet, it could be there forever (almost).
+    - **monitor trends and stay relevant** - ensure content and keyword research is up to date and relevant (E role)
+    - 
+2. Create
+    - quality is more important than quantity
+    - ensure users find what they are looking for on your page.
+3. Manage
+    - a sound CMS helps a great deal
 
 
-        
 
 
 
