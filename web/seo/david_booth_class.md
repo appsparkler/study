@@ -122,8 +122,24 @@ SE doesn't see the same webpage that we see.  They see the code (HTML).
 2. Create
     - quality is more important than quantity
     - ensure users find what they are looking for on your page.
+    - **understand different types of content** - text, audio, video, images, PDF, word docs, PPTs, other file formats, infographics, etc.
+    - **metadata** - ensure all meta data is updated for the videos, images, etc. For ex. if we upload a video on YT, ensure all metadata is filled in.
+    - **ideas for content**
+        - list broad content themes - for ex. educational, self-help, science, art, statistical, etc.
+        - find out what similar solutions are offerring and what is your 
+        - get feedback from customers and partners
+    - **use an editorial calendar**
+        - it maps out content development process
+        - it has a timetable of who will update content, etc.
+        - example: ![alt text](image-1.png)
+        - 
+        
 3. Manage
     - a sound CMS helps a great deal
+
+
+## Activities
+- Visit Google and search for you brand - is it returning the image you expected?
 
 
 
