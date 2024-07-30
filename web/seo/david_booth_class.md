@@ -11,6 +11,7 @@
 - robotstxt.org - for adding a `robots.txt` file
 - Google Search Console
 - Bing Search Console
+- https://schema.org - microformats - helps SEs easily recognize content. JSON-LD is the preferred method by Google and Bing.
 
 ## SEO Terms
 - SERPs - Search Engine Results Pages
@@ -97,8 +98,19 @@ SE doesn't see the same webpage that we see.  They see the code (HTML).
                 <meta http-equiv="refresh" content="0;url=http://www.example.com/"
                 />
             ```
-    
+- Using **microformats** - we may have parts of a webpage that may have very specific types of content - for ex. product reviews, embedded video, food recipe, etc.  We can help search engines recognize the content by providing information.  https://schema.org 
+- improving server-side factors:
+    - use caching for improved performance
+    - use https instead of http
+    - ensure server reliability - use server monitoring services to ensure your server is up and running.
+
+## Using Goolge Search Console
+- we can learn this as a separate module
+
+
+
         
+
 
 
 
