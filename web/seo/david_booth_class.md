@@ -142,6 +142,18 @@ SE doesn't see the same webpage that we see.  They see the code (HTML).
             - which hash tags will it it use?
             - who will do it?
             - who will monitor and respond to the activity?
+    - **measure content performance** - 
+        - what pieces of content are our visitors looking at?
+        - whats the most popular content?
+        - are visitors sharing our content?
+        - are visitors engaged with our content?
+        - is our content generating quality business results?
+        - using GA to find out, for ex:
+            - pages per visit
+            - avg. time on site
+            - bounce rate
+        
+
 3. Manage
     - a sound CMS helps a great deal
 
