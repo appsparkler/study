@@ -118,7 +118,7 @@ SE doesn't see the same webpage that we see.  They see the code (HTML).
     - **get more POVs** - involve everyone in our org
     - **define content policies** - ensure the appropriate content is posted by all users of the app as once its on the internet, it could be there forever (almost).
     - **monitor trends and stay relevant** - ensure content and keyword research is up to date and relevant (E role)
-2. Create
+2. Create (& Manage)
     - quality is more important than quantity
     - ensure users find what they are looking for on your page.
     - **understand different types of content** - text, audio, video, images, PDF, word docs, PPTs, other file formats, infographics, etc.
@@ -153,12 +153,14 @@ SE doesn't see the same webpage that we see.  They see the code (HTML).
             - avg. time on site
             - bounce rate
         
-
 3. Manage
     - a sound CMS helps a great deal
 
+## Link building strategies
+SE crawlers look out for links pointing to other pages
+- 
 
-## Activities
+## Test your site
 - Visit Google and search for you brand - is it returning the image you expected?
 
 
