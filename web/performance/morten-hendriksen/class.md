@@ -21,6 +21,9 @@ Websites should load efficiently and effectively for all users - someone with a 
 - FMP - as the name suggests
 - TTI - the amount of time it takes to interact with the app
 
+## How is a webpage rendered
+- Device > ISP > DNS > ISP - The DNS provides the IP Address we are trying to connect to
+- Once IP Address is available, TCP handshake between `Browser <> Server`
 
 
     
