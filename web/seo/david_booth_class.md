@@ -168,10 +168,14 @@ SE doesn't see the same webpage that we see.  They see the code (HTML).
 - SEs look out for links that are popular on social media - its easier for SEs to get an idea of the popularity of a website.
 - earn links to your website around the web for excellent SEO results
 
-### Internal Linking
+### Internal linking strategies
 - Navigation Links - links on the navigation bars, side-menus, etc. that are used for navigation
 - Contextual Links - internal links on blog posts, articles, etc.  These help SEs understand the content of the page and the link
 
+### External linking strategies
+- web directories - submit our website to these directories.  select the directories wisely.
+- create content worth linking to
+- outreach - leverage your social links to promote your website.  connect with others.
 
 ## Test your site
 - Visit Google and search for you brand - is it returning the image you expected?
