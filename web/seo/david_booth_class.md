@@ -13,6 +13,7 @@
 - Bing Search Console
 - https://schema.org - microformats - helps SEs easily recognize content. JSON-LD is the preferred method by Google and Bing.
 - https://moz.com/link-explorer - free back link checker
+- https://moz.com/community - excellent resource to dive deeper into the world of SEO
 
 ## SEO Terms
 - SERPs - Search Engine Results Pages
@@ -190,6 +191,19 @@ SE doesn't see the same webpage that we see.  They see the code (HTML).
 - foster links from non-profits - make a donation to a charity you support and they'll inturn backlink to your site
 - produce high quality educational content - this will motivate other website link back to your website.
 - keep iterating this process
+
+## Measuring SEO Performance
+- Install a analytics solution and configure it properly.
+    - collect data
+    - define business objectives and KPI
+        - organic search trafic and delta over various periods
+        - branded and non-branded keyword search queries 
+        - target keyword rankings
+- how is correlated to our your bottom line (goals). for ex. 
+    - ecommerce - revenue, average order values, transactional data, etc.
+    - tracking options - subscribers, social followers, sign-ups, driving directions, contact forms, etc. 
+- iterative cycle - take action > measure > learn > take action...
+
 
 ## Test your site
 - Visit Google and search for you brand - is it returning the image you expected?
