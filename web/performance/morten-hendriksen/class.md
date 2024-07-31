@@ -23,7 +23,11 @@ Websites should load efficiently and effectively for all users - someone with a 
 
 ## How is a webpage rendered
 - Device > ISP > DNS > ISP - The DNS provides the IP Address we are trying to connect to
-- Once IP Address is available, TCP handshake between `Browser <> Server`
-
+- Once IP Address is available, TCP handshake is established `Browser <> Server`
+- Now the request-response occurs between browser and server
+- DOM trees and CSSOM trees are setup for HTML and CSS respectively
+- For all assets except Javascript, the rendering is not blocked.
+- Javascript is render-blocking.  All rendering (DOM and CSSOM, etc.) is blocked and waits for the Javascript to download before the rendering continues
+> Javascript is render-blocking.  All rendering (DOM and CSSOM, etc.) is blocked and waits for the Javascript to download before the rendering continues
 
     
