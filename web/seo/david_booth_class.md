@@ -157,8 +157,14 @@ SE doesn't see the same webpage that we see.  They see the code (HTML).
     - a sound CMS helps a great deal
 
 ## Link building strategies
-SE crawlers look out for links pointing to other pages
-- 
+- SE crawlers look out for links pointing to other pages
+- SE give more weightage to links on sites that have authority, reputation and trust worthy
+- 3 important stats:
+    - the number of links, 
+    - the ratio of links to linking domain and 
+    - the quality of those links - relevance, 
+- increase link popularity
+- always define your links - for ex. `<a>Learn to recite</a>` is better than `<a>Click here </a>` to learn to recite
 
 ## Test your site
 - Visit Google and search for you brand - is it returning the image you expected?
