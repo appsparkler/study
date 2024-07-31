@@ -164,7 +164,14 @@ SE doesn't see the same webpage that we see.  They see the code (HTML).
     - the ratio of links to linking domain and 
     - the quality of those links - relevance, 
 - increase link popularity
-- always define your links - for ex. `<a>Learn to recite</a>` is better than `<a>Click here </a>` to learn to recite
+- always have descriptive links - for ex. `<a>Learn to recite</a>` is better than `<a>Click here </a>` to learn to recite
+- SEs look out for links that are popular on social media - its easier for SEs to get an idea of the popularity of a website.
+- earn links to your website around the web for excellent SEO results
+
+### Internal Linking
+- Navigation Links - links on the navigation bars, side-menus, etc. that are used for navigation
+- Contextual Links - internal links on blog posts, articles, etc.  These help SEs understand the content of the page and the link
+
 
 ## Test your site
 - Visit Google and search for you brand - is it returning the image you expected?
