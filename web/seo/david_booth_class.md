@@ -12,6 +12,7 @@
 - Google Search Console
 - Bing Search Console
 - https://schema.org - microformats - helps SEs easily recognize content. JSON-LD is the preferred method by Google and Bing.
+- https://moz.com/link-explorer - free back link checker
 
 ## SEO Terms
 - SERPs - Search Engine Results Pages
@@ -176,6 +177,19 @@ SE doesn't see the same webpage that we see.  They see the code (HTML).
 - web directories - submit our website to these directories.  select the directories wisely.
 - create content worth linking to
 - outreach - leverage your social links to promote your website.  connect with others.
+
+### Finding link building strategies
+- Analyze backlink of other pages - example of how to analyze
+    1. search for the keyword that we are targetting
+    1. from the organic results, pick up the most popular results to analyze them
+    1. Goto https://moz.com/link-explorer - enter the top ranking URL into the search field using the "exact page" option
+    1. Check the "Inbound Links" section.
+    1. Select only "active" status links
+    1. use other sort options - spam score, PA (Page Authority), DA (Domain Authority) etc. 
+- encourage guest authoring - this will be a win-win - the site gets content and you get backlinks.
+- foster links from non-profits - make a donation to a charity you support and they'll inturn backlink to your site
+- produce high quality educational content - this will motivate other website link back to your website.
+- keep iterating this process
 
 ## Test your site
 - Visit Google and search for you brand - is it returning the image you expected?
