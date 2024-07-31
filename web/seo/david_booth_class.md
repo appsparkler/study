@@ -14,6 +14,8 @@
 - https://schema.org - microformats - helps SEs easily recognize content. JSON-LD is the preferred method by Google and Bing.
 - https://moz.com/link-explorer - free back link checker
 - https://moz.com/community - excellent resource to dive deeper into the world of SEO
+- Google Business - enlist your place of business
+- Bing Business Places - enlist your place of business
 
 ## SEO Terms
 - SERPs - Search Engine Results Pages
@@ -204,9 +206,17 @@ SE doesn't see the same webpage that we see.  They see the code (HTML).
     - tracking options - subscribers, social followers, sign-ups, driving directions, contact forms, etc. 
 - iterative cycle - take action > measure > learn > take action...
 
+## Make your business known and cited
+- enlist your business on Google Business and Bing Places
+- cite your business - i.e. include the name, address and phone number of your business wherever your business is listed.
+
+
 
 ## Test your site
 - Visit Google and search for you brand - is it returning the image you expected?
+- enlist your business on Google My Business
+- enlist your business on bingplaces.com
+- mention
 
 
 
