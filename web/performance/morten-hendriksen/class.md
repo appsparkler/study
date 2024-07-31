@@ -12,8 +12,15 @@ Websites should load efficiently and effectively for all users - someone with a 
     - SEO
 
 ## Hosted 3rd Party tools
-- Page Speed Insights
+- Page Speed Insights - This is lighthouse on the web
 - WebPage Test
 - GT Metrics (actually Lighthouse)
+
+## Performance Metrics
+- LCP - Largest contentful paint - before the user sees content - text, images, etc.
+- FMP - as the name suggests
+- TTI - the amount of time it takes to interact with the app
+
+
 
     
