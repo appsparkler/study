@@ -100,5 +100,62 @@ Websites should load efficiently and effectively for all users - someone with a 
 As we can see in the below image, the TTFB (Time To First Bite) is very high which means that the server is very slow - so that needs to be optimized.
 ![network request-response analysis](image-1.png)
 
+## Optimizing Images
+Images makes up for the bulk of the web-page assets wrt size.  Thus we need to optimize images for best performance of websites.  Image quality matters thus we need to be careful while optimizing images that we don't degrade the quality of the images.
+- we can use tools like Sqoosh - https://squoosh.app/editor - to optimize image size
+- hack - reduce the size to 87% and then increase it back to 115%.  This is known to reduce the image size without the use of any special tool
+- image formats
+    - JPG/JPEG
+        - use for photos when WebP is not an option
+        - lossy images with adjustable compression
+        - higher compression means larger pixels
+        - use JPEG when we have image with complex gradients
+    - PNG
+        - meant for graphics
+        - losslss image format
+        - optional transparent alpha layer
+        - not recommended for regular photos - JPG/JPEG is more efficient
+    - GIF
+        - meant for lo-fi graphs
+        - lossy image formats
+        - only 256 colors
+        - can be animated
+        - avoid using - use SVG or VIDEO instead
+    - SVG (Scalable Vector Graphics)
+        - web native graphics format
+        - can be used directly in HTML and styled with CSS
+        - very small when optimized
+        - use for icons, logos, etc.
+    - WebP ()
+        - meant for web based images
+        - recommended for web
+        - not supported on older browsers - need to use picuture-element to have a fallback in place
+    - **So what should we use??**
+        - for photos - use WebP with JPG fallback
+        - for complex computer graphics - use PNG or JPEG (whichever is smaller)
+        - for graphics with transparency - use PNG or WebP
+        - for scalable graphics, icons, graphs, etc. - use SVG
+        - avoid GIFs - use Video or animated SVG
+- **manual image optimization**
+    - determine max image size for all images
+    - 1920px should be max (unless the requirements is for more)
+    - scale images to max display size
+    - experiment with compression in JPEG or WebP, lower is better
+    - only enable transparency in WebP and PNG when necessary
+    - Simplify SVGs by removing unnecessary points and lines
+    - compare file-size for all format and pick the one with the lowest file-size (considering quality is the same)
+- Tools to optimize images:
+    - `imagemin` NPM Module and its plugins such as `imagemin-mozjpeg`, `imagemin-pngquant`, `imagemin-webp` etc.  
+    - sqoosh - https://squoosh.app/editor - online tool to optimize images.  they also have an experimental CLI on NPM
+    - sharp NPM module - it is very popular.  It can also change the size for image which can be used for various device sizes.  Though imagemin is better at optimization.  So we can first put the image through sharp and then through imagemin.
+- Responsive images
+    - use `srcset` attribute of `img` tag. Example
+        ![enhanced image tag](image-2.png)
+        - the `320w, 600w, etc` is for the device width
+        - the `size="(min-width: 1200px) 1200px, 100vw"` means if viewport is 1200px or wider, set the image to fit 1200px, else anything less than 1200 (for ex. 590px), make the image full size - 100vw.
+        - 
+    
+
+
 
     
