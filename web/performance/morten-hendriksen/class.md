@@ -175,6 +175,19 @@ Images makes up for the bulk of the web-page assets wrt size.  Thus we need to o
         - post process with Post CSS
         - inline critical CSS
         - defer loading of non critical CSS
+- bundling v/s modules
+    - load only critical assets initially
+    - next, load necessary JS for functionality
+    - conditionally import ESM modules only when they are needed
+- async/defer Javascript files
+    - place all JS before the end of the `body tag` for 2 reasons
+        - JS is render-blocking
+        - JS execution is dependent on elements rendered in the DOM
+    - `async` - when we don't want to cause JS file to block-rendering and the the JS doesn't contain any code that needs the entire DOM to available to work 
+    - `defer` - when we don't want to cause JS file to block-rendering AND JS execution is dependent on elements to be available in the DOM tree.
+    - So, use `async` as default and use `defer` when we need the whole DOM to be available before executing the scripts.
+    - So, with this new understanding, we can place the `script tag` in the head of the HTML and add async/defer based on the scenario.
+-  
 
 
 
