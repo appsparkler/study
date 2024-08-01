@@ -36,6 +36,49 @@ Websites should load efficiently and effectively for all users - someone with a 
     - browser can download many files at same time over a single connection.
     - server must support HTTP2
     - requires HTTPS encryption - available for free from services like lets-encrypt
-    - 
+
+## Server Bottlenecks
+- processor speed
+- available RAM
+- storage type
+- available bandwidth
+- shared resources
+
+- Server/hosting optimizations:
+    - get sufficiently powerful hosting
+    - explore dynamic cloud options
+    - optimize files for server - compression, minification, etc.
+    - add CDN to our service
+- connection optimizations (fixes for TCP ):
+    - pre-connect to servers - DNS prefetch and pre-connect
+    - preload content -  
+    - consider server push - push files to browser before request is made
+    - pre-cache select assets (which we are sure will be used by user)
+- file transmit optimization
+    - modularize JS and CSS (good for HTTP2)
+    - async/defer JS
+    - defer non-critical CSS
+    - lazy loading images
+    - compress all files using GZIP and/or BROTLI
+- caching
+    - can be done at any of three levels:
+        1. on the server
+            - vital for server side rendered content from a CMS like WP, Drupal, etc.
+            - this way server doesn't have to generate the page for every request.  instead, it returns it from cache
+        1. on the CDN
+            - these are external caching for assets
+            - served from servers closest to the visitor
+            - "EDGE COMPUTING" moves dynamic asset building to the CDN for quicker and closer service
+        1. in the browser
+            - browser caches files automatically
+            - can be controlled using http-headers - use short caching for JS and CSS and long caching for main CSSs, main JS, images, fonts, etc. 
+            - caching strategies are now often controlled by CDN
+            - HTTP2 multiplexing - split CSS and JS into smaller modules
+- PRPL pattern - 
+    - P - Push/pre-load important resources
+    - R - Render the initial routes as soon as possible
+    - P - Pre-cache remaining assets
+    - L - Lazy Load other routes and non-critical assets
+
 
     
