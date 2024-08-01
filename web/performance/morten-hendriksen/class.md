@@ -30,4 +30,12 @@ Websites should load efficiently and effectively for all users - someone with a 
 - Javascript is render-blocking.  All rendering (DOM and CSSOM, etc.) is blocked and waits for the Javascript to download before the rendering continues
 > Javascript is render-blocking.  All rendering (DOM and CSSOM, etc.) is blocked and waits for the Javascript to download before the rendering continues
 
+## HTTP2 and multiplexing
+- HTTP1.1 disadvantages - synchronous loading - HTML > CSS > CSS > JS > JS > JS (first HTML, then CSS and then JS files) - one after the another - this is slow and in-efficient.  Browsers cheat by creating multiple connections and downloading multiple files at a time but this causes a lot of strain on the computer.
+- HTTP2 
+    - browser can download many files at same time over a single connection.
+    - server must support HTTP2
+    - requires HTTPS encryption - available for free from services like lets-encrypt
+    - 
+
     
