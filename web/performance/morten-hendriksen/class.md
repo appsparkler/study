@@ -201,7 +201,16 @@ Images makes up for the bulk of the web-page assets wrt size.  Thus we need to o
 - Loading Critical CSS
     - inline any styles impacting the content above the fold in the HTML doc and defer any other CSS
     - tools for this is `critical` NPM module which is a module by Addy Osmani
-
+- deferring non-critical CSS
+    - We can use the coverage tab on the amount of un-used CSS and JS
+- defer loading with adding link tags just above the related content.  So there will be multiple link tags that will load CSS just before the related HTML elements load
+    - for ex.
+        ```html
+            <link /> 
+            <header />
+            <link />
+            <carousel /> 
+        ```
     
 
 
