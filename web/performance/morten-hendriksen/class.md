@@ -85,5 +85,20 @@ Websites should load efficiently and effectively for all users - someone with a 
 - use webpack (performance option) or Lighthouse (light wallet) to test the budget - Lighthouse has a tool to test the app against the performance budget.
 - Example of a performance budget: 
 ![performance-budget](image.png)
+- realistic metrics for performance budget recommended by Google:
+    - speed index under 3 seconds
+    - TTI - under 5 seconds
+    - LCP - under 1 second
+    - MPFID - Max potential First Input Delay - is under 130ms
+    - max gzip JS bundle size is 170kb
+    - total bundle size is under 250kb
+    - all this on low-powered "feature" phone on 3G
+- dynamic performance metrics - have separate budgets for different scenarios - for ex. slow speed v/s high speed networks
+- common performance culprits
+    - images, JS bundles and external web fonts - 
+**Review the requests on the network-tab** - look for what is taking a longer time:
+As we can see in the below image, the TTFB (Time To First Bite) is very high which means that the server is very slow - so that needs to be optimized.
+![network request-response analysis](image-1.png)
+
 
     
