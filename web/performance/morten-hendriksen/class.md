@@ -187,7 +187,22 @@ Images makes up for the bulk of the web-page assets wrt size.  Thus we need to o
     - `defer` - when we don't want to cause JS file to block-rendering AND JS execution is dependent on elements to be available in the DOM tree.
     - So, use `async` as default and use `defer` when we need the whole DOM to be available before executing the scripts.
     - So, with this new understanding, we can place the `script tag` in the head of the HTML and add async/defer based on the scenario.
--  
+-  use `import` to lazy load JS and functionality
+    - Example with async/await:
+        ![import with async/await](image-3.png)
+    - Example of async code loading another 3rd party async code (rough):
+        ![loading the file from codebase](image-4.png)
+        - then rough.esm is further loaded asynchronously:
+        ![loading rough asynchronously](image-5.png)
+- optimize JS
+    - Minify - removes whitespace, removes comments, makes the entire script one line
+    - Uglify - shortens variables and function names, optimize for terseness (the use of few words to say something)
+    - minifier tools - uglify-js, terser
+- Loading Critical CSS
+    - inline any styles impacting the content above the fold in the HTML doc and defer any other CSS
+    - tools for this is `critical` NPM module which is a module by Addy Osmani
+
+    
 
 
 
