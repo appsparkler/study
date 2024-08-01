@@ -153,7 +153,32 @@ Images makes up for the bulk of the web-page assets wrt size.  Thus we need to o
         ![enhanced image tag](image-2.png)
         - the `320w, 600w, etc` is for the device width
         - the `size="(min-width: 1200px) 1200px, 100vw"` means if viewport is 1200px or wider, set the image to fit 1200px, else anything less than 1200 (for ex. 590px), make the image full size - 100vw.
-        - 
+    - targeting image size
+        - always provide image for smallest screen at 320px
+        - make widest image not more than 1920px
+        - control the image size with `sizes` attribute
+        - find natural breakpoints and make image sizes to match using the tools
+        - try to limit yourself to 4-5 image sizes
+- Developing for web performance
+    - lazy load images - for ex. when the image section is coming closer to view port or user clicks a button, etc.
+    - modern browser support lazy loding - to do this we use the `img` attribute `loading="lazy"`.  other option is `"eager"` and `"auto"`
+    - `lazysizes` is another NPM tool that helps provides the functionality for lazy loading images.
+
+# markup and content optimization
+- optimize build process for codebase
+    - JS
+        - minify
+        - uglify
+        - code-splitting
+    - CSS
+        - minify
+        - post process with Post CSS
+        - inline critical CSS
+        - defer loading of non critical CSS
+
+
+
+
     
 
 
