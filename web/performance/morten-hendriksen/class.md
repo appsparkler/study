@@ -80,5 +80,10 @@ Websites should load efficiently and effectively for all users - someone with a 
     - P - Pre-cache remaining assets
     - L - Lazy Load other routes and non-critical assets
 
+## Performance Budget
+- have a budget and adhere to it.
+- use webpack or Lighthouse to test the budget - Lighthouse has a tool to test the app against the performance budget.
+- Example of a performance budget: 
+![performance-budget](image.png)
 
     
