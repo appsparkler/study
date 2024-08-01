@@ -82,7 +82,7 @@ Websites should load efficiently and effectively for all users - someone with a 
 
 ## Performance Budget
 - have a budget and adhere to it.
-- use webpack or Lighthouse to test the budget - Lighthouse has a tool to test the app against the performance budget.
+- use webpack (performance option) or Lighthouse (light wallet) to test the budget - Lighthouse has a tool to test the app against the performance budget.
 - Example of a performance budget: 
 ![performance-budget](image.png)
 
