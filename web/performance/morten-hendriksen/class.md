@@ -232,7 +232,13 @@ Images makes up for the bulk of the web-page assets wrt size.  Thus we need to o
     - Example:
         ![self-hosted-font-link-tag](image-7.png)
 - variable fonts - uses only one font-file per style for different weights
-- 
+- optimization tips:
+    - consider using system fonts instead of web-font
+    - limit the number of font-families
+    - pick the correct character set
+    - consider deferring font loading by using a matching system font first
+    - cache font-files
+     
 
 
 
