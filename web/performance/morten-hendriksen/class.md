@@ -231,7 +231,8 @@ Images makes up for the bulk of the web-page assets wrt size.  Thus we need to o
     - use `rel="preload" href="font/path/url"` for these self hosted fonts.  This will keep the font files ready for the CSS to use them:
     - Example:
         ![self-hosted-font-link-tag](image-7.png)
-- variable fonts - 
+- variable fonts - uses only one font-file per style for different weights
+- 
 
 
 
