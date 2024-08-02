@@ -251,7 +251,14 @@ Images makes up for the bulk of the web-page assets wrt size.  Thus we need to o
     - server push using link-header
         ![link header](image-9.png)
     - ! - push only critical assets
-    
+- preload v/s prefetch
+    - preload
+        - use preload only for critical assets - I'll be surely need this assets soon, so keep it ready.
+        - also include `as` and/or `type` attribute to ensure the browser knows that is being loaded.
+    - prefetch
+        - use prefetch for non-critical assets - *I may need this asset in the course of rendering*
+        - 
+- 
 
 
 
