@@ -257,7 +257,7 @@ Images makes up for the bulk of the web-page assets wrt size.  Thus we need to o
         - also include `as` and/or `type` attribute to ensure the browser knows that is being loaded.
     - prefetch
         - use prefetch for non-critical assets - *I may need this asset in the course of rendering*
-        - 
+- browser caching - again, we can have a look at the `h5bp` repositories on Github for enhancing the caching strategy
 - 
 
 
