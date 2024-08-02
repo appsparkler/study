@@ -226,7 +226,12 @@ Images makes up for the bulk of the web-page assets wrt size.  Thus we need to o
     - `rel="dns-prefetch"` - gets the DNS information right away so that when the request is made, it doesn't need to wait for DNS resolution
     - `rel="preconnect"` - opens a connection even before these files are requested - it sort of creates a pipe to connect to the font-repository
     - `crossorigin` - optimizes calls to a different origin
-
+- optimizing self hosted font delivery
+    - self-hosting, by default, enhances performance
+    - use `rel="preload" href="font/path/url"` for these self hosted fonts.  This will keep the font files ready for the CSS to use them:
+    - Example:
+        ![self-hosted-font-link-tag](image-7.png)
+- variable fonts - 
 
 
 
