@@ -33,6 +33,20 @@
     1. event - add_billing_info
     1. event - purchase 
 - Now, observe this funnel - it shows the abandonment rate at each step
+- Further, we can also breakdown this data based on, for ex, "Device Category"
+    - This shows us that majority of our users are visiting us from the Desktop
+    - We can also "include only these users" for desktop and focus only on Desktop dimension
+
+### Can you tell show me user engagement before they add an item to the cart?
+- Yes, we can use the "path exploration" in the explore section.
+- Once selected, click on "Start Over" and set the end-point to event > "add_to_cart"
+- We, can now track backward from there to see the event or page paths users are visiting before adding to cart
+
+## Explore with GA4
+- https://www.youtube.com/watch?v=u3APRpZfitk
+- https://skillshop.docebosaas.com/learn/courses/18104/answer-business-questions-with-google-analytics/lessons/50845:16669/visualize-your-user-journeys-in-explore
+- There are various reports in Explore that can help us analyze a lot of things about our business
+
 
 ## Key Events
 Key events are defined by the Analyast as events that are most useful for the business.  For an online-store,  it could be a "purchase" event, for a blog, it could be a "subscription", for a learn to recite app, it could be a recitation.  We can use these key events to understand the performance of our ad-campaigns, etc.
@@ -126,5 +140,6 @@ Google Ads can be placed in:
 
 ### Leveraging Audiences
 - we can target specific audiences (defined in GA) for our campaigns
+
 
 
