@@ -245,8 +245,13 @@ Images makes up for the bulk of the web-page assets wrt size.  Thus we need to o
     - Brotli - new compression format, compression process takes a long time and is done manual
     - `h5bp/server-configs` - resource to configure self-hosted servers to compress files
     - check if the CDN or server is not doing compression automatically before deciding to configure it yourself - else it'll be unnecessary work
-    - 
-
+- server push
+    - how it is optimized:
+        ![server push](image-8.png)
+    - server push using link-header
+        ![link header](image-9.png)
+    - ! - push only critical assets
+    
 
 
 
