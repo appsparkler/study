@@ -212,6 +212,21 @@ Images makes up for the bulk of the web-page assets wrt size.  Thus we need to o
             <carousel /> 
         ```
     
+## Web Fonts
+-intro
+    - could significantly affect performance due to many different files for various size, weights, etc.  
+    - could cause FOUT, FOIT
+- optimizing 3rd party font delivery
+    - pick only font-weights that we are going to use in the project
+    - combine requests for multiple font families in one
+    - use resource hints to dns-prefetch API and preconnect to the font file service
+    - Examples:
+        ![web-font-optimization](image-6.png)
+    - `&display=swap` URL parameter for Google fonts - uses available font first and then uses the requested-font when its downloaded- `&text=[your text]` if only a small character set is used - of ex. company name, etc.
+    - `rel="dns-prefetch"` - gets the DNS information right away so that when the request is made, it doesn't need to wait for DNS resolution
+    - `rel="preconnect"` - opens a connection even before these files are requested - it sort of creates a pipe to connect to the font-repository
+    - `crossorigin` - optimizes calls to a different origin
+
 
 
 
