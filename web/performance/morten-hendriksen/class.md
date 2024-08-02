@@ -258,7 +258,20 @@ Images makes up for the bulk of the web-page assets wrt size.  Thus we need to o
     - prefetch
         - use prefetch for non-critical assets - *I may need this asset in the course of rendering*
 - browser caching - again, we can have a look at the `h5bp` repositories on Github for enhancing the caching strategy
-- 
+- leverage a CDN
+    - without a CDN every visitor has to get files from your sever.  this could put a lot of strain on the resources
+    - with the CDN, the CDN grabs a copy of our site and visitors get their copy from the closest CDN
+    - Feature rich CDNs can include features like:
+        - advanced caching
+        - auto compression of assets including CSS and JS (brotli or gzip)
+        - automatic modernization of images with WebP
+        - DDoS protection
+
+## Additional Resources
+- https://web.dev - performance section
+- MDN Web Docs - performance section
+
+
 
 
 
