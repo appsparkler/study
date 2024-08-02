@@ -238,7 +238,14 @@ Images makes up for the bulk of the web-page assets wrt size.  Thus we need to o
     - pick the correct character set
     - consider deferring font loading by using a matching system font first
     - cache font-files
-     
+
+## Optimizing Delivery
+- compressing data
+    - GZIP - standard, fast, automatically done by many hosts
+    - Brotli - new compression format, compression process takes a long time and is done manual
+    - `h5bp/server-configs` - resource to configure self-hosted servers to compress files
+    - check if the CDN or server is not doing compression automatically before deciding to configure it yourself - else it'll be unnecessary work
+    - 
 
 
 
