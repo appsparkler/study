@@ -116,3 +116,20 @@
         <META NAME="ROBOTS" CONTENT="NOINDEX, FOLLOW"> </head>
     ```
     - excellent guide for pagination : https://www.ayima.com/knowledge/guides/conquering-pagination-guide.html
+- http status codes:
+    - 100s - informational
+    - 200s - success
+    - 300s - redirections
+    - 400s - client errors
+    - 500s - server errors
+    - 7 key http status codes:
+        - 200s -  success
+        - 301 - permanent redirects
+        - 302 - found/temporary-redirect -
+        - 404 - file not found
+        - 410 - Gone
+        - 500 - server error
+        - 503 - service unavailable
+    - Ensure everything in the status-code column of our page-response is true and correct
+    
+
