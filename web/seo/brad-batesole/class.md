@@ -84,4 +84,5 @@
         - use broad keywords
     - make it adaptable
         - work with what is available (for ex. if .com is not available, go for .shop :)
-
+- sitemaps
+    - 
