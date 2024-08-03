@@ -3,7 +3,7 @@
 ## Tools And Links
 1. Screaming Frog 
 1. Google Search Console
-1. 
+1. https://www.ayima.com/knowledge/guides/conquering-pagination-guide.html - guide for 
 
 
 ## Creating your information architecture
@@ -107,4 +107,12 @@
     - take care of parameters that are added in tracking by adding link with `rel="canonical"` - for ex:
         ```html <link rel="canonical" href="https://www.example.com/blog" />```
     - it can also be added to the http header.
-     
+- pagination - this could confuse the SE since it doesn't crawl pages in any particular order so it might end up crawling the 4th page and index it without indexing any other page
+    - use `<link>` tag with `rel="prev"` and `rel="next"` attributes to let the crawler know that this is one of the pages in the pagination list.
+    - we could also consider adding `rel="canonical"` on all paginated pages with `href="/the/view-all/page"` so that the view-all pages shows up in the search results.
+    - if the paginated is not useful in search results, simple exclude with `NOINDEX` as shown below.  Add this to the head section of every page.  Include the `FOLLOW` tab so that the crawler does crawl the page for all destinations on that page.
+    ```html
+        <head>
+        <META NAME="ROBOTS" CONTENT="NOINDEX, FOLLOW"> </head>
+    ```
+    - excellent guide for pagination : https://www.ayima.com/knowledge/guides/conquering-pagination-guide.html
