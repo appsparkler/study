@@ -48,4 +48,40 @@
             - this has two types:
                 - Open Sort - as the name suggest, the user would give names for the categories
                 - Close Sort - the categories are set by the product team.
--https - 
+-https - obtain and install a secure certificate layer (SSL) layer
+    - check the list of websites that are using https - https://transparencyreport.google.com/https/top-sites
+    - HTTP Checklist
+        - verify the new URL
+        - implent your 301 redirects
+        - update internal links
+        - update off property links
+        - verify site-map and submit a new site in search console
+        - double check the robots.txt file
+        - confirm caononical tags
+        - resubmit any disavows
+        - re-configure URL params
+        - verify existing rewrites
+        - update analytics and tracking tags
+- subdomains
+    - subdomains shouldn't be the first choice i.e. https://example.com/blogs/article/... is preferred by the author than https://blogs.example.com/article/...
+    - This way Google understands the relationship of the site and its content else it will take the two sites as different
+- Picking a domain name
+    - make it brandable
+        - sounds like a brand
+        - is it ealisy sharable?
+        - is it memorable?
+        - is it unique?
+    - make it pronounceable
+        - can you easily say it?
+        - can other guess how to say it on the first try?
+    - make it short
+    - make it .com
+    - make it legally sound - so it shouldn't be amaazon.com for ex.
+    - make it intuitive
+        - make it obvious what you do
+        - your marketing helps with this as you grow
+    - make it broad
+        - use broad keywords
+    - make it adaptable
+        - work with what is available (for ex. if .com is not available, go for .shop :)
+
