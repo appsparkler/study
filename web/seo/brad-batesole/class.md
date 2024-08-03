@@ -1,5 +1,10 @@
 # Advanced SEO
 
+## Tools And Links
+1. Screaming Frog 
+1. Google Search Console
+1. 
+
 
 ## Creating your information architecture
 - Indexable content
@@ -24,4 +29,8 @@
     - use `robots.txt` to disallow pages
     - try to keep 1:1 for URL:Page ratio - for ex. a page with a different session ID would have the same content but now there are infinite URLs with the same page popping up!
     -  ensure site is responsive
-    - 
+- the robots.txt file
+    - update allow and disallow for all user agents
+    - use globs to define allow and disallow
+    - add the `Sitemap` in this file
+    - avoid adding sensitive data
