@@ -88,3 +88,23 @@
     - a user friendly sitemap is good - another opportunity for crawlers to visit all the pages on the site
     - XML site map is very important which will be added in the robots.txt for the crawlers
     - Screaming Frog has a feature to create a site map
+
+## Managing your URLs
+- URL structure 
+    - focus on URLs that are human-readable and short
+    - focus on simplicity and brevity
+    - static URLs are ideal - instead of parameters, etc. with various 
+    - use only what is necessary - don't over organize folders
+    - utilize hyphens for separation 
+    - URL:page ratio of 1:1 is ideal
+    - simplify additive filtering and sorting parameters
+    - build a URL playbook
+- Canonical URLs - if this is an issue, SE's crawling budget for your site would expire faster 
+    - definitition of canonical - _included in the list of sacred books officially accepted as genuine_
+    - define a canonical URL
+    - have 301 redirects for URLs that might be duplicated - for ex. - https://example.com/blOG or https://example.com/blOG/ should redirect to https://example.com/blog if the later is the canonical URL.
+    - another example is that - https://www.appsparkler.com and https://appsparkler.com both shouldn't be crawlable else the crawler will look at them at two separate pages.  Instead, we need to select which URL we prefer and set is as our canonical URL for that page.  Now, we need to re-direct the other to the one we have selected.
+    - take care of parameters that are added in tracking by adding link with `rel="canonical"` - for ex:
+        ```html <link rel="canonical" href="https://www.example.com/blog" />```
+    - it can also be added to the http header.
+     
