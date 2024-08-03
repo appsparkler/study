@@ -34,3 +34,18 @@
     - use globs to define allow and disallow
     - add the `Sitemap` in this file
     - avoid adding sensitive data
+- site information architecture
+    - plan your architecture with a sitemap (hierarchical site-map) - aka Taxonomy
+    - keep your most popular content no more than 4 links away
+    - Ontology - the complex relationships between concepts and taxonomies - for ex. paddles could be for row-boats, kayaks, kanoos, etc. they might also be classified into high-performance, leisure, etc. so the Ontology of paddles is just as important
+    - Exercise:
+        - Approach 1: Listing
+            - you and your team list all the content pages
+            - define whether the content must be reachable by primary or secondary navigation
+            - keep everything no more than 4 clicks away
+        - Approach 2: Card sorting
+            - this is a well known methodology
+            - this has two types:
+                - Open Sort - as the name suggest, the user would give names for the categories
+                - Close Sort - the categories are set by the product team.
+-https - 
