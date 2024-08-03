@@ -85,4 +85,6 @@
     - make it adaptable
         - work with what is available (for ex. if .com is not available, go for .shop :)
 - sitemaps
-    - 
+    - a user friendly sitemap is good - another opportunity for crawlers to visit all the pages on the site
+    - XML site map is very important which will be added in the robots.txt for the crawlers
+    - Screaming Frog has a feature to create a site map
