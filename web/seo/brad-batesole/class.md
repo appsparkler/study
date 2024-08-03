@@ -131,5 +131,6 @@
         - 500 - server error
         - 503 - service unavailable
     - Ensure everything in the status-code column of our page-response is true and correct
-    
-
+- mobile and desktop friendly
+    - always design mobile-first
+    - prefer responsive design over dynamic-serving or dynamic-serving with different URLs (for ex. m.example.com and example.com)
