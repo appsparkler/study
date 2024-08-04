@@ -172,3 +172,51 @@
     - add structured data to our site - `application/ld-json` is the preferred format.
     - determine the relevant content for our document
     - define the action markup
+- Schema.org
+    - add the schema to the document which will provide the metadata
+
+## Technical Makeup
+- Site Speed
+    - SEs prefer website that load really fast
+    - 1 second is the total benchmark time to have all content, above the fold, rendered.
+        - 500-600ms is taken up in other overheads such as DNS resolution, etc.
+        - so, we actually have only around 400 ms to deliver the content above the fold
+        - So:
+            1. get the server to send the response in under 200ms
+            1. minimize or eliminate redirects (max of 1)
+            1. minimize the number of round trips necessary to render the first piece of content
+            1. avoid any external-blocking JS and CSS above the fold
+            1. reserve 200 ms for browser layout and rendering
+            1. optimize JS execution and rendering time
+        - go through page speed insights : https://pagespeed.web.dev/ to understand how to maximize website speed.
+-  Javascript and DOM   
+    - Each element is a DOM note
+    - view-source will never change but the DOM will change based on how JS edits it.
+- Critical Rendering Path
+    - Lighthouse
+        - run each webpage through lighthouse and see how the site can be optimized.
+    - Optimizing CSS styles
+        - some CSS styles are only used under certain conditions
+        - so we don't want to load them when they are not in use
+        - For ex:
+            ```html
+                <link href="style.css" rel="stylesheet">
+                <link href="print.css" rel="stylesheet" media="print">
+                <link href="other.css" rel="stylesheet" media="(min-width: 40em)">
+            ```
+        - with these tags, we can optimize for certain medias
+        - Put CSS in document head
+        - avoid CSS imports - they introduce additional round trips
+        - consider inline render-blocking
+        - analyze the unused CSS using dev-tools
+    - Optimizing JS styles
+        - prfer async (non blocking) 
+        - defer parsing the JS for non-critical JS
+        - avoid long-running JS
+
+HTTP/2
+    - multiplexing - can make multiple concurrent connecting over a single connection
+    - has push feature
+- PWA
+    - these are progressive, responsive, responsive, independent, app-like, fresh, 
+    safe, discoverable, re-engagable, installable, linkable
