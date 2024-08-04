@@ -5,6 +5,7 @@
 1. Google Search Console
 1. https://www.ayima.com/knowledge/guides/conquering-pagination-guide.html - guide for 
 1. HTML Outliner extension for heading outlines
+1. TF-IDF tool - https://en.ryte.com/wiki/TF*IDF/
 
 ## Creating your information architecture
 - Indexable content
@@ -158,5 +159,6 @@
         - SEs show preference for keywords in heading tags
         - sometimes matches the title tag
         - must be in sequential order
-- 
-    
+- TF-IDF (Term Frequency - Inverse document frequency)
+    - reflects how important a word is to a document within a collection - for ex. ("recite" would have high TF-IDF for our Lets Recite home page)
+    - a tool called RYTE - https://ryte.com - https://en.ryte.com/wiki/TF*IDF/
