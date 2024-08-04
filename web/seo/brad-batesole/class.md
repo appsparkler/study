@@ -4,7 +4,7 @@
 1. Screaming Frog 
 1. Google Search Console
 1. https://www.ayima.com/knowledge/guides/conquering-pagination-guide.html - guide for 
-
+1. HTML Outliner extension for heading outlines
 
 ## Creating your information architecture
 - Indexable content
@@ -134,3 +134,29 @@
 - mobile and desktop friendly
     - always design mobile-first
     - prefer responsive design over dynamic-serving or dynamic-serving with different URLs (for ex. m.example.com and example.com)
+
+## Optimizing Content Structure
+- Site Tags
+    - Title 
+        - found in the head section of the HTML Document
+        - ensure it is relevant to the page
+        - front-load with keywords
+        - should be less than 50 characters
+        - know your audience
+        - canonalize title tags - make each title tag unique
+    - meta description tag
+        - every page has one
+        - doesn't directly impact rank
+        - impacts clickability
+        - think of it like an advertisement
+        - include a few keywords
+        - keep meta descriptions to 140 characters or less
+    - heading tags
+        - H1 - a single heading for the page
+        - H2 - sub headings
+        - H3 - tertiary headings
+        - SEs show preference for keywords in heading tags
+        - sometimes matches the title tag
+        - must be in sequential order
+- 
+    
