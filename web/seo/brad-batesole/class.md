@@ -6,6 +6,7 @@
 1. https://www.ayima.com/knowledge/guides/conquering-pagination-guide.html - guide for 
 1. HTML Outliner extension for heading outlines
 1. TF-IDF tool - https://en.ryte.com/wiki/TF*IDF/
+1. Introduction to structured data (`ld-json`) - https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data
 
 ## Creating your information architecture
 - Indexable content
@@ -162,3 +163,12 @@
 - TF-IDF (Term Frequency - Inverse document frequency)
     - reflects how important a word is to a document within a collection - for ex. ("recite" would have high TF-IDF for our Lets Recite home page)
     - a tool called RYTE - https://ryte.com - https://en.ryte.com/wiki/TF*IDF/
+- Image optimization
+    - filenames need to be descriptive
+    - alt tags need to be descriptive
+
+## Introducing Structured Data
+- Structured data 
+    - add structured data to our site - `application/ld-json` is the preferred format.
+    - determine the relevant content for our document
+    - define the action markup
