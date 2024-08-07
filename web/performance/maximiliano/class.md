@@ -109,7 +109,26 @@
 - measuring on iOS and Android
     - iOS - devices > simulator
     - Android - emulator by Android Studio
-- 
+- measuring in production with APIs
+    - `window.performance` object has many useful timestamps and other important performance data
+    - use `performance.now()` instead of `Date.now()` for measuring performance
+    - using resources:
+        ```js
+            let resourceList =
+            window-performance.getEntriesByType("resource");
+            for (let resourceInfo of resourceList) {
+                let totalTime = resourceInfo. responseEnd -
+                resourceInfo.startTime;
+            }
+        ```
+    - adding lines on waterfall - `performance.mark()`
+    - first paint and first contentful paint - 
+        ```js
+            let paintMetrics = performance.getEntriesByType("paint");
+            paintMetrics.forEach ( metric => {
+                console.log ('${metric.name}: ${metric.startTime}');
+            }) ;
+        ```
 
 
 
