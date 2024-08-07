@@ -85,7 +85,12 @@
         - AWS device farm
         - perfecto
         - browser-stack
-- 
+- measuring on different networks
+    - network throttling tools on browser developer tools
+    - Network Link Conditioner Tool - available for free on Mac
+    - Charles Proxy - available on Windows (free only for 30 mins)
+    - Android Virtual Device - Advanced Settings - network speed configuration
+
     
 
 
