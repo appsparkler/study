@@ -220,6 +220,21 @@
         - data images, BTF content, other JS files, other responsive web-design needs
     - critical npm tool by Addy Osmani - to create a critical HTML page.
 
-
+## improving recurrent user performance
+- the cache - resources store in browser storage for retrieving later.
+    - first the browser looks for the resource in the cache - if its not available it makes the request
+    - it reads the cache HTTP headers such as `Expire` (absolute expiration) or `Cache-Control: max-age` (relative expiration).  If no cache headers are sent, the browser has an algorithm based on the date of the file.  So that the browser doesn't use an algorithm for cache expiry, WE MUST ALWAYS include cache headers.
+    - ETags - another complex way to manage cache
+    - Scenarios
+        - if cache is not expired - the browser takes it from the cache immediately
+        - if is in cache, not expired 
+            - the browser doesn't delete it
+            - the browser makes a conditional HTTP request to the server with `If-Modified-Since` header.
+            - if that resource didn't change, it will respond with `304 - Not Modified` and new cache headers
+            - it it did change, the sever makes a new response with the new resource and headers
+    - learn how to set cache policies on server or CDN
+    - static assets must be cached with a far future expiration
+- 
+        
 
     
