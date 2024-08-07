@@ -239,7 +239,16 @@
     -  resource hints
         - `prefetch` - `<link rel="prefetch" href="URL">` - prefetch is a low priority request
         - `prerender` - `<link rel="prerender" href="URL">`
-    
-        
+- service workers
+    - acts as a network proxy
+    - receives messages in the name of the scope
+    - executes background scope
+    - performance use case
+        - deliver assets from a cache immediately
+        - act as a web server replacement when offline
+        - act as a web server replacement reacting to bad connections
+        - do background syncs for optimistic saves
+    - 
+
 
     
