@@ -250,7 +250,28 @@
         - do background syncs for optimistic saves
 - advanced service workers
     - Web streams -  a service worker extension
-    - 
+
+## Improving immediate feedback
+- giving immediate feedback
+    - use web worker - 
+- keeping a consistent frame rate
+    - avoid large scripts when executing animations or scroll events
+    - use web-worker for any heavy scripting
+    - debouncing and throttling
+    - use passive listeners - `{passive: true}`
+    - avoid CPU repaint - styles such as border-radius, filter, text-shadow and box-shadow - https://CSSTriggers.com has a full list of properties that cause CPU repaint
+    - prefer GPU repaint - 
+    - promote element to GPU layers - 
+        ```css
+            #fadedElement {
+                will-change: opacity;
+            }
+            #transitionedElement {
+                will-change: transform;
+            }
+        ```
+    - CSS Containment - defines a contain property accepting multiple values. `contain: content` is most useful option.
+
 
 
     
