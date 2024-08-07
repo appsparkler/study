@@ -4,7 +4,9 @@
 - https://www.webpagetest.org/ - tool to check detailed website performance along with recommendations
 - G Suite HAR file analyzer - https://toolbox.googleapps.com/apps/har_analyzer/
 - HAR analyzer - http://www.softwareishard.com/har/viewer/
-- HAR file comparision tool - 
+- HAR file comparision tool - need to search
+- Genymotion - tool to emulate android devices
+- Samsung remote test lab - https://developer.samsung.com/remote-test-lab
 
 ## Web Performance Optimization
 - intro - bounce rate is inversely proportional to the TTL.  More than 3 seconds TTL, the bounce rate increases exponentially.
@@ -70,6 +72,19 @@
     - it is viewport dependent
     - web-page-test toolkit has a tool to test speed-index
     - goal is to have a speed-index of 1500 or below.
+
+## Measuring Performance
+- measuring on different platforms
+    - simulate various conditions - based on what your users are going to experience.
+    - use personas to target all users
+    - use iOS and Android emulators
+    - Genymotion for Android emulators
+    - modern.ie (by microsoft) has tools to download virtual machines so that we can test our app on Windows
+    - cloud base solutions
+        - samsung remote test lab - https://developer.samsung.com/remote-test-lab
+        - AWS device farm
+        - perfecto
+        - browser-stack
 - 
     
 
