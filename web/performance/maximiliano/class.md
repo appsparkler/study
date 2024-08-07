@@ -1,5 +1,8 @@
 # Learning Enterprise Web Application Performance by Maximiliano Firtman
 
+## Resources
+- https://www.webpagetest.org/ - 
+
 ## Web Performance Optimization
 - intro - bounce rate is inversely proportional to the TTL.  More than 3 seconds TTL, the bounce rate increases exponentially.
 - WPO in enterprise world - we have more control than the public WPO.
@@ -18,5 +21,16 @@
 - understanding the mobile web - 
     - browser: unless it is pre-defined - for ex. that all users will use the Chrome browser on Android - we'll have to consider different browsers - including web-views inside various apps such as FB, Google, etc.
     - network: we need to consider 4G, 3G and 2G connections used for browsing our app.  Also consider VPN latency.
+
+## Charts & Metrics
+- waterfall chart
+    views:
+        - first view - empty cache (first visit to site)
+        - repeat view - all resources are available on cache
+        - flexible view - some are cached but not all
+    - vertical lines - may specify important events such as page-load, DOM complete, etc.
+    - row colors - various colors may specify various things - for ex. yellow rows may specify redirect, red-rows may specify errors, etc.
+    - resource-timing-bar - for each resource, there are various phases while the resource has completed download - for ex. DNS lookup, TCP connection, TTFB, Download, Stalled or hold, proxy-negotiation, SSL negotiation, 
+
 
     
