@@ -38,7 +38,33 @@
     - its in JSON format
     - from web-page-test tool, we could export HAR files for various scenarios - for ex. Chrome on Android, Chrome on iOS, etc. and export the HAR files and then use the HAR file analyzer tools such as G Suite HAR file analyzer to analyze the results and compare them
     - helps us to compare HAR files
-
+- performance milestones
+    - TTFB - Time To First Byte - 
+        - gives us information about server performance
+    - First Render or First Paint
+        - the primary content is visible
+    - First Meaningful paint
+        - the primary content is visible
+        - the first above the fold layout change has happened
+        - web fonts have loaded
+        - i.e. the user has started to read and parse the content
+    - First Interactive
+        - the user can start interacting with the app i.e. the necessary scripts have loaded
+        - and the CPU is idle enough to handle most user inputs
+    - First Meaningful Interaction
+        - it is a custom metric for our app
+    - Consistently interactive
+        - most network resources have finished loading
+    - DOM Content Loaded
+        - follows the DOM event with the same name
+        - all resources have been download
+    - ATF render - Above The Fold render
+        - viewport dependent
+    - Page Load
+        - defines the DOM onload event is fired
+        - all resources have been downloaded and executed by the application
+- 
+    
 
 
     
