@@ -248,6 +248,8 @@
         - act as a web server replacement when offline
         - act as a web server replacement reacting to bad connections
         - do background syncs for optimistic saves
+- advanced service workers
+    - Web streams -  a service worker extension
     - 
 
 
