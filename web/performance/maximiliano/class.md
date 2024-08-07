@@ -106,7 +106,11 @@
 - using Lighthouse - npm module - lighthouse
     - allows us to run lighthouse locally
     - can be added to the build chain
+- measuring on iOS and Android
+    - iOS - devices > simulator
+    - Android - emulator by Android Studio
 - 
+
 
 
 
