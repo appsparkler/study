@@ -193,7 +193,24 @@
         - `font-display: swap` in the `@font-face`
     - Fixing FOUT - Flash of Unstyled Text
         - use an alternate font until it is loaded
-
+- optimizing the images
+    - compress the files
+    - embrace SVG when possible
+    - use WebP with `<picture>` tag - they are 35% smaller in size
+    - opt in for HTTP Client Hints
+    - HTTP Client Hints - if opted in, the browser will expose data to the server on every image request
+        - data can be width, viewport-width, DPR, save-data, etc.
+        - can be opted in with ```html <meta http-equiv= "Accept-CH" content="DPR, Viewport-Width, Downlink" >```
+    - embed small images
+        - convert small images into base64
+        - embed them into HTML, JSON, or CSS
+        - avoids extra http request for them
+        - ex: `data: image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAARBAMAAACSi8F4AAAAANCSVQICAjb4U/gAAAAGFBMVEX///////8AAACpqanMzMxmZmaHhoQ/Pz9kt3AEAAAACHRSTLMA` 
+    - preview data images faster
+        - load a very low resolution version
+        - apply some canvas blur effects while it is loading
+        - or apply blur and scale effect
+- 
 
 
     
