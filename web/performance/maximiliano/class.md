@@ -161,7 +161,16 @@
     1. redirects to HTTPS 
         - use HSTS header - `Strict-Transport-Security: max-age=<expire-time-s>`
         - opt in at - `https://hstspreload.org`
-- 
+- optimizing the parsing
+    - avoid client side rendering - use server side framework
+    - use isomporphic rendering - server side rendered and then it shifts to client side rendering
+    - compress, minify and uglify CSS and JS files
+    - load only necessary resources for initial loading
+    - use a build tool - like Vite.js
+    - use non blocking scripts
+        - use `<script defer>` or `<script async>` - use `async` only for very important scripts
+        - on-demand JS or lazy load JS scripts
+- optimizing the rendering
 
 
 
