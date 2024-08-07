@@ -98,9 +98,16 @@
 - using Microsoft Edge developer tools
     - using the Performance Tab
     - using the Memory Tab to review the memory utilization
-- using Safari developer tools
-    - has timeline tool on a different tab
-    
+- using Safari developer tools - it has timeline tool on a different tab
+- using Firefox developer tools
+    - it has a performance tab that we can use to analyze the performance
+- using Google Chrome developer tools
+    - network, performance, memory and audit tabs for analyzing performance
+- using Lighthouse - npm module - lighthouse
+    - allows us to run lighthouse locally
+    - can be added to the build chain
+- 
+
 
 
     
