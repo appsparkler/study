@@ -66,6 +66,10 @@
 - filmstrip views
     - this helps us analyze the screen-view against the waterfall
     - web-page-test-view has many tools for analyzing filmstrip - it can create a video from the filmstrips which helps us understand what the user is experiencing
+- speed index (aka peceptual speed index) - defines how much blank screen content the user has seen on the screen during the loading process. 
+    - it is viewport dependent
+    - web-page-test toolkit has a tool to test speed-index
+    - goal is to have a speed-index of 1500 or below.
 - 
     
 
