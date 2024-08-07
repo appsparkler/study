@@ -234,7 +234,12 @@
             - it it did change, the sever makes a new response with the new resource and headers
     - learn how to set cache policies on server or CDN
     - static assets must be cached with a far future expiration
-- 
+- fetching for possible user journeys
+    - use analytics to figure out what to prefetch as per a user journey
+    -  resource hints
+        - `prefetch` - `<link rel="prefetch" href="URL">` - prefetch is a low priority request
+        - `prerender` - `<link rel="prerender" href="URL">`
+    
         
 
     
