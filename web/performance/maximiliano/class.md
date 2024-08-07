@@ -130,6 +130,22 @@
             }) ;
         ```
 
+## improving the loading experience
+- loading step review
+    - HTTP2
+        - can multiplex the same TCP connection
+        - HTTP header compression
+        - supports server push
+    - steps involved in a web app access
+        1. DNS Query - to convert the web-address into an ip-address
+        1. TCP connection - a handshake is started and a connection is established
+        1. HTTP Request - browser creates a request 
+        1. Server - server queue and execution
+        1. HTTP Response - by the server
+        1. HTML Parsing - DOM and CSSOM creation.  JS is render blocking.  Setup queue for resources
+        1. Resources Download
+        1. Rendering 
+    
 
 
 
