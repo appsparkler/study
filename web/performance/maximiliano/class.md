@@ -210,7 +210,16 @@
         - load a very low resolution version
         - apply some canvas blur effects while it is loading
         - or apply blur and scale effect
-- 
+- achieving extreme loading
+    - What to fit in critical rendering
+        - all HTML necessary for ATF
+        - all CSS embeded in `<style>` tag
+        - all the JS in `<script>` tag
+        - if there is room, we can also add images, icons and logos in base64
+    - what to load after
+        - data images, BTF content, other JS files, other responsive web-design needs
+    - critical npm tool by Addy Osmani - to create a critical HTML page.
+
 
 
     
