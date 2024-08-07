@@ -1,7 +1,10 @@
 # Learning Enterprise Web Application Performance by Maximiliano Firtman
 
 ## Resources
-- https://www.webpagetest.org/ - 
+- https://www.webpagetest.org/ - tool to check detailed website performance along with recommendations
+- G Suite HAR file analyzer - https://toolbox.googleapps.com/apps/har_analyzer/
+- HAR analyzer - http://www.softwareishard.com/har/viewer/
+- HAR file comparision tool - 
 
 ## Web Performance Optimization
 - intro - bounce rate is inversely proportional to the TTL.  More than 3 seconds TTL, the bounce rate increases exponentially.
@@ -31,6 +34,11 @@
     - vertical lines - may specify important events such as page-load, DOM complete, etc.
     - row colors - various colors may specify various things - for ex. yellow rows may specify redirect, red-rows may specify errors, etc.
     - resource-timing-bar - for each resource, there are various phases while the resource has completed download - for ex. DNS lookup, TCP connection, TTFB, Download, Stalled or hold, proxy-negotiation, SSL negotiation, 
+- HAR format - a format to save waterfall data
+    - its in JSON format
+    - from web-page-test tool, we could export HAR files for various scenarios - for ex. Chrome on Android, Chrome on iOS, etc. and export the HAR files and then use the HAR file analyzer tools such as G Suite HAR file analyzer to analyze the results and compare them
+    - helps us to compare HAR files
+
 
 
     
