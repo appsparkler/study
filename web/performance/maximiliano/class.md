@@ -99,7 +99,8 @@
     - using the Performance Tab
     - using the Memory Tab to review the memory utilization
 - using Safari developer tools
-    - 
+    - has timeline tool on a different tab
+    
 
 
     
