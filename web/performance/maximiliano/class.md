@@ -7,6 +7,7 @@
 - HAR file comparision tool - need to search
 - Genymotion - tool to emulate android devices
 - Samsung remote test lab - https://developer.samsung.com/remote-test-lab
+- HSTS Preload - opt in for HTTPS here : https://hstspreload.org
 
 ## Web Performance Optimization
 - intro - bounce rate is inversely proportional to the TTL.  More than 3 seconds TTL, the bounce rate increases exponentially.
@@ -152,6 +153,14 @@
     1. Reduce DNS queries - use fewer 3rd party resources - which will reduce DNS queries
     1. enable keep-alive (only for HTTP 1)
     1. use CDN - Akamai or Cloudfare
+- optimizing network layer - part 2
+    1. domain sharding - solved with a multidomain certificate
+    1. cookies - travels on every request
+    1. service worker can help
+    1. reduce unnecessary redirects - redirects takes time so be careful to use redirects
+    1. redirects to HTTPS 
+        - use HSTS header - `Strict-Transport-Security: max-age=<expire-time-s>`
+        - opt in at - `https://hstspreload.org`
 - 
 
 
