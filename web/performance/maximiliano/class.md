@@ -95,7 +95,11 @@
         - multiple URLs
         - and many other features - maybe it can be covered as part of a separate learning module
 - creating scripts with web-page-test tool - allows us to write scripts for testing on the web tool
-    
+- using Microsoft Edge developer tools
+    - using the Performance Tab
+    - using the Memory Tab to review the memory utilization
+- using Safari developer tools
+    - 
 
 
     
