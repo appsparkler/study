@@ -90,7 +90,11 @@
     - Network Link Conditioner Tool - available for free on Mac
     - Charles Proxy - available on Windows (free only for 30 mins)
     - Android Virtual Device - Advanced Settings - network speed configuration
-
+- using web-page-test tool (https://webpagetest.org)
+    - this tool has many options - few of the ones easy to miss are
+        - multiple URLs
+        - and many other features - maybe it can be covered as part of a separate learning module
+- 
     
 
 
