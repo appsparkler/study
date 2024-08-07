@@ -171,6 +171,28 @@
         - use `<script defer>` or `<script async>` - use `async` only for very important scripts
         - on-demand JS or lazy load JS scripts
 - optimizing the rendering
+    - both CSS and web fonts can block rendering
+    - `dns-prefetch` for resources on a different domain - for ex. `<link rel="dns-prefetch" href="//newdomain.com">`
+    - use CSS as an appetizer
+        - CSS blocks rendering
+        - add `<link>` as close to the top as possible
+        - avoid using `@import`
+        - push it on `HTTP/2`
+    - stop using `onload`
+    - avoid rendering BTF (below the fold)
+    - render first ATF and after load, render BTF
+    - fixing FOIT (flash of invisible text)
+        - reduce web-font usage in ATF content
+        - use WOFF 2.0 - it has better compression
+        - reduce glyphs and unused characters - online tools are available to remove unnecessary glyphs and chars
+        - embed it in base64
+        - use CSS font loading API if it is available
+        - preload font file - `<link rel="preload" type="font" href="font.woff" ...>`
+        - CSS Font Rendering Control 
+            - make text invisible until it is loaded
+        - `font-display: swap` in the `@font-face`
+    - Fixing FOUT - Flash of Unstyled Text
+        - use an alternate font until it is loaded
 
 
 
