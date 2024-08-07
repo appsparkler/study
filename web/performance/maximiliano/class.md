@@ -15,4 +15,8 @@
         - Idle - 50ms - idle time for any JS or CSS to load
         - Load - 1000ms - for a page to load
     - always remember, HUMAN PERCEPTION is more important than TECHINCAL DETAILS
+- understanding the mobile web - 
+    - browser: unless it is pre-defined - for ex. that all users will use the Chrome browser on Android - we'll have to consider different browsers - including web-views inside various apps such as FB, Google, etc.
+    - network: we need to consider 4G, 3G and 2G connections used for browsing our app.  Also consider VPN latency.
+
     
