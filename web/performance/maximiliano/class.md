@@ -63,6 +63,9 @@
     - Page Load
         - defines the DOM onload event is fired
         - all resources have been downloaded and executed by the application
+- filmstrip views
+    - this helps us analyze the screen-view against the waterfall
+    - web-page-test-view has many tools for analyzing filmstrip - it can create a video from the filmstrips which helps us understand what the user is experiencing
 - 
     
 
