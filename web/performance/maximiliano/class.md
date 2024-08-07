@@ -145,7 +145,14 @@
         1. HTML Parsing - DOM and CSSOM creation.  JS is render blocking.  Setup queue for resources
         1. Resources Download
         1. Rendering 
-    
+- optimizing network layer
+    1. upgrade to HTTPS - free TLS certificates are available on Lets Encrypt
+    1. upgrade to HTTP2 - Akamai or Cloudfare CDNs support it even if our server doesn't support it.
+    1. compression - ensure GZIP, zopli or brotli (br)
+    1. Reduce DNS queries - use fewer 3rd party resources - which will reduce DNS queries
+    1. enable keep-alive (only for HTTP 1)
+    1. use CDN - Akamai or Cloudfare
+- 
 
 
 
