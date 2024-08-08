@@ -6,6 +6,8 @@
     - I want to see like the colour blind Chrome plugin - https://chromewebstore.google.com/detail/colorblindly/floniaahmccleoclneebhhmnjgdfijgg
     - Understanding color blindness - https://a11yproject.com/posts/understanding-colourblindness/
     - Color Contrast Checker - https://webaim.org/resources/contrastchecker/
+- ARIA
+    - https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-checked
 
 ## Personas
 - color blindness
@@ -29,7 +31,21 @@
         - change your design in gray scale mode
         - set the laptop in grayscale mode and view your website, if everything is perceivable
         - use the available tools to make site accessible for all
-    
+- aria attributes
+    - `aria-expanded` - set true/false based on expanded/collapsed state of a popup menu for ex.
+    - `aria-label` - add aria label to SVG, for ex. to describe what clicking on the SVG will do
+        ```html
+            <a href="/path/to/insta">
+                <svg aria-label="Follow us on Instagram"></svg>
+            </a>
+        ```
+    - `aria-labelledby` - if we have a caption for an image, we want to tag the image with that caption.  For ex.: 
+        ```html
+            <img src="path/to/gem_file.webp" aria-labelledby="content" />
+            <p id="caption">Red Gem</p>
+        ```
+    - `role and tabindex` attributes - to change the role of non-semantic element and make it tabbable
+- accessible images
     
 
     
