@@ -59,6 +59,12 @@
     - `0` - to include element in tab-flow
     - `-1` - to remove element from tab-flow
     - `<any-integer>` - to manually set the tab-order
+- bypass blocks (skips link)
+    - add bypass blocks for providing option to user to skip the secondary content on the page
+        - for ex. 
+            - navigation links in the header
+            - filters
+    - skipping this is optional - we'll have a hidden-until-tabbed/focused link such as "Skip site navigation links" and "Skip product filters" or simply "Skip to Main" or "Skip to inventory"
 - 
 
     
