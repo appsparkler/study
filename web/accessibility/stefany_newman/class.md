@@ -46,6 +46,12 @@
         ```
     - `role and tabindex` attributes - to change the role of non-semantic element and make it tabbable
 - accessible images
-    
+    - avoid non-blank alt attributes on background images. simply use `alt=""`
+    - add non-blank alt attributes on supporting images - `alt="pink flowers"`
+    - ensure the user gets the information that is needed when they tab on the image
+    - use `aria-labelledby` for images with captions.  Ensure to add `alt=""` if we use `aria-labelledby`
+    - if the image has important text, ensure the alt attribute or caption has that text.
+- 
+
 
     
