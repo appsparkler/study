@@ -102,7 +102,12 @@
         - as cross browser compatible as possible (toss it if it doesn't run on the most popular browsers)
         - support for interactive transcript
 
-
+## make a real life webiste accessible (practicals)
+- use lower case text - screen reader will read upper-case text as abbreviations - for example "CONTACT US" will be read as `Contact U S`
+- letter-spacing needs to be readable
+- use `aria-current="page"` - screen-reader will announce that use is currently on this page
+- avoid `title` tag on `a`, for ex. - otherwise SR will read it twice
+- use `outline` instead of `border` since the `border` changes the height of the element and jerks the UI
 
 
 
