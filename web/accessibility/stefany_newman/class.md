@@ -19,7 +19,6 @@
 - color blindness
 - hearing impairment
 - deaf
-- 
 
 ## Getting Started
 - semantic HTML
@@ -53,6 +52,7 @@
             <p id="caption">Red Gem</p>
         ```
     - `role and tabindex` attributes - to change the role of non-semantic element and make it tabbable
+    - `aria-hidden="true"` - will remove the entire element from the accessibility API
 - accessible images
     - avoid non-blank alt attributes on background images. simply use `alt=""`
     - add non-blank alt attributes on supporting images - `alt="pink flowers"`
