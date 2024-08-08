@@ -55,6 +55,10 @@
     - if the image has important text, ensure the alt attribute or caption has that text.
 - outline property
     - outline needs to be clearly visible, with the right contrast and color, to all users
-
+- tabindex
+    - 0 - to include element in tab-flow
+    - -1 - to remove element from tab-flow
+    - any-number - to manually set the tab-order
+- 
 
     
