@@ -8,6 +8,10 @@
 - Genymotion - tool to emulate android devices
 - Samsung remote test lab - https://developer.samsung.com/remote-test-lab
 - HSTS Preload - opt in for HTTPS here : https://hstspreload.org
+- https://developers.google.com/web/fundamentals/
+performance/
+- https://www.w3.org/webperf
+- https://developers.google.com/web/updates/
 
 ## Web Performance Optimization
 - intro - bounce rate is inversely proportional to the TTL.  More than 3 seconds TTL, the bounce rate increases exponentially.
