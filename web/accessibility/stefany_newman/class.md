@@ -11,6 +11,8 @@
 
 ## Personas
 - color blindness
+- hearing impairment
+- deaf
 - 
 
 ## Getting Started
@@ -51,7 +53,8 @@
     - ensure the user gets the information that is needed when they tab on the image
     - use `aria-labelledby` for images with captions.  Ensure to add `alt=""` if we use `aria-labelledby`
     - if the image has important text, ensure the alt attribute or caption has that text.
-- 
+- outline property
+    - outline needs to be clearly visible, with the right contrast and color, to all users
 
 
     
