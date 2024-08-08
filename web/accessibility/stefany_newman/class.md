@@ -8,6 +8,12 @@
     - Color Contrast Checker - https://webaim.org/resources/contrastchecker/
 - ARIA
     - https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-checked
+- OZ Player - accessible Video Player: https://www.accessibilityoz.com/ozplayer/
+- Multimedia Accessibility FAQ (W3C)
+- W3C Web Accessibility Initiaive
+- WebAIM
+- 10 Ways to Make Your Website Accessible (DeamHost)
+- American Sign Language is not English on the Hands
 
 ## Personas
 - color blindness
@@ -65,6 +71,39 @@
             - navigation links in the header
             - filters
     - skipping this is optional - we'll have a hidden-until-tabbed/focused link such as "Skip site navigation links" and "Skip product filters" or simply "Skip to Main" or "Skip to inventory"
-- 
+- accessible audio and video
+    - Providing captions and transcript
+        - this also adds points for SEO because SEs cannot go through our audio or video files
+    - captions can be open or closed
+    - captions need to be in various languages depending on our target audience
+    - include the captions in the title of the vides - for ex. `About Lets Recite [Closed Captions]`
+    - captions should be in good quality and grammar
+    - all on-screen-text needs to be showin in the caption/transcript
+    - audio descriptions need to be included - for ex. door bell rings, chimes, thunder, etc.
+    - placements should not block important sections on the video
+    - consider interactive-transcripts for extreme user experience
+    - audio/visual description - 
+    - for videos without voice and presentations - ensure we include a audio-feedback so that sight-impared users know what our content is about.
+    - IDV - consider Integrated Described Videos - 
+    - Sign language for hearing impared - there are 300 sign languages so adding all 300 might not be possible so it is important to know our target audience.
+    - accessible podcasts
+        - include interactive transcripts for hearing impaired 
+        - include transcripts in various languages for all users
+        - also consider sign-language
+        - enlist all speakers and links mentioned in the podcast
+    - careful with your audience
+        - avoid flashy videos, animations and sounds that may cause harm to users with epilepsy
+        - nevery autoplay videos
+    - accessible player
+        - displaying captions
+        - button for audio descriptions
+        - full screen option
+        - keyboard accessible
+        - as cross browser compatible as possible (toss it if it doesn't run on the most popular browsers)
+        - support for interactive transcript
+
+
+
+
 
     
