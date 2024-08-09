@@ -113,6 +113,10 @@
 - avoid placeholders since it gives a false idea that the form is populated.  Instead add some supporting text instead.
 - use descriptive text for buttons that submit a form - for ex. "Send Message" or "Subscribe to newsletter", etc.
 
+## advanced web accessibility techniques
+- always add form controls inside form
+- use `aria-live` for elements that get updated on the fly - for ex. a TODO list.
+- 
 
 
 
