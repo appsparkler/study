@@ -108,6 +108,11 @@
 - use `aria-current="page"` - screen-reader will announce that use is currently on this page
 - avoid `title` tag on `a`, for ex. - otherwise SR will read it twice
 - use `outline` instead of `border` since the `border` changes the height of the element and jerks the UI
+- make the code conditional on JS on/off.  For ex. if user keeps JS off, the hamburger menu should be expanded by default and if user keeps JS on, the hamburger menu should be collapsed
+- add `title` attributes to iframe
+- avoid placeholders since it gives a false idea that the form is populated.  Instead add some supporting text instead.
+- use descriptive text for buttons that submit a form - for ex. "Send Message" or "Subscribe to newsletter", etc.
+
 
 
 
