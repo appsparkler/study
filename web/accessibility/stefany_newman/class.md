@@ -115,8 +115,9 @@
 
 ## advanced web accessibility techniques
 - always add form controls inside form
-- use `aria-live` for elements that get updated on the fly - for ex. a TODO list.
-- 
+- use `aria-live` to announce 
+- ensure focus is moved in case of removing an element.
+- Exercise - create an accessible TO-DO form
 
 
 
