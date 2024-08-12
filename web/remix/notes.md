@@ -125,6 +125,9 @@ We can redirect to other pages in `action` or `loader`:
 return redirect(`/contacts/${contact.contactId}/edit`)
 ```
 
+## Using `NavLink` Component
+This component has a `className` prop which accepts a function which can return a string or a string.  The function has parameters - `isActive`, `isPending` and others which let us know the status of the route
 
-
+## Using navigation states
+With `useNavigation()`, we can get the navigation states which can be helpful in informing user about the navigation state - for ex. - showing a spinner, etc.
 
