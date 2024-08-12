@@ -42,3 +42,10 @@
 
 ## Using the Network panel
 - each request has several sub-tabs which can be very helpful.  For ex. the `Timing` tab is super useful to see the performance of a file
+
+## Using the application panel
+- This panel has sub-sections
+    - Application Section - for managing PWA - service workers, PWA, etc.
+    - Storage Section - all kinds of persistent storage - session storage, local storage, cookies, index-db, web-sql
+    - Cache section - all cache related information
+    - Background Services
