@@ -47,4 +47,11 @@ The Open Web Application Security Project
     - update out-of-date software and ensure all patches known vulnerabilities.
 
 ### 7 - Identification and Authentication
-- 
+- real world example
+    - someone shows up as a pilot and somehow the auth-check for this person is missed.
+- confirmation of the user's identity, authentication and session management is critical to protect from this.
+- example
+    - user "forgot password" - if the system doesn't check the OTP and accepts any OTP to reset the password
+    - certificate fraud - software communicates with host that provides certificate, but doesn't ensure the certificate is actually associated with the host.
+    - web app establishes a new user session without closing the previous one - expire session every 5 minutes to protect users from this kind of attacks
+
