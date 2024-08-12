@@ -55,3 +55,8 @@ The Open Web Application Security Project
     - certificate fraud - software communicates with host that provides certificate, but doesn't ensure the certificate is actually associated with the host.
     - web app establishes a new user session without closing the previous one - expire session every 5 minutes to protect users from this kind of attacks
 
+### 8 - Software and data integrity failures
+- CI/CD pipelines, for ex., have auto-update features - where dependencies are auto-updated without sufficient verification
+- ensure security checks within automated updates
+
+
