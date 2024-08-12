@@ -35,3 +35,8 @@ The Open Web Application Security Project
     - leaving the house without locking it
     - not wearing a seatbelt in a car
 - examples, are - weak passwords, etc.
+
+### 6 - Vulnerable and outdated components
+- we are vulnerable if the 3rd part software packages we use are vulnerable, outdated or unsuported.
+
+### 7 - 
