@@ -30,3 +30,11 @@
     - log
     - trace
     - table
+- we can use the command line within this panel for various things.  For ex.
+    - to copy a variable, we can `copy(variableName)`
+    - we can inspect an element with `inspect($_)`
+    - we can inspect all `div` elements, for ex., with `$$('ul')` 
+
+## Using the Sources panel
+- we can use this panel to view the compiled files and folders for the app
+- 
