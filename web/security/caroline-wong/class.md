@@ -37,6 +37,14 @@ The Open Web Application Security Project
 - examples, are - weak passwords, etc.
 
 ### 6 - Vulnerable and outdated components
+- real world examples 
+    - building a house with asbestos as insulation - anyone living there will like get poisoned.
+    - using glaze that has lead to mould a creamic bowl - anyone who eats that will get lead poisoning. 
 - we are vulnerable if the 3rd part software packages we use are vulnerable, outdated or unsuported.
+- steps to take to protect ourselves
+    - know what our assets are
+    - know if each component is vulnerable or not
+    - update out-of-date software and ensure all patches known vulnerabilities.
 
-### 7 - 
+### 7 - Identification and Authentication
+- 
