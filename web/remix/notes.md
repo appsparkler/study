@@ -98,5 +98,23 @@ HTML forms actually cause a navigation in the browser, just like clicking a link
 
 Without client side routing, the browser will serialize the form's data automatically and send it to the server as the request body for POST, and as URLSearchParams for GET. Remix does the same thing, except instead of sending the request to the server, it uses client side routing and sends it to the route's action function.
 
+## POST request:
+We can add a `http:POST` request like so:
+```tsx
+<Form method="post">
+    <button type="submit">New</button>
+</Form>
+```
+Now, when the `New` button is clicked, we can handle the request in an `action`:
+
+```tsx
+export const action = async() => {
+  const contact = await createEmptyContact();
+  return json({contact})
+}
+```
+
+## 
+
 
 
