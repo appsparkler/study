@@ -39,4 +39,20 @@ export const links: LinksFunction = () => [
     <Link to={`/contacts/1`}>Your Name</Link>
 ```
 
+## Loader and `useLoaderData`
+- We can execute server-side code with `loader` function.  For ex. in the `app/root.tsx` file:
+```tsx
+// setting up the loader to get data and pass it to the UI
+export const loader = async () => {
+  const contacts = await getContacts();
+  return json({ contacts });
+};
+
+// using the data
+export default function App() {
+  const { contacts } = useLoaderData<typeof loader>();
+    // somewhere in the JSX
+    // {contacts.map() ....}
+}
+```
 
