@@ -38,3 +38,4 @@
 ## Using the Sources panel
 - we can use this panel to view the compiled files and folders for the app
 - to open a file, we can use `CMD + P`
+- we can use the `File system` sub-tab to use Chrole Dev Tools as an editor and make LIVE changes
