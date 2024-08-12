@@ -37,4 +37,4 @@
 
 ## Using the Sources panel
 - we can use this panel to view the compiled files and folders for the app
-- 
+- to open a file, we can use `CMD + P`
