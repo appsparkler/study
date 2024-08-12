@@ -14,6 +14,7 @@ The Open Web Application Security Project
 - outsource the responsibility of storing sensitive data to credible 3rd parties
 
 ### 3 - Injection
+- real world example - naming a dog "Sit".  This confuses the dog
 - occurs when there's an opportunity for a user to provide an input and the application handles it incorrectly.
 - Types of injection
     - cross-site scripting occurs when 
@@ -23,4 +24,14 @@ The Open Web Application Security Project
     - SQL injection
         - is an attack to create, read, update or delete something in BE SQL
         - again, take advantage of unmonitored user input field to trick application
-        - 
+
+### 4 - Insecure Design
+- as developers, we sometimes include the file path and name of an important file in the error message - if we don't remove this in production, this information could be used for an attack.
+- passwords stored in plain text is another loop hole which could be used for an attack
+
+### 5 - Security Misconfiguration
+- real world examples
+    - not wearing a helmet for bike ride
+    - leaving the house without locking it
+    - not wearing a seatbelt in a car
+- examples, are - weak passwords, etc.
