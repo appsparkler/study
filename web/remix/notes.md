@@ -25,4 +25,18 @@ export const links: LinksFunction = () => [
 - `/contacts/123`
 - `/contacts/abc`
 
+## Outlet
+- we can add an `Outlet` tag and it will render the route in the Outlet, for ex. in our `app/root.tsx` file:
+```tsx
+<div id="detail">
+    <Outlet />
+</div>
+```
+
+## Client Side Routing - `<Link>` instead of `<a>`
+- Client side routing allows our app to update the URL without requesting another document from the server
+```tsx
+    <Link to={`/contacts/1`}>Your Name</Link>
+```
+
 
