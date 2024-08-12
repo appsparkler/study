@@ -117,7 +117,13 @@ export const action = async() => {
 ## Creating un-nested routes
 By default, Remix will automatically nest routes.  For ex. if we have 2 routes - `contacts.$contactId.tsx` and `contact.$contactId.edit.tsx` - Remix will expect the outlet on the `contactId` page.  To avoid this, we add and `_` at the end of the param in the filename - `contact.$contactId_.edit.tsx` - this tells Remix to not nest the route under `contact/<contactId>`
 
+## Redirecting
+We can redirect to other pages in `action` or `loader`:
 
+```tsx
+// inside action or loader
+return redirect(`/contacts/${contact.contactId}/edit`)
+```
 
 
 
