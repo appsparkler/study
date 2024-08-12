@@ -92,3 +92,8 @@ if(!contact) {
     throw new Response("Not Found", {status: 404})
 }
 ```
+
+## An important note on `HTML Forms`:
+HTML forms actually cause a navigation in the browser, just like clicking a link. The only difference is in the request: links can only change the URL while forms can also change the request method (GET vs. POST) and the request body (POST form data).
+
+
