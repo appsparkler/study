@@ -56,3 +56,39 @@ export default function App() {
 }
 ```
 
+## Handling Errors
+### Step 1: To add types to the params, we can use `LoaderFunctionArgs` - we need to do this to avoid params being of type `any`
+```tsx
+import { LoaderFunctionArgs } from "@remix-run/node";
+
+export const loader = ({params}:LoaderFunctionArgs) => {
+    return ...
+}
+```
+### Step 2: Use `invariant` to make the `params.contactId` type-safe. `params.contactId` is narrowed down to type of `string` since `Params` in `LoaderFunctionArgs` has type like so:
+
+```tsx 
+export type Params<Key extends string = string> = {
+    readonly [key in Key]: string | undefined;
+};
+```
+
+```tsx
+import invariant from 'tiny-invariant'
+import { LoaderFunctionArgs } from "@remix-run/node";
+
+export const loader = async({params}:LoaderFunctionArgs) => {
+    invariant(params.contactId, "Missing Contact Id");
+    const contact = await getContact(params.contactId); //params.contactId is typeof string :)
+    return ...
+}
+```
+
+### Step 3: Throwing Error
+We can throw errors on server-side as a `Response`:
+```tsx
+// inside a loader
+if(!contact) {
+    throw new Response("Not Found", {status: 404})
+}
+```
