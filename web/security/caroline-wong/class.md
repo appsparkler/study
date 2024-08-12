@@ -59,4 +59,12 @@ The Open Web Application Security Project
 - CI/CD pipelines, for ex., have auto-update features - where dependencies are auto-updated without sufficient verification
 - ensure security checks within automated updates
 
+### 9 - Security logging and montoring failures
+- Without logging and monitoring, breaches cannot be detected.
+
+### 10 - Server Side Request Forgery (SSRF)
+- allows an attacker to coerce the application to send a crafted request to an unexpected destination.
+
+
+
 
