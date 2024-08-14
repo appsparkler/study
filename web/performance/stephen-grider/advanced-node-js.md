@@ -47,3 +47,9 @@ Imagine event loop to be like a `while loop` which starts once a NodeJS program 
 
 ## Is Node single threaded
 - Some of Node Framework/Std. lib is not single threaded!
+- If we execute this line multiple times (paralelly, max 4), we'll notice that it takes about the same time it does for executing it once:
+```js 
+console.log(Date.now()); crypto.pbkdf2('a', 'b', 100000, 512, 'sha512', () => {console.log(Date.now())})
+```
+- this efficiency is handle by `Thread pool` managed by the `libuv` library
+
