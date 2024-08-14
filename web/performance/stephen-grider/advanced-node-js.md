@@ -34,7 +34,7 @@ Imagine event loop to be like a `while loop` which starts once a NodeJS program 
     1. there are any pending timers
     1. there are any pending OS operations
     1. there are any pending long running operations
-- the body of this imaginary event loop (while loop) exececutes in a single tick (a tick is )
+- the body of this imaginary event loop (while loop) exececutes in a single tick (so, a tick is basically a single execution of an event-loop)
 - Inside this imaginary event loop, there's a pause after 2 basic checks:
     1. Node looks at pendingTimers and see if any functions are ready to be called (`setTimeout` and `setInterval`)
     1. Node looks at pending OS Tasks and calls relevant callbacks
@@ -52,4 +52,8 @@ Imagine event loop to be like a `while loop` which starts once a NodeJS program 
 console.log(Date.now()); crypto.pbkdf2('a', 'b', 100000, 512, 'sha512', () => {console.log(Date.now())})
 ```
 - this efficiency is handle by `Thread pool` managed by the `libuv` library
+- What functions use the thread-pool? - All fs functions
+- All networking related operations are not handled by V8 or libuv, they are instead handed over to OS Aysnc/Networking Helpers.
+- What functions in node std library use the OS's async features? - almost everything around networking for all OSs. 
+    - the tasks under OS are reflected in our `pendingOsTasks` array.
 
