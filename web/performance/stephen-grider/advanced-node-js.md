@@ -25,3 +25,8 @@ https://marcelclasses.udemy.com/course/advanced-node-for-developers/learn/lectur
 - 2 ways we can improve performance 
     1. add more CPU cores
     1. allow the OS scheduler to detect big pauses in processing time in expensive i/o processes.
+
+## Event Loop
+- each thread has a `event loop` which is a control protocol that defines what the thread will be doing at any point in time.
+- every program has only one event loop
+- 
