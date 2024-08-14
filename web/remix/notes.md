@@ -135,3 +135,8 @@ With `useNavigation()`, we can get the navigation states which can be helpful in
 - every route, from the root-route has an index route.  We can add an index route with `index.tsx`.  For ex. `dashboard/index.tsx`
 - it renders this route when there are no other routes to render in the parent routes `<Outlet />`
 - for the root route's `index`, we need to prefix `_` else it will consider `/index` as a separate page.  So the route would be `_index.tsx`
+
+## Navigation within the component
+- we can use `navigate(-1)` to navigate to the previous route.  If there is no previous route, it will navigate to the parent route
+
+
