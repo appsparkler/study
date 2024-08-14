@@ -29,4 +29,3 @@ https://marcelclasses.udemy.com/course/advanced-node-for-developers/learn/lectur
 ## Event Loop
 - each thread has a `event loop` which is a control protocol that defines what the thread will be doing at any point in time.
 - every program has only one event loop
-- 
