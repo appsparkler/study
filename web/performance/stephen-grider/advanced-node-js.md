@@ -29,3 +29,18 @@ https://marcelclasses.udemy.com/course/advanced-node-for-developers/learn/lectur
 ## Event Loop
 - each thread has a `event loop` which is a control protocol that defines what the thread will be doing at any point in time.
 - every program has only one event loop
+## What causes the event loop to be runnin?
+Imagine event loop to be like a `while loop` which starts once a NodeJS program is executed.  The loop doesn't end until:
+    1. there are any pending timers
+    1. there are any pending OS operations
+    1. there are any pending long running operations
+- the body of this imaginary event loop (while loop) exececutes in a single tick (a tick is )
+- Inside this imaginary event loop, there's a pause after 2 basic checks:
+    1. Node looks at pendingTimers and see if any functions are ready to be called (`setTimeout` and `setInterval`)
+    1. Node looks at pending OS Tasks and calls relevant callbacks
+    1. now the never-ending pause - until
+        1. a new timer is about to complete
+        1. a new pending operation task is done
+        1. a new pending task is done
+    1. Look at pendingTimers, call any `setImmediate`s
+    1. Handle any `close` events - for ex. `readStream.on('close', handleClose)`
