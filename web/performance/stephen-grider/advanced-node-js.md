@@ -44,3 +44,6 @@ Imagine event loop to be like a `while loop` which starts once a NodeJS program 
         1. a new pending task is done
     1. Look at pendingTimers, call any `setImmediate`s
     1. Handle any `close` events - for ex. `readStream.on('close', handleClose)`
+
+## Is Node single threaded
+- Some of Node Framework/Std. lib is not single threaded!
