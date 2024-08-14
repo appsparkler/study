@@ -139,4 +139,13 @@ With `useNavigation()`, we can get the navigation states which can be helpful in
 ## Navigation within the component
 - we can use `navigate(-1)` to navigate to the previous route.  If there is no previous route, it will navigate to the parent route
 
+## Using the URL Search Params
+- We can use the native API `URL` to pass the search params from the loader to the component.  For ex:
+
+```tsx
+// inside the loader
+const url = new URL();
+const q = url.searchParams.get("q");
+return json({contacts, q});
+```
 
