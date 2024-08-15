@@ -149,3 +149,31 @@ const q = url.searchParams.get("q");
 return json({contacts, q});
 ```
 
+## Replacing the history stack
+- while navigating, we can replace the history with the second argument to `navigate`
+```tsx
+// inside the component
+const isFirstSearch = q === null;
+navigate(event.currentTarget, {
+    replace: true // !isFirstSearch
+})
+```
+
+## Fetcher Form
+- many times we don't want to navigate or redirect while submitting a form like we did for edit and delete.  We simply want to update the UI.  In that case, we can use the `fetcher` API.  For ex.
+```tsx
+const fetcher = useFetcher();
+
+<form.Fetcher>
+    <button name="favorite" value="true/false" aria-label="Add to favorites/Remove from favorites" value={contact.favorite ? "false" : "true"}>...</button>
+</form.Fetcher>
+```
+
+## Optimistic UI
+- we can setup optimistic UI with fetcher:
+```tsx
+// if formData is available on fetcher, lets already show the new state, else, lets show the existing state
+const favorite = fetcher.formData ? fetcher.formData.get("favorite") === "true" : contact.favorite
+```
+
+
