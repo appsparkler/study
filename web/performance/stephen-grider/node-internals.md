@@ -29,6 +29,7 @@ https://marcelclasses.udemy.com/course/advanced-node-for-developers/learn/lectur
 ## Event Loop
 - each thread has a `event loop` which is a control protocol that defines what the thread will be doing at any point in time.
 - every program has only one event loop
+
 ## What causes the event loop to be runnin?
 Imagine event loop to be like a `while loop` which starts once a NodeJS program is executed.  The loop doesn't end until:
     1. there are any pending timers
