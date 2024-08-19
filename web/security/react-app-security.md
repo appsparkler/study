@@ -19,4 +19,6 @@ https://www.linkedin.com/learning/react-securing-applications-2/securing-react-a
 - be careful with any data on client - always use server-side implementation for validations, etc.
 - use `<React.Strict>` on the application root
 
-
+## Best Practices
+- always use `https`
+- audit our app regularly with tools like Snyk and/or `npm audit`
