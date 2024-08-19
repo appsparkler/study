@@ -82,7 +82,3 @@
 - Preload fonts and optimize their loading
 - reduce jitter, reshuffle or resizing changes - for ex. show a smaller image with same w:h ratio initiall before showing the main image
 - preventing content-reflow from lazy loaded images: https://css-tricks.com/preventing-content-reflow-from-lazy-loaded-images/
-
-
-
-
