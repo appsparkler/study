@@ -11,3 +11,6 @@
     - Frequently Asked Questions
     - Support / help pages
     - Social media channels
+- focus indicator needs to be visible clearly on B/W mode of our website.
+- focus should not be hidden behind other elements - for ex. by the chat box
+- avoid drag and drop
