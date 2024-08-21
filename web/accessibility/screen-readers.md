@@ -1,9 +1,26 @@
-### Screen Readers
+# Screen Readers
 
-### Voice Over
+## Tools and Resources:
+- Screen Readers Guides - https://dequeuniversity.com/screenreaders/
+- Whats new in WCAG 2.2 - https://www.youtube.com/watch?v=5yhL8q8hDMA
 
+## Voice Over
+https://www.youtube.com/watch?v=5R-6WvAihms
+- THE VOICE OVER KEY (VOKEY) - CTRL + OPTION
+- navigate around the page - VOKEY + RIGHT/LEFT ARROW
+- navigate headings - VOKEY + CMD + H
+- clicking on elements - VOKEY + space bar
+- changing the pitch (vo talkback speed) -  VOKEY + CMD + UP/DOWN
+- changing other vo options VOKEY + CMD + LEFT/RIGHT
+- turn on/off Voice Over - CMD + F5
+- jump into a web-page - VOKEY + SHIFT + DOWN
+- rotor
 
-### NVDA Getting started
+### The Rotor
+- open rotor (the elements browsers) - CTRL + ALT + U
+- 
+
+## NVDA Getting started
 https://www.youtube.com/watch?v=Jao3s_CwdRU
 
 ## NVDA
