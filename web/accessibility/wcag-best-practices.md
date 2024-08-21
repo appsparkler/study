@@ -1,4 +1,5 @@
 # WCAG best practies
+https://www.youtube.com/watch?v=5yhL8q8hDMA
 
 ## Best Practices 
 - Show "billing address is same as shipping address"
