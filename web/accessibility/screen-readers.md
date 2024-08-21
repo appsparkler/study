@@ -1,4 +1,9 @@
-# NVDA Getting started
+### Screen Readers
+
+### Voice Over
+
+
+### NVDA Getting started
 https://www.youtube.com/watch?v=Jao3s_CwdRU
 
 ## NVDA
@@ -20,3 +25,4 @@ https://www.youtube.com/watch?v=Jao3s_CwdRU
 ## Elements List
 - NVDA has an element list dialog with which user can easily navigate between the links, headings and landmarks on the site.
 - open elements list - CAPS + F7
+
