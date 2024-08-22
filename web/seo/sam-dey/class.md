@@ -2,6 +2,8 @@
 
 ## Tools and Resources
 - https://backlinko.com/hub/seo/architecture - article about SEO website structure 
+- Broken Links checker - https://ahrefs.com/broken-link-checker
+
 
 ## Website structure
 - It is a very important factor.  During planning stage itself, we need to create a robust website structure.
@@ -27,4 +29,11 @@
     - use breadcrumbs - 
 
 ## URLs of e-commerce
-- 
+- https instead of http
+    - buy, activate and install the certificate
+    - ⭐️ add target key words in the URL 
+    - add categories in URL - for ex. https://letsrecite.app/learn-to-recite/the-essence-of-the-bhagavad-gita/chapter-02/verse-47 instead of https://letsrecite.app/3asdf82asdfasdf42/23asdf42-2sadf3asdf42asdf4
+- sub-directories are preferred to sub-domains unless you have a separate concept, niche or product in which case sub domains are a good option.
+- descriptive anchor text instead of "click here" 
+- managing broken and redirect links - Google Search Console -  
+refs.com/broken-link-checkers - 
