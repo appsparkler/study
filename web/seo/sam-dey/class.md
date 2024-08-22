@@ -3,6 +3,7 @@
 ## Tools and Resources
 - https://backlinko.com/hub/seo/architecture - article about SEO website structure 
 - Broken Links checker - https://ahrefs.com/broken-link-checker
+- keyword research - https://answerthepublic.com
 
 
 ## Website structure
@@ -36,4 +37,21 @@
 - sub-directories are preferred to sub-domains unless you have a separate concept, niche or product in which case sub domains are a good option.
 - descriptive anchor text instead of "click here" 
 - managing broken and redirect links - Google Search Console -  
-refs.com/broken-link-checkers - 
+refs.com/broken-link-checkers
+
+## Optimizing product pages for SEO
+- think deeply about what someone will type for your specific offering.  use those keywords for each page.
+- be intentional and create your pages with meaning and depth to attract real users - your users will only be as real as your content.
+- Buyer journeys and keywords
+    - Focus on keywords that:
+        - have clear intent
+        - seek information about your offering
+        - suggest searches may benefit from our product at some stage
+- Search intent can be one of four types:
+    ![search intent](image.png)
+    - create content for users with all intents
+- create a brand
+    - being active on Social Media with your offering
+    - working with blogs and influencers
+    - run PR campaigns
+- 
