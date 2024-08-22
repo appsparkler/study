@@ -54,4 +54,4 @@ refs.com/broken-link-checkers
     - being active on Social Media with your offering
     - working with blogs and influencers
     - run PR campaigns
-- 
+- use `canonical` url - for pages that could have multiple versions
