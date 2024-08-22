@@ -21,4 +21,10 @@
     - fix pages that have issues
     - sending social signs to our website
     - update our website often
+- navigation considerations - issues with navigation
+    - duplicate content
+    - faceted navigation - i.e. multiple URLs to land on the same page
+    - use breadcrumbs - 
+
+## URLs of e-commerce
 - 
