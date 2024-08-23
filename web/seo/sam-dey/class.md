@@ -70,4 +70,12 @@ refs.com/broken-link-checkers
 - ⭐️ Rich Snippet Optimization - 
     1. use Google Structured Data Markup Helper to create the rich snippet and then add it to our site.  
     1. next, we can check the result on rich-result-test by Google
-    
+- Social media and video 
+    - update all data on Instagram, Pinterest, etc. and interconnect social media with our app - it too will show up on the SERP
+    - use YT for creating content
+    - Content should aim to
+        - Educate
+        - Inspire
+        - Entertain
+
+
