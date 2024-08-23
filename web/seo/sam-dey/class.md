@@ -4,6 +4,8 @@
 - https://backlinko.com/hub/seo/architecture - article about SEO website structure 
 - Broken Links checker - https://ahrefs.com/broken-link-checker
 - keyword research - https://answerthepublic.com
+- Google Structured Data Marker Helper - This tool by Google is very helpful for adding structured data for our products
+- 
 
 
 ## Website structure
@@ -57,3 +59,15 @@ refs.com/broken-link-checkers
 - for duplicate content
     - use `canonical` url - for pages that could have multiple versions
     - use 301 redirects
+- interstial content - sale pop-ups, etc. that hide the main content may be bad for SEO
+- ensure pages are loading
+- ensure page is relevant to keywords
+- use good, readable fonts and clear images
+
+## SERP - Search Engine Result Page
+- Meta Title - will appear on the SERP
+- Meta Description - will appear as the description for our page on the SERP
+- ⭐️ Rich Snippet Optimization - 
+    1. use Google Structured Data Markup Helper to create the rich snippet and then add it to our site.  
+    1. next, we can check the result on rich-result-test by Google
+    
