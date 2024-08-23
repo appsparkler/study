@@ -9,3 +9,18 @@
 - so the question is - is the provider capable or incapable of providing?
 - the ability or the disablity is of the provider/environment - since the same person in an accessible environment becomes capable.
 > People have impairments, it is the environments/providers inability that make them disabled.
+![equity v/s equality](image.png)
+
+- `compliant !== accessible` 
+    - tools will tell us that we are compliant but we may yet not be accessible
+    - being compliant is good but being accessible is the key
+- compliance breakdown - accessibility is done right at all three stages of the app:
+    - design - the wireframes and designs
+    - code - the code
+    - content - the app content
+
+## How?
+- accessibility should be just as much as part of writing an event handler, CSS styles or some logic.  It shouldn't be considered as a "separate" activity.
+- 
+
+Hello World
