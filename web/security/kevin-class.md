@@ -21,3 +21,23 @@ https://www.linkedin.com/learning/programming-foundations-web-security-22680062/
     criminals | mixed | high | thefts, scams | as the name suggest
     tropy hunters | high | medium | bragging rights | for name and fame
     governments | very high | very high | intel, espionage, etc.
+
+## General Security Principle
+- least privilage 
+    - users ought to be given least privilege to a system - only enough to accomplish the task
+    - this principle can be applied to
+        - APIs
+        - system resources
+        - database access
+        - software version control
+        - public facing webpages
+        - code - not all methods and variables need to be exported!
+- simple is more secure - write clean code
+    - Use clearly named functions and variables
+    - Write code comments
+    - Prefer built-in functions
+    - Remove cruft
+    - Disable unused features
+    - Break up long sections of code
+    - Don't repeat yourself
+
