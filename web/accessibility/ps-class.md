@@ -1,5 +1,9 @@
 # Accessibility
 
+## Tips
+- use `sr-only` class
+- use the `Accessibility` tab on 
+
 ## Why?
 - We have the opportunity to make things accessible
 - Think about the visually challenged persona - they are just seeing a blur or complete darkness.  Isn't your offering for this persona as well?
@@ -21,6 +25,18 @@
 
 ## How?
 - accessibility should be just as much as part of writing an event handler, CSS styles or some logic.  It shouldn't be considered as a "separate" activity.
-- 
+- Add landmarks
+    - Example code
+    ```html
+        <!--  sr-only class visually hide the element with position absolute and left: -10000px; overflow: hidden;-->
+        <main
+            aria-labelledby="page-title"
+        >
+            <h1 id="page-title" className="sr-only">Products</h1>
+        </main>
+    ```
+- Use `role="alert"` to publish any content that needs to be announced
+- use `aria-live="assertive"` to jump the queue and announce the contents
+- use `aria-labelledby` instead of `aria-label` for translated content.
 
-Hello World
+
