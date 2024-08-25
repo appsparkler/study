@@ -207,7 +207,16 @@ https://www.linkedin.com/learning/programming-foundations-web-security-22680062/
         - throttling - regulating the flow to keep it below the maximum level. aka rate-limiting
         - sinkholing - traffic is re-routed to a new destination - usually a server that can capture and alayze the traffic
         - blackholing - traffic return null or nothing
-        - 
+
+## Other important tips
+- update software regularly
+- back up data
+- secure your domain
+    - use multifactor authentication for our registar
+    - use DNSSEC (DNS SECurity Extensions)
+- secure your server
+- join the security communities
+
 
 
     
