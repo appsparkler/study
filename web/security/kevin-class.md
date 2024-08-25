@@ -173,8 +173,20 @@ https://www.linkedin.com/learning/programming-foundations-web-security-22680062/
     - expire and remove old sessions
     - destroy the session when user logs out
     - regenerate session id after re-login
-    
-
+    - comparing user-agent strings or ip address is not recommended though it is quite popular.  the above methods provide more security.
+- Session Fixation - in this type, the session-id is provided by the attacker.  Once the user logs in, the attacker gains access to users account.
+    - machine in the middle attack
+    - protection
+        - never accept session-id in GET or POST requests
+        - only accept them in secure cookies
+        - other protection are similar to session hijacking protection
+- Remote Code Execution (RCE) 
+    - avoid using system execution functions
+    - disable functions
+    - do not use dynamic data
+    - validate data, use allow list, 
+    - sanitize data
+- 
 
 
     
