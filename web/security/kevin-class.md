@@ -215,7 +215,7 @@ https://www.linkedin.com/learning/programming-foundations-web-security-22680062/
     - use multifactor authentication for our registar
     - use DNSSEC (DNS SECurity Extensions)
 - secure your server
-- join the security communities
+- join the security communities - read blogs, attend confrences, stay in touch.
 
 
 
