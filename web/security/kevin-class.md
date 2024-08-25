@@ -75,9 +75,40 @@ https://www.linkedin.com/learning/programming-foundations-web-security-22680062/
 - keep error messages vague 
     - for ex. use 500 (internal server error) instead of 404 or other speicific error - this will create obscurity which will add another layer of protection
     - ensure logging is removed for production environments
-- smart logging
+- smart logging (logs)
     - three main activities that need to be logged:
         1. errors - as many details as possible to understand the state of the application 
         1. sensitive actions
         1. suspicious activity
+
+## The Most Common Attack
+- credential attacks: Protection from this attack:
+    - strong passwords
+            - min 12 chars
+            - use character variety
+            - avoid patterns and dictionary words
+            - use a password manager with features
+                - strong password generator
+                - form autofill
+                - note storage
+            - popular password managers
+                - 1Password
+                - LastPass
+                - BitWarden
+                - Dashlane
+    - where available - use SSH keys instead of password - for ex. on GitHub and other domains where available
+    - use Yubi Key 
+    - use MS or Google authenticators 
+    - our architecture
+        - protect users - hash their passwords with an encrypting system - Bcrypt aka Blowfish
+        - use login throttling - wait time before next-try for 5 wrong attemts, for ex.
+- URL Manipulation - an attacker may add parameters that could leak information from our site
+    - this is called IDOR - Insecure Direct Object Reference - i.e. access is permitted without auth check
+    - protection agains this attack
+        - use allow list for acceptable params
+        - handle params gracefully and vaguely
+        - use access-control for privileged pages and actions
+- SQL Injection
+    
+
 
