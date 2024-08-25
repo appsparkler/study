@@ -197,8 +197,17 @@ https://www.linkedin.com/learning/programming-foundations-web-security-22680062/
         - don't make user uploaded files available for public download
         - validate size, file type, file-name, mime-type, etc.
         - scan servers for malware
-- Denial of Service attack - prevents legitimate users from using a service they have priviliges to
-- 
+- Denial of Service attack - DoS- prevents legitimate users from using a service they have priviliges to.
+    - use flooding or crashing to make service unavailable
+    - protection - 
+        - first check if DoS is in our threat model
+        - if it is, use 3rd party service to secure our data from attacks
+        - Azure, Cloudfare, Project Shield, etc.
+        - filtering - applies certain rules to incoming traffic - not all requests are let through.
+        - throttling - regulating the flow to keep it below the maximum level. aka rate-limiting
+        - sinkholing - traffic is re-routed to a new destination - usually a server that can capture and alayze the traffic
+        - blackholing - traffic return null or nothing
+        - 
 
 
     
