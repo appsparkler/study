@@ -6,13 +6,16 @@ https://www.linkedin.com/learning/programming-foundations-web-security-22680062/
     - https://csp-evaluator.withgoogle.com
     - https://content-security-policy.com
 
-
 ## Security
 - Threat Model - think of web security in terms of how a king and queen would protect their castle.  Depending on the current state of affairs, they need to draw up a threat model:
     - profile of an attacker
     - likely attack vectors
     - high value assets
     - vulnerabilities
+- 3 goals of data security
+    - confidentiality
+    - integrity
+    - availability
 
 ## Profile of an attacker
 - hackers can be of two kinds - 
@@ -186,6 +189,15 @@ https://www.linkedin.com/learning/programming-foundations-web-security-22680062/
     - do not use dynamic data
     - validate data, use allow list, 
     - sanitize data
+- file upload abuse
+    - too many, too large or too frequent
+    - protection
+        - require user to login before they can upload files
+        - don't allow anonymous uploads
+        - don't make user uploaded files available for public download
+        - validate size, file type, file-name, mime-type, etc.
+        - scan servers for malware
+- Denial of Service attack - prevents legitimate users from using a service they have priviliges to
 - 
 
 
