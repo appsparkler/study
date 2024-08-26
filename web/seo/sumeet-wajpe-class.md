@@ -30,7 +30,7 @@
 1. check the search volumes on Google Keyword planner
 
 ## Practicals
-1. consider adding a brief/short description or a punchline in the title
+1. consider adding a brief/short description or a punchline in the `<title>` tag
 1. use `<meta name="keywords" content="" >`
 1. look at source code of big players for how they're 
 
