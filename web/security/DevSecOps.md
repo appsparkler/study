@@ -9,4 +9,17 @@
 - DevSecOps - a community resource
 - DecSecOps Reference Design - handbook unclassified by the USA DoD
 - devsecops/awesome-devsecops on Github
-- 
+
+## Why?
+- DevOps brings the three groups together
+    1. Development
+    1. Testing
+    1. Operations
+- Issues with DevOps
+    - lack of automation
+    - security is not immune to the effect of DevOps
+    ![normal security process](image-1.png)
+
+## Welcome DevSecOps
+- real time notification for developers
+- ChapOps, not PDFs - JIRA, Teams, etc.
