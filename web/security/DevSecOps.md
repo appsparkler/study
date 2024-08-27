@@ -38,5 +38,5 @@
 - **dev team and security team are partners.  Dev team is responsible, security team is accountable.**
 
 ## Getting started with DSO
-- Cloud is fast, agile and more secure.  To truly capture the value of DevOps and Cloud, you need both.
+- Cloud and DevOps - Cloud is fast, agile and more secure.  To truly capture the value of DevOps and Cloud, you need both.
 - 
