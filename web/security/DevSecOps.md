@@ -39,4 +39,13 @@
 
 ## Getting started with DSO
 - Cloud and DevOps - Cloud is fast, agile and more secure.  To truly capture the value of DevOps and Cloud, you need both.
-- 
+- APIs are essentials - ex. Burp
+- Finding the right toolset. Questions to ask:
+    - what languages do we need to support?
+    - what technologies do we need to use?
+    - what tests do you need to cover?
+- Tools
+    - SAST - has many false positives
+    - commercial - fortify, veracode, checkmarx
+    - open source - find sec bugs, brakeman, pmd
+    
