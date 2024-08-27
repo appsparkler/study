@@ -21,5 +21,22 @@
     ![normal security process](image-1.png)
 
 ## Welcome DevSecOps
-- real time notification for developers
-- ChapOps, not PDFs - JIRA, Teams, etc.
+- Need to 
+    1. Automation 
+        - this is the key.  All tools need to be upgraded as everything needs to happen quickly.  Only meaningful results needs to be pushed for developers to consume on the fly.
+        - flip the role of security team to auditor
+        - real time notification for developers
+        - ChapOps, not PDFs - JIRA, Teams, etc.
+    1. Education - educate/train developers
+    1. Empowerment
+        - ensure developers have the tools and resources to fix security issues
+        - empower the developer to own the security
+- **shifting security to the left** - bring it closer to the development team - the security team needs to provide developers 
+    1. the framework
+    1. the tools
+    1. the expertise
+- **dev team and security team are partners.  Dev team is responsible, security team is accountable.**
+
+## Getting started with DSO
+- Cloud is fast, agile and more secure.
+- 
