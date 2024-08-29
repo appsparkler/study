@@ -8,6 +8,7 @@ https://www.smashingmagazine.com/2018/06/nodejs-tools-techniques-performance-ser
 - clinic - NPM module for diagnozing perfomrance with NodeJS
     - clinic doctor
     - clinic flame
+- pino - NPM NodeJS logger
 
 ## Executing Benchamarking Calls with AutoCannon and clinic
 - autocannon
@@ -22,4 +23,4 @@ https://www.smashingmagazine.com/2018/06/nodejs-tools-techniques-performance-ser
 ## Preventing performance problems
 - making `autocannon` and `clinic` as part of everyday development
 - use these tools to evaluate libraries being added to the project
-- 
+- use an efficient logger - for ex. `pino` is the fastest one recommended.
