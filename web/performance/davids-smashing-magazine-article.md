@@ -3,3 +3,4 @@ https://www.smashingmagazine.com/2018/06/nodejs-tools-techniques-performance-ser
 
 ## Tools
 - autocannon - NPM module for benchmarking
+- clinic - NPM module for diagnozing perfomrance with NodeJS
