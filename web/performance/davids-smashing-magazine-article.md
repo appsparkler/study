@@ -18,3 +18,8 @@ https://www.smashingmagazine.com/2018/06/nodejs-tools-techniques-performance-ser
     > Note: no need to start a server separately - this command with start the server as well
     - doctor - `clinic doctor --on-port='autocannon -c100 localhost:3000/seed/v1' -- node index.js`
     - flame - `clinic flame --on-port='autocannon -c100 localhost:3000/seed/v1' -- node index.js`
+
+## Preventing performance problems
+- making `autocannon` and `clinic` as part of everyday development
+- use these tools to evaluate libraries being added to the project
+- 
