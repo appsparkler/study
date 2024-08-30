@@ -1,6 +1,15 @@
 # WCAG best practies
 https://www.youtube.com/watch?v=5yhL8q8hDMA
 
+# WCAG 2.0
+Web Content Accessibility Guidelines
+
+## The 4 princiles (P.O.U.R)
+- P - Perceivable - ensuring that we provide appropriate content for all users regardless of disabilities or accessibilities challenge they might face
+- O - Operable - do everything on keybord you can do with a mouse
+- U - Understandable - ensure that our content is digestible by everyone 
+- R - Robust - ensure our site works with all agents (devices/software, etc.) and assisted technology
+
 ## Best Practices 
 - Show "billing address is same as shipping address"
 - Help pages to have the following information:
