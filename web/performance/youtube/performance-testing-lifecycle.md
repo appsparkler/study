@@ -2,7 +2,7 @@
 https://www.youtube.com/watch?v=7di60jrzQLQ
 
 ## 6 phases of the cycle
-1. Requirement Gathering
+1. PT Requirement Gathering
     - Purpose
         - Performance testing requirements are identified.
         - The gathered requirements are analyzed.
@@ -23,7 +23,14 @@ https://www.youtube.com/watch?v=7di60jrzQLQ
         - Server CPU utilization should not exceed 70%.
         - Server memory utilization should not exceed 60%.
         - Optional: During some days, site receives more traffic. Account for that too.
-1. Planning
+    - Challenges
+        - Vague requirements
+            - Ask questions.
+            - Go through historical usage patterns.
+            - If application is new, use step-up approach - load testing - keep increasing load.
+        - Lot of co-ordination between different teams.
+1. PT Planning
+    
 1. Test Design
 1. Test Execution
 1. Test Reporting
