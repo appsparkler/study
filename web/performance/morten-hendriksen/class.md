@@ -2,6 +2,18 @@
 
 Websites should load efficiently and effectively for all users - someone with a fastest speed connection on an ultra HD device as well as someone in a village with extremely poor network and a legacy device.
 
+## Web Performance Focus Areas
+1. reduce overall load time 
+    - minify and compress assets
+    - advanced loading and caching techniques
+    - serve only what they need
+1. making the site usable as soon as possible
+    - load critical components first, defer less important features later
+    - preloading next experiences
+1. smoothness and itneractivity
+    - improve perceived performance - skeletons, progress components and other clear indications
+1. performance measurements - use tools and metrics
+
 ## Web Developer Tools
 - Network Tab - we can reload the page by disabling cache and analyze the waterfall table for resource-loading
 - Performance Tab - click on start profiling
