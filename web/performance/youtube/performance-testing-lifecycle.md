@@ -30,8 +30,45 @@ https://www.youtube.com/watch?v=7di60jrzQLQ
             - If application is new, use step-up approach - load testing - keep increasing load.
         - Lot of co-ordination between different teams.
 1. PT Planning
-    
-1. Test Design
+    - Purpose
+        - Detailed performance test strategy and plan is prepared.
+        - All these details are captured in performance test plan document.
+        - Performance test plan is signed off.
+    - Approach
+        - Overall performance testing activities are planned and documented as
+        Performance Test Plan by Test Manager or Test Lead.
+        - This test plan will have details such as :
+            - Performance test scope
+            - Test entry and exit criteria
+            - Tooling and resourcing requirements
+            - Test environment and test data
+            - Test execution strategy
+            - Any 3rd party dependencies
+            - Metrics that will be captured
+            - Risk identification and mitigation steps
+            - etc.
+        - The test plan is reviewed and approved by project team.
+1. PT Design
+    - Purpose
+        - Creating performance test scripts as per test plan.
+        - Validating that the test scripts are working as intended.
+        - Get test scripts reviewed.
+    - Approach
+        - Test scripts are typically created by Performance Testers.
+        - They go through all scenarios documented in performance test plan.
+        - Test scripts are prepared based on the requirements.
+            - Recording the test scripts.
+            - Enhancing the test script by adding any custom logic, think time, assertions etc.
+            to simulate real world scenarios.
+            - Validating the scripts.
+            - Scripts are debugged if they are not working as expected.
+        - Scripts are reviewed and verified by Test Manager or Test Lead.
+    - Challenges
+        - Unavailability of performance test environment.
+            - Try to make the script reusable.
+            - Validate the script thoroughly on performance test environment.
+        - Unavailability of 3rd party services or required APls.
+            - Mocking/service virtualization
 1. Test Execution
 1. Test Reporting
 1. Performance Tuning
