@@ -69,6 +69,37 @@ https://www.youtube.com/watch?v=7di60jrzQLQ
             - Validate the script thoroughly on performance test environment.
         - Unavailability of 3rd party services or required APls.
             - Mocking/service virtualization
-1. Test Execution
-1. Test Reporting
+1. PT Execution
+    - Purpose
+        - Run performance tests.
+        - Analyze performance test results.
+        - Raise a defect in case any performance bottleneck is found.
+    - Approach
+        - Performance Testers run the scripts to generate load on the application.
+            - Load generators are used.
+            - Graphs and metrics are monitored while test is running.
+            - Application resource usage is also monitored.
+        - At the end of a test run, junk records are cleared.
+        - Metrics captured for test run are compared against the test plan.
+        - Defect is raised in case a performance bottleneck is found.
+        - Root cause analysis is performed by relevant team members.
+1. PT Reporting
+    - Purpose
+        - Prepare a final performance test report.
+        - Provide a Go/No-go decision.
+        - Provide performance recommendations.
+        - Bring an attention to any performance related risks.
+    - Approach
+        - Test Manager or Test Lead prepares final performance test report with the help of Performance Testers.
+        - The document contains:
+            - Details on whether all the NFRs are met in performance testing.
+            - Issues noticed during performance testing.
+            - Performance related risks.
+            - Recommendations to improve application performance.
+        - The report is then presented to stakeholders and/or client with Go/No-go decision.
 1. Performance Tuning
+    - Purpose
+        - Performance tuning may be carried out on the application based on the recommendations in performance test report.
+        - These can be application specific or infra specific.
+        - If required, performance tests are run again to check if there is an improvement in performance.
+    
