@@ -29,14 +29,17 @@ Websites should load efficiently and effectively for all users - someone with a 
 - GT Metrics (actually Lighthouse)
 
 ## Performance Metrics
-- LCP - Largest contentful paint - before the user sees content - text, images, etc.
-- FMP - as the name suggests
+- TTFB - Time to first byte
+- FP - First Paint - the time it takes before user sees something on the browser.
+- LCP - Largest Contentful Paint - before the user sees content - text, images, etc.
+- FMP - First Meaningful Paint - as the name suggests
 - TTI - the amount of time it takes to interact with the app
 
 ## How is a webpage rendered
 - Device > ISP > DNS > ISP - The DNS provides the IP Address we are trying to connect to
 - Once IP Address is available, TCP handshake is established `Browser <> Server`
 - Now the request-response occurs between browser and server
+- First the HTML is downloaded and parsed. HTML is head of line (HOL )blocking - i.e. it blocks the retreiving of other assets
 - DOM trees and CSSOM trees are setup for HTML and CSS respectively
 - For all assets except Javascript, the rendering is not blocked.
 - Javascript is render-blocking.  All rendering (DOM and CSSOM, etc.) is blocked and waits for the Javascript to download before the rendering continues
@@ -56,7 +59,7 @@ Websites should load efficiently and effectively for all users - someone with a 
 - available bandwidth
 - shared resources
 
-- Server/hosting optimizations:
+- Server/hosting optimizations - improves TTFB, download time
     - get sufficiently powerful hosting
     - explore dynamic cloud options
     - optimize files for server - compression, minification, etc.
@@ -87,8 +90,8 @@ Websites should load efficiently and effectively for all users - someone with a 
             - caching strategies are now often controlled by CDN
             - HTTP2 multiplexing - split CSS and JS into smaller modules
 - PRPL pattern - 
-    - P - Push/pre-load important resources
-    - R - Render the initial routes as soon as possible
+    - P - Push or pre-load important resources
+    - R - Render the initial route (ATF content) as soon as possible
     - P - Pre-cache remaining assets
     - L - Lazy Load other routes and non-critical assets
 
