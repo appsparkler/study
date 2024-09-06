@@ -36,3 +36,13 @@ https://marcelclasses.udemy.com/course/sleep-course/learn/lecture/38272112
     - if done regularly, it may also help us stay lean 
 1. Every evening - exposure to warmth for upto 20 minutes - 80 - 100 degree Celcius
     - improves cardiac health, detoxification
+
+## My Personalized Sleep Plan
+- What time do I plan to sleep? - 9:20pm
+- What time do I plan to wake up? - 2:45am
+- Expose yourself to bright light in open space for 5-30mins (based on weather).
+- late-afternoon/evening - 5-30 mins 
+- after sunset, dim the lights, turn of devices.
+- Cold showers after waking up in the morning
+- Hot showers before sleeping in the night
+- decrease the temperature in the room (AC for ex.)
