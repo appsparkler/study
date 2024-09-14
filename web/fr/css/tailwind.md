@@ -40,3 +40,11 @@ We can modify the base layer so that the default elements have different styles 
     ｝
 ```
 
+## Utility First
+- Tailwind is utility first i.e. 
+    - no unclear names
+    - clear intent
+    - no overrides
+    - mirrors CSS
+
+
