@@ -47,4 +47,27 @@ We can modify the base layer so that the default elements have different styles 
     - no overrides
     - mirrors CSS
 
+## Make Tailwind Easy to use
+- use `@apply`
+    ```css
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+    @layer components {
+        .btn {
+                @apply
+                bg-gray-500
+                hover:bg-gray-700 
+                text-white
+                ру-2
+                px-4
+                m-0.5
+                text-sm
+                rounded-md
+            ｝
+    }
+    ```
+Now we can simply use the `.btn` class wherever we need these styles
+
+
 
