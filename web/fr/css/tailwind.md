@@ -68,6 +68,11 @@ We can modify the base layer so that the default elements have different styles 
     }
     ```
 Now we can simply use the `.btn` class wherever we need these styles
-
+- Tailwind UI: https://tailwindui.com/ has ready to use component copy-paste - paid and free options
+- Tailwind Kit: https://www.tailwind-kit.com - 
+- Headless UI
+- Daisy UI
+- Raybo.org - search for tailwind
+ 
 
 
