@@ -82,3 +82,12 @@ Now we can simply use the `.btn` class wherever we need these styles
     - `from and to` - `class="bg-gradient-to-r from-red-600 to-blue-600"`
     - `from, via and to` - `class="bg-gradient-to-tl from-red-600 via-yellow-600 to-blue-600"`
 
+## Font Families
+- `font-sans`, `font-serif`, `font-mono`, etc. - this can be easily configured in the theme section of the `tailwind.config`
+```js
+theme: {
+    sans: ['Arial', 'Halvetica', 'sans-serif'],
+    display: ['Custom Font', 'Other Font']
+}
+```
+
