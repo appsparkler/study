@@ -74,5 +74,11 @@ Now we can simply use the `.btn` class wherever we need these styles
 - Daisy UI
 - Raybo.org - search for tailwind
  
-
+## Tailwind Colors
+- `bg-<color-name>-<weight>` - `bg-gray-900`
+- `text-<color-name>-<weight>` - ex. `text-gray-900`
+- gradients - `bg(-none)|(-gradient-to)(-DIR)` - `DIR` is the direction - `t,l,r` etc.
+    - examples: 
+    - `from and to` - `class="bg-gradient-to-r from-red-600 to-blue-600"`
+    - `from, via and to` - `class="bg-gradient-to-tl from-red-600 via-yellow-600 to-blue-600"`
 
