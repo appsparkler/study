@@ -91,3 +91,11 @@ theme: {
 }
 ```
 
+## Font Sizes
+- `text-SIZ` - for ex. `text-4xl`, `text-2xl`, `text-md`, `text-lg`, etc.
+
+## Screen Reader Classes
+- `sr-only` and `not-sr-only` - for screenreaders
+
+
+
