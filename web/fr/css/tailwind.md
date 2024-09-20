@@ -97,4 +97,6 @@ theme: {
 ## Screen Reader Classes
 - `sr-only` and `not-sr-only` - for screenreaders
 
-
+## Power Techinques
+- `focus, focus-within and focus-visible` modifiers
+- 
