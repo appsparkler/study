@@ -124,6 +124,23 @@ theme: {
     - `selection:bg-red-400 selection:bg-red-800`
 - media modifiers
     - `motion-reduce`, `motion-safe` - for ex. `motion-reduce:animate-none motion-safe:animate-bounce` - will animate only when `reduced-motion` is turned off.
+    - `potrait`, `landscape`, `print` are other modifiers we can use to style elements conditionally.
+- dark modifier - `dark:bg-slate-500`
+
+
+## Configuring Tailwind
+- with the theme object:
+```js
+tailwind.config = {
+    theme: {
+        extend: {
+            colors: {
+                primary: '#4CC7C7'
+            }
+        }
+    }
+}
+```
 
 
 
