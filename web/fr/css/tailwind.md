@@ -107,7 +107,7 @@ theme: {
     - empty:hidden - hides elements with no content
     - first-letter, first-line
 - form element state
-    - disabled
+    - disabled - ex. `disabled:bg-gray`
     - checked
     - indeterminate - initial state of 
     - default
