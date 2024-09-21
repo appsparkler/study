@@ -98,5 +98,18 @@ theme: {
 - `sr-only` and `not-sr-only` - for screenreaders
 
 ## Power Techinques
-- `focus, focus-within and focus-visible` modifiers
-- 
+- state modifiers - `focus, focus-within and focus-visible, visited, etc.` modifiers
+- position modifiers - 
+    - first, first-of-type
+    - last, last-of-type
+    - only, only-of-type
+    - odd, even
+    - empty:hidden - hides elements with no content
+    - first-letter, first-line
+    - Form Element State
+        - disabled
+        - checked
+        - indeterminate
+        - default
+        - placeholder-shown
+        -autofill
