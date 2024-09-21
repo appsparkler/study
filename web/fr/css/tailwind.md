@@ -141,6 +141,31 @@ tailwind.config = {
     }
 }
 ```
+- presets - the preset file needs to look like a copy of our config document.
+```js
+module.exports = {
+    presets: [require('./my-preset.js')]
+}
+```
+- dark mode
+    - `{darkMode: "media"} // or "class"` - 
+- configuring themes
+    - override classes
+    - extend existing class - better than overriding
+- scales - re-using the `theme variables` with the `theme` function
+```js
+{
+    padding: ({ theme }) => theme ('spacing'),
+    ringColor: ({theme }) => ({
+    DEFAULT: theme ('colors.blue.500', '#3b82f6'),
+    ... theme (' colors')
+    })
+}
+```
+- have a look at the theme object on how we want to work with them.
+
+
+
 
 
 
