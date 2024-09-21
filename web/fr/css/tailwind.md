@@ -177,6 +177,7 @@ module. exports = {
     ]
 }
 ```
+- there are many methods like `addUtilities`, `addComponent`, etc. available to us.
 
 
 
