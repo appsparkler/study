@@ -164,6 +164,20 @@ module.exports = {
 ```
 - have a look at the theme object on how we want to work with them.
 
+## Tailwinds Plugin System
+```js
+const plugin = require('tailwindcss/plugin')
+module. exports = {
+    plugins: [
+        plugin(function ({ addUtilities }) {
+            addUtilities({
+                'huge': { ' font-size': '10em' }
+            })
+        })
+    ]
+}
+```
+
 
 
 
