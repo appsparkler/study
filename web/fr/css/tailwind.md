@@ -114,4 +114,16 @@ theme: {
     - placeholder-shown
     - autofill
     - read-only
+- child and sibling modifiers
+    - child modifier
+        - group, group-hover - pair helps to hover part of the group
+    - peer, peeer-* - for ex. style a sibling field conditionally if another sibling is invalid
+- attribute modifiers - rtl, ltr when using dir="DIR"; group, open for details and summary.
+- psuedo-elements 
+    - `list-decimal`, `list-disc` or `list-none` for bullets on a list.
+    - `selection:bg-red-400 selection:bg-red-800`
+- media modifiers
+    - `motion-reduce`, `motion-safe` - for ex. `motion-reduce:animate-none motion-safe:animate-bounce` - will animate only when `reduced-motion` is turned off.
+
+
 
