@@ -106,10 +106,12 @@ theme: {
     - odd, even
     - empty:hidden - hides elements with no content
     - first-letter, first-line
-    - Form Element State
-        - disabled
-        - checked
-        - indeterminate
-        - default
-        - placeholder-shown
-        -autofill
+- form element state
+    - disabled
+    - checked
+    - indeterminate - initial state of 
+    - default
+    - placeholder-shown
+    - autofill
+    - read-only
+
