@@ -14,6 +14,16 @@ https://www.linkedin.com/learning/tailwind-css-3-essential-training/working-with
 
 - Tailwind Play - https://play.tailwindcss.com
 - CDN - https://cdn.tailwind.css
+- Tailwind Plugins - `@tailwindcss/typography`, `@tailwindcss/line-clamp`
+- Hypercolor.dev - set of color graidents
+- TailwindCSS Buttons - on devdojo.com
+- tailblocks.cc - 
+- tailkit
+- daisyui
+- tailwindui - by tailwindcss
+- @planetoftheweb - raybo's site.
+
+
 
 ## Tailwind Modules
 - `@tailwind base` - 
@@ -178,6 +188,12 @@ module. exports = {
 }
 ```
 - there are many methods like `addUtilities`, `addComponent`, etc. available to us.
+- Using the `@tailwindcss/typography` plugin after installing and adding it to the config.
+    - `prose` in the wrapper will provide a markdown like stying for the elements inside that container
+    - `lg:prose-lg` will set better styles to accomodate large screens
+    - `prose-h1:mt-4` - will set a top margin for h1 element
+- Using the `@tailwindcss/line-clamp` plugin after installing and adding it to config - to truncate content
+- 
 
 
 
