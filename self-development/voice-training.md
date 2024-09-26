@@ -34,7 +34,18 @@
 
 ## Important Tips
 - best speakers are also the best listeners
-- 
+- listening ought to be purposeful, focused, requires motivation, requires effort, requires concentrated attention
+- be aware of voice tone and body language
+- smile and gently nod your head to signal that you're getting what is being said
+- eye contact
+- posture
+- avoid distraction
+- use brief verbal affirmation
+- paraphrase
+- try not to interrupt 
+- be neutral and non-judgmental
+
+## 
 
 
 
