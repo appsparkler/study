@@ -23,5 +23,18 @@
         - "six sticky skeletons", 
         - "she sells sea shells by the sea shore of sychelles"
 
-## 
+## Develop a more resonant voice
+- breathe deeply - 
+- cut down the tension - if you wake up with a deep voice naturally, it means you've had a good night sleep and thus you're less tensed.
+
+## Stop Stuttering Speech
+- avoid quickly answer questions - keep a gap
+- speak with a carrot in your mouth
+- close your eyes and picture yourself speaking slowly, positively.
+
+## Important Tips
+- best speakers are also the best listeners
+- 
+
+
 
