@@ -45,7 +45,16 @@
 - try not to interrupt 
 - be neutral and non-judgmental
 
-## 
+## Voice with more variety and power
+
+## choosing a mic
+- XLR and not USB
+- try many - go to a shop instead of buying online
+- should have 
+    - an arm and 
+    - a cradle to stop vibrations
+    - a pop-filter
+- 
 
 
 
