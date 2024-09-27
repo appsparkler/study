@@ -54,8 +54,10 @@
     - an arm and 
     - a cradle to stop vibrations
     - a pop-filter
-- need to find out that device that sits between the mic and the system.
-- 
+- the microphone is connected to a USB interface which connects everything to the computer
+- we can have a in-between wire-link-wire into a digital audio recorder - solid-state/physical recorder jic the computer records anything distorted.
+
+
 
 
 
