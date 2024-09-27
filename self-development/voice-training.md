@@ -54,6 +54,7 @@
     - an arm and 
     - a cradle to stop vibrations
     - a pop-filter
+- need to find out that device that sits between the mic and the system.
 - 
 
 
