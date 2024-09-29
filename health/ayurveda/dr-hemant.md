@@ -10,3 +10,7 @@
     1. localization
     1. manifestation
     1. disruption
+    
+
+# Vata Dosha
+- space + air - 
