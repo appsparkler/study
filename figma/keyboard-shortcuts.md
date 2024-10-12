@@ -1,5 +1,6 @@
 # Figma Keyboard Shortcuts
 
+## Officical
 - `SHIFT + 2` - zoom into the element
 - `OPTION + drag` - copy an element
 - `CMD + C then CMD + V` - copy paste
@@ -12,3 +13,7 @@
 - `keep CMD pressed` - to keep adding elements to a selection
 - `spacebar` - for the hand tool
 - `CMD + scroll` - zoom in/out
+
+
+## My Favourite Shortcuts
+- Press `CTRL` while click on a component - we can see the entire hierarchy of elements and select what we need :D
