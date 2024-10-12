@@ -16,4 +16,5 @@
 
 
 ## My Favourite Shortcuts
-- Press `CTRL` while click on a component - we can see the entire hierarchy of elements and select what we need :D
+1. Press `CTRL` while click on a component - we can see the entire hierarchy of elements and select what we need :D
+1. Hold `Option` while dragging and it will create a copy/instance of that element
