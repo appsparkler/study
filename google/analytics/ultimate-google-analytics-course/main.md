@@ -18,3 +18,23 @@ Like any table, it has to aspects -
     - How many sessions that have a source of google/cpc? Ans - 100002
     - How many events were triggered for a sessions that have a source of whats-app? 20,0000
 - So, ideally, the questions that we have around our application should drive our dimensions and metrics configuration.
+
+## How is measurement done?
+Its done with browser cookie.  This is the structure of a GA cookie: `GA.1.2.1808482521.1486727369`.
+- the client-id (cid): the last two numbers - `1808482521.1486727369` which is `random-number.first-timestamp` is set as the client-id.  It is the id that GA uses to identify as a a user/browser/client.
+- GA sends this 
+
+## User/Client Identification
+- in GA world the `user` is defined as the `client` i.e. the device
+- There are 4 ways for identifying user-data
+    1. user-id - our custom implementation - we tell GA to use some specific data for 
+    1. Google Signals - given that the human user has given us permission to collect data, we use that data use the Google Signals feature to identify a user
+    1. device-id - the most common - the cid stored in the cookie
+    1. modelling - user hasn't given consent, but Google uses its algorithms to identify a client.
+- we can configure this under 
+
+## Session Dfinition
+- 
+
+
+
