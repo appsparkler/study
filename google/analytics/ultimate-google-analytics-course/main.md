@@ -49,6 +49,18 @@ Its done with browser cookie.  This is the structure of a GA cookie: `GA.1.2.180
 - The Reports Tab
     - reports-snapshot - use the compare feature - to compare metrics between two time periods
     - realtime-reports - here we can see real-time data for our app. We can see key-events, events, users by country and a lot more. 
+    - traffic acquisition - here we can see 
 
+
+
+## Practicals
+- reports
+    - Compare two periods in the report snapshot
+    - go through the real-time reports and get details about events, key-events, etc.
+    - review the traffic acquisition report & 
+        - toggle the granuality - day, week, month
+        - plot only the `totals` on the graph.
+        - use secondary dimension to get breakdown by country
+    - change the pre-selected dimension for a report
 
 
