@@ -42,7 +42,7 @@ Its done with browser cookie.  This is the structure of a GA cookie: `GA.1.2.180
 - Session Expiry - the only way session would expire for GA client is if the client is inactive for more than 30 minutes (configurable in GA)
 - bounce rate - (total-sessions - engaged-sessions)/total sessions
 - active users - are users that have atleast 1 engaged session
-- 
+- time measurement - the time user spends on a page is calculated with `events` - especially the page `load` and `before-unload` events.
 
 
 
