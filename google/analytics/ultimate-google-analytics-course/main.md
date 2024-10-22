@@ -33,8 +33,17 @@ Its done with browser cookie.  This is the structure of a GA cookie: `GA.1.2.180
     1. modelling - user hasn't given consent, but Google uses its algorithms to identify a client.
 - we can configure this under 
 
-## Session Dfinition
+## Session, Engagement, Active User and Bounce Rate Definition
+- A session is termed as ENGAGED SESSION if:
+    1. it lasted more than 10 seconds - this can be configured in GA
+    1. includes a conversion
+    1. 2 or more page views
+- Otherwise, its a SESSION
+- Session Expiry - the only way session would expire for GA client is if the client is inactive for more than 30 minutes (configurable in GA)
+- bounce rate - (total-sessions - engaged-sessions)/total sessions
+- active users - are users that have atleast 1 engaged session
 - 
+
 
 
 
