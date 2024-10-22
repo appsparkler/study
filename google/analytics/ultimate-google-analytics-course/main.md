@@ -44,6 +44,11 @@ Its done with browser cookie.  This is the structure of a GA cookie: `GA.1.2.180
 - active users - are users that have atleast 1 engaged session
 - time measurement - the time user spends on a page is calculated with `events` - especially the page `load` and `before-unload` events.
 
+## Navigating through the interface
+- The various cards on the HOME section are mostly links to the reports page and we can configure what appears on the HOME page.
+- The Reports Tab
+    - reports-snapshot - use the compare feature - to compare metrics between two time periods
+    - realtime-reports - here we can see real-time data for our app. We can see key-events, events, users by country and a lot more. 
 
 
 
