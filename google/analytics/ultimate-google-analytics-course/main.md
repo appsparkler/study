@@ -51,7 +51,8 @@ Its done with browser cookie.  This is the structure of a GA cookie: `GA.1.2.180
     - realtime-reports - here we can see real-time data for our app. We can see key-events, events, users by country and a lot more. 
     - traffic acquisition - here we can see 
 
-
+## Reports
+- **secondary dimension** - we could add a dimension on top of a selected dimension - for ex. if we have a more specific question about our data - how many direct users are we getting from United States v/s organic users from India?
 
 ## Practicals
 - reports
