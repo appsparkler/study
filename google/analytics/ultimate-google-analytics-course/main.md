@@ -63,6 +63,8 @@ Its done with browser cookie.  This is the structure of a GA cookie: `GA.1.2.180
         - toggle the granuality - day, week, month
         - plot only the `totals` on the graph.
         - use secondary dimension to get breakdown by country
+        - use the search to search only "United States" in the secondary dimension
+        - use the sort buttons to sort data by a specific metric - for ex. engaged sessions, etc.
     - change the pre-selected dimension for a report
 
 
