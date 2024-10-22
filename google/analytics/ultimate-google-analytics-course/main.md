@@ -52,7 +52,8 @@ Its done with browser cookie.  This is the structure of a GA cookie: `GA.1.2.180
     - traffic acquisition - here we can see 
 
 ## Reports
-- **secondary dimension** - we could add a dimension on top of a selected dimension - for ex. if we have a more specific question about our data - how many direct users are we getting from United States v/s organic users from India?
+- **secondary dimension** - we could add a dimension on top of a selected dimension - for ex. if we have a more specific question about our data - how many direct users are we getting from United States v/s organic users from India? - in this question, session is the primary dimension whereas country is the secondary dimension.
+
 
 ## Practicals
 - reports
