@@ -62,7 +62,7 @@ Its done with browser cookie.  This is the structure of a GA cookie: `GA.1.2.180
     1. Now we can configure it - vertical, horizontal, %age or px, etc.  We can add multiple values - for ex. `25,50,75,100` which will send data when scroll depth is 25%,50%,75% and 100%
     1. Save this trigger and now go to Tags section and start creating a new tag
     1. Provide an event name and add the parameters.
-    
+    1. set the trigger and publish the tag.
 
 ## Practicals
 - reports
