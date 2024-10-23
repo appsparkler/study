@@ -54,6 +54,15 @@ Its done with browser cookie.  This is the structure of a GA cookie: `GA.1.2.180
 ## Reports
 - **secondary dimension** - we could add a dimension on top of a selected dimension - for ex. if we have a more specific question about our data - how many direct users are we getting from United States v/s organic users from India? - in this question, session is the primary dimension whereas country is the secondary dimension.
 
+## Creating Custom Triggers in GTM
+- Triggers are actions to which GA sends data from the client.
+- Creating a custom scroll trigger
+    1. Click on `Trigger` and create a new one.  Name it `Custom Scroll`
+    1. Select `Trigger Type` as `Scroll Depth`
+    1. Now we can configure it - vertical, horizontal, %age or px, etc.  We can add multiple values - for ex. `25,50,75,100` which will send data when scroll depth is 25%,50%,75% and 100%
+    1. Save this trigger and now go to Tags section and start creating a new tag
+    1. Provide an event name and add the parameters.
+    
 
 ## Practicals
 - reports
@@ -66,5 +75,5 @@ Its done with browser cookie.  This is the structure of a GA cookie: `GA.1.2.180
         - use the search to search only "United States" in the secondary dimension
         - use the sort buttons to sort data by a specific metric - for ex. engaged sessions, etc.
     - change the pre-selected dimension for a report
-
+- create a custom_scroll trigger
 
