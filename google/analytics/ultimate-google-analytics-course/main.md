@@ -64,6 +64,12 @@ Its done with browser cookie.  This is the structure of a GA cookie: `GA.1.2.180
     1. Provide an event name and add the parameters.
     1. set the trigger and publish the tag.
 
+## GA Configuration - important setup
+- Data Settings > data retention - change  from 2 months to 14 months in `Data Settings` for more aggregate data
+- Tag Configuration > List Unwanted Referrals - set any unwanted referrals - for ex. payment gateways, auth gateways, etc.
+- Adjust Session Timeout - i.e. set the timer for which when user remains inactive, the session ends.  Also, define the Engaged sessions timeouts - definitely increase it more than the default of 10 seconds (which says that if user leaves the page within 10 seconds, it was not an engaged session)
+- Admin > Streams > Modify Events - We can modify events for use cases such as combining two sources into 1 - for ex. we want eylearning.udemy.com and udemy.com to to be counted as the same source - udemy.com
+
 ## Practicals
 - reports
     - Compare two periods in the report snapshot
