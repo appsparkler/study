@@ -81,10 +81,12 @@ Its done with browser cookie.  This is the structure of a GA cookie: `GA.1.2.180
     1. click on create
 
 ##  Explore
-- Free Form 
+- **Free Form** 
     - this reports allows us to visually review our report for segments, dimensions and their metrics
     - further we can visualize the report as a bar-graph, donut-chart, line-chart, etc.
     - this is a simple report and can have many use cases
+- **Funnel**
+    - 
 
 ## Calculations
 - User conversion rate = total-users/total-users-converted
@@ -102,4 +104,10 @@ Its done with browser cookie.  This is the structure of a GA cookie: `GA.1.2.180
         - use the sort buttons to sort data by a specific metric - for ex. engaged sessions, etc.
     - change the pre-selected dimension for a report
 - create a custom_scroll trigger
+- Explore
+    - create a free form report visualized in line-chart for total users over the last 12 months, compared with the previous 12 months
+    - create a funnel report with the following 3 steps:
+        1. View Category page (/shop/)
+        1. Views Product detail page (/product/)
+        1. Adds to cart (add to cart event)
 
