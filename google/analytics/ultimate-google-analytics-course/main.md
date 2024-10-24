@@ -110,4 +110,7 @@ Its done with browser cookie.  This is the structure of a GA cookie: `GA.1.2.180
         1. View Category page (/shop/)
         1. Views Product detail page (/product/)
         1. Adds to cart (add to cart event)
+        1. Purchase event
+        ...also add 2 segments to the report - for ex. "desktop users india" and "desktop users USA"
+    - 
 
