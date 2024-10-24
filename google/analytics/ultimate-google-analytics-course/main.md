@@ -1,4 +1,5 @@
 # Ultimate Google Analytics 4 course - with 50+ practical examples:
+Everything revolves around Segments, Dimensions, Metrics and Comparisions.
 
 ## What is GA?
 A huge table (like the ones we have in SQL DB)
@@ -14,6 +15,7 @@ Like any table, it has to aspects -
         - total sessions
         - engaged sessions
         - events (the events during the session)
+    1. Segments - These are complex dimensions.  They contain 2 or more dimensions - for ex. Desktop Users From India, Mobile Users From USA, etc.
 - The metrics and dimensions come together to give us meaningful data and answer questions.  For ex.
     - How many sessions that have a source of google/cpc? Ans - 100002
     - How many events were triggered for a sessions that have a source of whats-app? 20,0000
@@ -75,7 +77,18 @@ Its done with browser cookie.  This is the structure of a GA cookie: `GA.1.2.180
 - Turn on the switch for all events that we need to be set as `conversions`
 - **custom conversion event** 
     1. click on create event
-    1. 
+    1. define the parameters and conditions
+    1. click on create
+
+##  Explore
+- Free Form 
+    - this reports allows us to visually review our report for segments, dimensions and their metrics
+    - further we can visualize the report as a bar-graph, donut-chart, line-chart, etc.
+    - this is a simple report and can have many use cases
+
+## Calculations
+- User conversion rate = total-users/total-users-converted
+- Conversion rate = total-sessions-that-had-conversions/total-sessions
 
 ## Practicals
 - reports
