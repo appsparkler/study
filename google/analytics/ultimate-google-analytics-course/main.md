@@ -70,6 +70,13 @@ Its done with browser cookie.  This is the structure of a GA cookie: `GA.1.2.180
 - Adjust Session Timeout - i.e. set the timer for which when user remains inactive, the session ends.  Also, define the Engaged sessions timeouts - definitely increase it more than the default of 10 seconds (which says that if user leaves the page within 10 seconds, it was not an engaged session)
 - Admin > Streams > Modify Events - We can modify events for use cases such as combining two sources into 1 - for ex. we want eylearning.udemy.com and udemy.com to to be counted as the same source - udemy.com
 
+## GA - Setting up Goals
+- Click on the `Configure` tab and select `Events`
+- Turn on the switch for all events that we need to be set as `conversions`
+- **custom conversion event** 
+    1. click on create event
+    1. 
+
 ## Practicals
 - reports
     - Compare two periods in the report snapshot
