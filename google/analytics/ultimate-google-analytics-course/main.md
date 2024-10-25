@@ -86,7 +86,12 @@ Its done with browser cookie.  This is the structure of a GA cookie: `GA.1.2.180
     - further we can visualize the report as a bar-graph, donut-chart, line-chart, etc.
     - this is a simple report and can have many use cases
 - **Funnel**
-    - 
+    - https://support.google.com/analytics/answer/9327974?hl=en
+    - this is great to visualize how many users are "flowing" into what we want them to do.
+- **Path Exploration**
+    - in this report we can start visualizing from a starting point or ending point
+    - very helpful, if we want to visualize user journeys from one event to another or from one page to another
+    - Also, we can easily visualize how the user got to an ending point (for ex. purchase)
 
 ## Calculations
 - User conversion rate = total-users/total-users-converted
