@@ -92,6 +92,12 @@ Its done with browser cookie.  This is the structure of a GA cookie: `GA.1.2.180
     - in this report we can start visualizing from a starting point or ending point
     - very helpful, if we want to visualize user journeys from one event to another or from one page to another
     - Also, we can easily visualize how the user got to an ending point (for ex. purchase)
+- **Segment Overlap** 
+    - this reports help us to see overlaps between 2 or more segments.  This is great when we want to see; for ex. how many desktop users are from USA compared to total users.
+
+## Report Customization
+- click on the `pencil` button to customize a report
+- change the rows and columns and set one of them as default
 
 ## Calculations
 - User conversion rate = total-users/total-users-converted
@@ -117,5 +123,5 @@ Its done with browser cookie.  This is the structure of a GA cookie: `GA.1.2.180
         1. Adds to cart (add to cart event)
         1. Purchase event
         ...also add 2 segments to the report - for ex. "desktop users india" and "desktop users USA"
-    - 
+    - customize the pages and screen path
 
