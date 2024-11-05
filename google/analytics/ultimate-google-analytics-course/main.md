@@ -124,4 +124,11 @@ Its done with browser cookie.  This is the structure of a GA cookie: `GA.1.2.180
         1. Purchase event
         ...also add 2 segments to the report - for ex. "desktop users india" and "desktop users USA"
     - customize the pages and screen path
-
+    - create a free-form report with the following:
+        - Dimensions - Browser, Language
+        - Metric - Total Users, Bounce Rate, Sessions, Engagement Rate
+        - Play around with the filters, date-ranges, 
+    - create a free-form report to understand the location of our uses (where from Earth are our users accessing our app?)
+        - Dimensions - country, city, region
+        - metrics - total users
+        - play around with filters to see users coming from a specific country or region (state)
