@@ -130,5 +130,9 @@ Its done with browser cookie.  This is the structure of a GA cookie: `GA.1.2.180
         - Play around with the filters, date-ranges, 
     - create a free-form report to understand the location of our uses (where from Earth are our users accessing our app?  What is the conversion rate for each location?)
         - Dimensions - country, city, region
-        - metrics - total users, sessions, bounce rate/conversion rate
+        - Metrics - total users, sessions, bounce rate/conversion rate
         - play around with filters to see users coming from a specific country or region (state)
+    - browser conversion rate (use a custom conversion rate - for ex. which only includes purchases)
+        - Dimensions - Browsers, 
+        - Metrics - Total Users
+
