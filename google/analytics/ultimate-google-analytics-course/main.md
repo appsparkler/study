@@ -135,4 +135,5 @@ Its done with browser cookie.  This is the structure of a GA cookie: `GA.1.2.180
     - browser conversion rate (use a custom conversion rate - for ex. which only includes purchases)
         - Dimensions - Browsers, 
         - Metrics - Total Users
+        - next, also include the device category dimension and observe the conversion rate - if there is much variation between mobile and desktop conversion rate, for ex., we need look into why users are not getting converted on the lower one.
 
