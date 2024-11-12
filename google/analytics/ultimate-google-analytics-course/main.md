@@ -136,4 +136,5 @@ Its done with browser cookie.  This is the structure of a GA cookie: `GA.1.2.180
         - Dimensions - Browsers, 
         - Metrics - Total Users
         - next, also include the device category dimension and observe the conversion rate - if there is much variation between mobile and desktop conversion rate, for ex., we need look into why users are not getting converted on the lower one.
+        - next, also include the screen resolution and check which screen resolutions have the lowest lowest conversion rate.  Check how our app looks on that resolution on an addon like Mobile Simulator or the Chrome Dev tools mobile simulator and check for any issues on those screen resolutions.  We could further drill down.
 
