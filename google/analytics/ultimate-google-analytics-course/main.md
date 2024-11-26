@@ -138,4 +138,7 @@ Its done with browser cookie.  This is the structure of a GA cookie: `GA.1.2.180
         - next, also include the device category dimension and observe the conversion rate - if there is much variation between mobile and desktop conversion rate, for ex., we need look into why users are not getting converted on the lower one.
         - next, also include the screen resolution and check which screen resolutions have the lowest lowest conversion rate.  Check how our app looks on that resolution on an addon like Mobile Simulator or the Chrome Dev tools mobile simulator and check for any issues on those screen resolutions.  We could further drill down.
     - use Google's Page Speed Insights tool to analyze app performance.
+    - we can dive deeper by adding these dimensions - mobile OS, device brand, dimensions and the metric - Average Revenue Per User to understand which OS and/or device brand is yielding the maximum revenue and optimize our site for those users
+    
+
 
