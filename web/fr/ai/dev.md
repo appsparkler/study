@@ -13,7 +13,7 @@ Explain what BERT is in this context.”
     > Describe the process of developing a Foundation Model in AI, from data collection to model training
 - iterative prompting - 
     > first prompt: Tell me about the latest developments in Foundation Models in AI.
-    
+
     > next prompt: Can you provide more details about these improvements in multi-modal learning within Foundation Models?
 - negative prompting - here, we tell AI what not to do.
     > Explain the concept of Foundation Models in AI without mentioning natural language processing or NLP
@@ -23,6 +23,7 @@ Explain what BERT is in this context.”
     > first prompt: List some examples of Foundation Models in AI
 
     > next prompt: Choose one of these models and explain its foundational role in AI development
+    
 # Writing Code
 - write methods
 - generate tests
