@@ -23,12 +23,24 @@ Explain what BERT is in this context.”
     > first prompt: List some examples of Foundation Models in AI
 
     > next prompt: Choose one of these models and explain its foundational role in AI development
-    
+
 # Writing Code
-- write methods
-- generate tests
+- generate methods for problem statements
+- generate test cases for the methods
+
+# Reducing code complexity
+- callback hells
+- cyclomatic complexity - It is a quantitative measure of the number of linearly independent paths through a program's source code.  We can use AI tools to reduce this number.
+- data structure - we can use AI to improve data-strucutures - for ex. it will respond if Set would be more ideal to use than array for unique number (for ex.)
+
+# Other uses
+- transition a project from one framework to another (step by step)
+- transition a JS project to TS
 
 # Storybook
 - it can help us setup storybook
 - it can help us generate stories
 - it can help us with accessibility testing
+
+# UX Design to code:
+- locofy.ai can help us achieve this.
