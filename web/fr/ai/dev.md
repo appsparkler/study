@@ -44,3 +44,5 @@ Explain what BERT is in this context.”
 
 # UX Design to code:
 - locofy.ai can help us achieve this.
+- we choose design tool and framework to configure
+- 
