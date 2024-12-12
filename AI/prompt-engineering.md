@@ -30,9 +30,15 @@ What are the top three most important discoveries that the Hubble Space Telescop
 ```
 
 ### Special Syntax
+
+##### End Of Prompt
 `<|endofprompt|>` - allows to end a prompt and include the beginning of an answer.  For ex.
 
 ```txt
 Write a scary story. <|endofprompt|> It was a beautiful winter day.
 ```
+
+##### Assertive
+Use all capital case to assert something.
+
 
