@@ -13,6 +13,15 @@ Do not show description, reasoning or any additional test for the fixes.  Only s
 Also, suggest how I can improve my prompt.
 ```
 
+# Generate Interface for a Typescript React Component:
+```txt
+Generate the Typescript Interface for the following components and include it in the code.
+
+<components>
+
+Do not show description, reasoning or any additional test for the fixes.  Only share the code snippet.
+```
+
 # Writing stories in Storybook version 8
 ```txt
 Generate Storybook version 8 stories for this component:
