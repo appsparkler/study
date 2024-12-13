@@ -13,6 +13,8 @@ Do not show description, reasoning or any additional test for the fixes.  Only s
 Also, suggest how I can improve my prompt.
 ```
 
+<!-- # Generate test cases for React component -->
+
 # Generate Interface for a Typescript React Component:
 ```txt
 Generate the Typescript Interface for the following components and include it in the code.
@@ -24,9 +26,13 @@ Do not show description, reasoning or any additional test for the fixes.  Only s
 
 # Writing stories in Storybook version 8
 ```txt
-Generate Storybook version 8 stories for this component:
+Generate Storybook version 8 stories for <component-name> component:
 
 <component>
+
+These are the types for the props (if applicable):
+
+<types/interfaces>
 
 Here is an example of stories for a Button component.
 
