@@ -26,6 +26,13 @@ Here is an example of stories for a Button component.
 Do not show description, reasoning or any additional test for the fixes.  Only share the code snippet.
 ```
 
+# Instructions
+```txt
+<instruction>
+
+Do not show description, reasoning or any additional test for the fixes.  Only share the code snippet.
+```
+
 # Suggestions
 - ensure clarity and conciseness
 - specify the exact error message, context and desired outcome.
