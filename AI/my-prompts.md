@@ -1,6 +1,6 @@
 # My Prompts
 
-# Finding errors:
+# Finding errors in test cases for a React Typescript component
 ```txt
 I'm writing tests for a React component Typescript.  The error in the console is:
 
@@ -12,6 +12,8 @@ Do not show description, reasoning or any additional test for the fixes.  Only s
 
 Also, suggest how I can improve my prompt.
 ```
+
+
 
 # Suggestions
 - ensure clarity and conciseness
