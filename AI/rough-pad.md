@@ -1,106 +1,120 @@
-Generate Storybook version 8 stories for this component:
+Generate the Typescript Interface for PropertyCard component and include it in the code.
 
-import { forwardRef, ReactNode } from "react";
-import { Whisper, Popover } from "rsuite";
-import { TypeAttributes } from "rsuite/esm/@types/common";
+import { Grid, Row, Col } from "rsuite";
+import { getCamleCaseString } from "../../../constants/pokemon.types";
+import ColorfulTag from "../colorfulTags/colorfulTag";
+import "./propertyCard.scss";
+import "../../../styles/common.scss";
+import PropTypes from "prop-types";
 
-// eslint-disable-next-line react/display-name
-const DefaultPopover = forwardRef<
-  HTMLDivElement,
-  {
-    content: ReactNode;
-    className: string;
-  }
->(({ content, className, ...props }, ref) => {
+const PropertyCard = ({ speciesData, data, pokemonTypeData }) => {
   return (
-    <Popover ref={ref} {...props} className={className} arrow={false}>
-      <p>{content}</p>
-    </Popover>
+    <div className="property-container">
+      <Grid fluid>
+        <Row className="show-grid">
+          <Col xs={12} sm={12} lg={6} xl={6}>
+            <div className="flex-col">
+              <div>
+                <span className="prop-header">Height</span>
+              </div>
+              <div className="prop-header-data">{data.height}</div>
+            </div>
+          </Col>
+          <Col xs={12} sm={12} lg={6} xl={6}>
+            <div className="flex-col">
+              <div>
+                <span className="prop-header">Weight</span>
+              </div>
+              <div className="prop-header-data">{data.weight / 10} Kg</div>
+            </div>
+          </Col>
+          <Col xs={12} sm={12} lg={6} xl={6}>
+            <div className="flex-col">
+              <div>
+                <span className="prop-header">Gender(s)</span>
+              </div>
+              <div className="prop-header-data">Male, Female</div>
+            </div>
+          </Col>
+          <Col xs={12} sm={12} lg={6} xl={6}>
+            <div className="flex-col">
+              <div>
+                <span className="prop-header">Egg Groups</span>
+              </div>
+              {speciesData.egg_groups.length &&
+                speciesData.egg_groups.map((item, index) => (
+                  <span key={item.name} className="prop-header-data">
+                    {getCamleCaseString(item.name)}
+                    {speciesData.egg_groups.length !== index + 1 && (
+                      <span>,</span>
+                    )}
+                  </span>
+                ))}
+            </div>
+          </Col>
+        </Row>
+        <Row className="show-grid pt-3">
+          <Col xs={12} sm={12} lg={6} xl={6}>
+            <div className="flex-col">
+              <div>
+                <span className="prop-header">Abilities</span>
+              </div>
+              {data.abilities.length &&
+                data.abilities.map((item, index) => (
+                  <span key={item.ability.name} className="prop-header-data">
+                    {getCamleCaseString(item.ability.name)}
+                    {data.abilities.length !== index + 1 && <span>,</span>}
+                  </span>
+                ))}
+            </div>
+          </Col>
+          <Col xs={12} sm={12} lg={6} xl={6}>
+            <div className="flex-col">
+              <div>
+                <span className="prop-header">Types</span>
+              </div>
+              <div className="prop-header-data">
+                <div className="type-wrap">
+                  {data.types.length &&
+                    data.types.map((item, index) => (
+                      <ColorfulTag
+                        className="pr-1"
+                        key={item.type.name + index}
+                        type={item.type.name}
+                        text={getCamleCaseString(item.type.name)}
+                      />
+                    ))}
+                </div>
+              </div>
+            </div>
+          </Col>
+          <Col xs={12} sm={12} lg={12} xl={12}>
+            <div className="flex-col">
+              <div>
+                <span className="prop-header">Weak Against</span>
+              </div>
+              <div className="prop-header-data type-wrap">
+                {pokemonTypeData.damage_relations.double_damage_from.length &&
+                  pokemonTypeData.damage_relations.double_damage_from.map(
+                    (item, index) => (
+                      <ColorfulTag
+                        key={item.name + index}
+                        className="pr-1"
+                        type={item.name}
+                        text={getCamleCaseString(item.name)}
+                      />
+                    )
+                  )}
+              </div>
+            </div>
+          </Col>
+        </Row>
+      </Grid>
+    </div>
   );
-});
-
-interface AppTooltipProps {
-  placement: TypeAttributes.Placement;
-  data: ReactNode;
-  className: string;
-  name: string;
-  tooltipClass: string;
-}
-const AppTooltip = ({
-  placement,
-  data,
-  className,
-  name,
-  tooltipClass,
-}: AppTooltipProps) => (
-  <Whisper
-    trigger="click"
-    placement={placement}
-    controlId={`control-id-${placement}`}
-    speaker={<DefaultPopover content={data} className={tooltipClass} />}
-  >
-    <div className={className}>{name}</div>
-  </Whisper>
-);
-
-export default AppTooltip;
-
-
-Here is an example of stories for a Button component.
-
-import type { Meta, StoryObj } from '@storybook/react';
-import { fn } from '@storybook/test';
-
-import { Button } from './Button';
-
-// More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
-const meta: Meta<typeof Button> = {
-  title: 'Example/Button',
-  component: Button,
-  parameters: {
-    // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
-    layout: 'centered',
-  },
-  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
-  tags: ['autodocs'],
-  // More on argTypes: https://storybook.js.org/docs/api/argtypes
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
-  // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
-  args: { onClick: fn() },
 };
 
-export default meta;
-type Story = StoryObj<typeof Button>;
-
-// More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Primary: Story = {
-  args: {
-    primary: true,
-    label: 'Button',
-  },
-};
-
-export const Secondary: Story = {
-  args: {
-    label: 'Button',
-  },
-};
-
-export const Large: Story = {
-  args: {
-    size: 'large',
-    label: 'Button',
-  },
-};
-
-export const Small: Story = {
-  args: {
-    size: 'small',
-    label: 'Button',
-  },
-};
+export default PropertyCard;
 
 
 Do not show description, reasoning or any additional test for the fixes.  Only share the code snippet.
