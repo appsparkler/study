@@ -1,34 +1,48 @@
-Generate the Typescript Interface for the following components and include it in the code.
+I use jest and react-testing library for testing my React Typescript components.  
 
+Generate testcases for the following component(s):
 
 ```tsx
-import { getPokcolor } from "../../../constants/pokemon.types";
-import "./colorfulTags.scss";
-import PropTypes from "prop-types";
+import "./search.filter.scss";
+import { Input, InputGroup } from "rsuite";
+import SearchIcon from "@rsuite/icons/Search";
 
-const ColorfulTag = ({ text, className, type }) => {
+const SearchFilter = ({
+  placeholder,
+  inputClass,
+  onChangeHandler,
+  ...props
+}: {
+  placeholder?: string;
+  inputClass?: string;
+  label: string;
+  onChangeHandler?: (event: any) => void;
+}) => {
   return (
-    <div>
-      <div className={className}>
-        <span
-          style={{
-            background: getPokcolor(type),
-          }}
-          className="colorful-tag"
-        >
-          {text}
-        </span>
+    <>
+      <div className="search-container">
+        <div className="flex-col">
+          <div className="search-label">
+            <span>{props.label}</span>
+          </div>
+          <InputGroup {...props} inside className="mb-1">
+            <Input
+              placeholder={placeholder}
+              className={inputClass}
+              size="lg"
+              onChange={onChangeHandler}
+            />
+            <InputGroup.Button>
+              <SearchIcon />
+            </InputGroup.Button>
+          </InputGroup>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
-ColorfulTag.propTypes = {
-  text: PropTypes.string,
-  className: PropTypes.string,
-  type: PropTypes.any,
-};
 
-export default ColorfulTag;
+export default SearchFilter;
 
 ```
 

@@ -1,5 +1,16 @@
 # My Prompts
 
+# Generate Unit test cases for React Component
+```txt
+I use jest and react-testing library for testing my React Typescript components.  
+
+Generate testcases for the following component(s):
+
+<components>
+
+Do not show description, reasoning or any additional test for the fixes.  Only share the code snippet.
+```
+
 # Finding errors in test cases for a React Typescript component
 ```txt
 I'm writing tests for a React component Typescript.  The error in the console is:
