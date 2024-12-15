@@ -4,7 +4,6 @@
 ```txt
 I am a React Senior Developer.
 My stack is <stack>.
-
 ```
 
 # Generate Unit test cases for React Component
@@ -28,10 +27,11 @@ Generate test cases for this method:
 ```
 
 Do not show description, reasoning or any additional test for the fixes.  Only share the code snippet.
-
 ```
 
+```
 # Finding errors in test cases for a React Typescript component
+
 ```txt
 I'm writing tests for a React component Typescript.  The error in the console is:
 
