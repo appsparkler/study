@@ -1,5 +1,12 @@
 # My Prompts
 
+# Context
+```txt
+I am a React Senior Developer.
+My stack is <stack>.
+
+```
+
 # Generate Unit test cases for React Component
 ```txt
 I use jest and react-testing library for testing my React Typescript components.  
