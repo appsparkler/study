@@ -11,6 +11,19 @@ Generate testcases for the following component(s):
 Do not show description, reasoning or any additional test for the fixes.  Only share the code snippet.
 ```
 
+# Generate Unit Test Cases for a method:
+```txt
+I am a Senior React Developer and use Jest and React Testing Library for web and app development.
+Generate test cases for this method:
+
+```ts
+<method-name>
+```
+
+Do not show description, reasoning or any additional test for the fixes.  Only share the code snippet.
+
+```
+
 # Finding errors in test cases for a React Typescript component
 ```txt
 I'm writing tests for a React component Typescript.  The error in the console is:
