@@ -12,6 +12,7 @@
     nx g @nx/plugin:plugin <path/for/plugin>
     ```
 1. Generate a generator inside the plugin (we could place it anywhere, but `tools/<plugin>` is the ideal place for our tools) - `nx generate @nx/plugin:generator tools/recommended/src/generators/basic-project`
+
     ```sh
     nx g @nx/plugin:generator <path/for/the/generator> // ideally the plugin-path + the src/generators/<generator-folder-name>
     ```
