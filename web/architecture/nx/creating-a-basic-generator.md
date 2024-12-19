@@ -11,7 +11,7 @@
     ```sh
     nx g @nx/plugin:plugin <path/for/plugin>
     ```
-    
+
     - The plugin is installable by other projects if it is published
     - The plugin will contain our `basic project generator`
 1. Generate a generator inside the plugin (we could place it anywhere, but `tools/<plugin>` is the ideal place for our tools) - `nx generate @nx/plugin:generator tools/recommended/src/generators/basic-project`
@@ -26,6 +26,10 @@
     - A `schema.d.ts` which has the Typescript interface for `schema.json` 
     - A `basic-project.spec.ts` (optional) file that has the test for generator.
 1. Now, we can try out our newly created generator: `nx g @<org>/recommended:basic-project` - this will prompt us for the name of the project as defined in the `schema.json` and the input will be used by the generator code.
+
+    ```sh
+    nx g @<org>/recommended:basic-project
+    ```
 1. Thats it!
 > we need to `reload window` in VS Code to see the UI for our generator.
 
