@@ -28,7 +28,7 @@
 1. Now, we can try out our newly created generator: `nx g @<org>/recommended:basic-project` - this will prompt us for the name of the project as defined in the `schema.json` and the input will be used by the generator code.
 
     ```sh
-    nx g @<org>/recommended:basic-project
+    nx g @<org>/<plugin-name>:<generator-name>
     ```
 1. Thats it!
 > we need to `reload window` in VS Code to see the UI for our generator.
