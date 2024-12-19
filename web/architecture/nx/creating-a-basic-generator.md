@@ -12,5 +12,7 @@
     - A `schema.json` file which has the configuration for user inputs.  We'll use the values of these inputs in the files inside the files generator
     - A `schema.d.ts` which has the Typescript interface for `schema.json` 
     - A `basic-project.spec.ts` (optional) file that has the test for generator.
+1. Now, we can try out our newly created generator: `nx g @<org>/recommended:basic-project` - this will prompt us for the name of the project as defined in the `schema.json` and the input will be used by the generator code.
+1. Great!
 
  
