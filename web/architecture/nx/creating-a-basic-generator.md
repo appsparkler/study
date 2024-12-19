@@ -1,6 +1,6 @@
 # Creating A Basic Generator
 
-## Steps 
+## Steps
 1. Add the `@nx/plugin` plugin - `nx add @nx/plugin` - this will help us generate a new project as per our configuration
 1. Generate a plugin - `nx g @nx/plugin:plugin tools/recommended`
     - The plugin is installable by other projects if it is published
