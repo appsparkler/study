@@ -25,7 +25,31 @@ https://turbo.build/repo/docs/crafting-your-repository
 - each package is almost like a small project 
 - important properties for a package `package.json`:
     - `name` - identifies the package - best practice is to namespace our internal packages - for ex. `@appsparklers/library-app` - use `@repo` which is unclaimable on the NPM repository.
-    - `scripts` - 
+    - `scripts` - defines scripts that can be run in the package's context.
+    - `exports` - so that other modules can import the codes - https://turbo.build/repo/docs/crafting-your-repository/structuring-a-repository#exports 
+        ```json
+        {
+            "exports": {
+                ".": "./dist/constants.ts",
+                "./add": "./dist/add.ts",
+                "./subtract": "./dist/subtract.ts"
+            }
+        }
+        ```
+        will allow:
+        ```tsx
+            import { GRAVITATIONAL_CONSTANT, SPEED_OF_LIGHT } from '@repo/math';
+            import { add } from '@repo/math/add';
+            import { subtract } from '@repo/math/subtract';
+        ```
+        - avoid barrel files
+        - more powerful features - https://nodejs.org/api/packages.html#conditional-exports
+        - IDE autocompletion guaranteed
+    - `imports` (optional) - read the manual to understand this better
+
+## Typescript best practices
+
+
 
 ## Tips
 1. Install dependencies in the workspace they are used:
