@@ -10,6 +10,10 @@ npm i -g turbo
 npx create-turbo@latest
 ```
 
+## Crafting our monorepo
+https://turbo.build/repo/docs/crafting-your-repository
+
+
 ## Tips
 1. Install dependencies in the workspace they are used:
     ```sh
@@ -25,4 +29,4 @@ npx create-turbo@latest
     npx i typescript@latest --workspaces
     ```
     1. Use the IDE tools like find with regex - for ex. `"react":".*"` on `pacakge.json` files
-    
+
