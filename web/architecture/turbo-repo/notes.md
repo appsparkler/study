@@ -24,7 +24,7 @@ https://turbo.build/repo/docs/crafting-your-repository
 - a root `turbo.json`
 - each package is almost like a small project 
 - important properties for a package `package.json`:
-    - `name` - identifies the package - best practice is to namespace our internal packages - for ex. `@appsparklers/library-app`
+    - `name` - identifies the package - best practice is to namespace our internal packages - for ex. `@appsparklers/library-app` - use `@repo` which is unclaimable on the NPM repository.
     - `scripts` - 
 
 ## Tips
