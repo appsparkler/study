@@ -24,3 +24,5 @@ npx create-turbo@latest
     ```sh
     npx i typescript@latest --workspaces
     ```
+    1. Use the IDE tools like find with regex - for ex. `"react":".*"` on `pacakge.json` files
+    
