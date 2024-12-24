@@ -47,8 +47,30 @@ https://turbo.build/repo/docs/crafting-your-repository
         - IDE autocompletion guaranteed
     - `imports` (optional) - read the manual to understand this better
 
-## Typescript best practices
-
+## Typescript in Turborepo
+https://turbo.build/repo/docs/guides/tools/typescript
+- Share Typescript configuration - create a `packages/tsconfig` directory which could host the Typescript configurations that other packages could extend from.  Also, give a name to this package to easily extend it in other packages - for ex. `@repo/tsconfig`.  Now other packages can extends it like so: `"extends": "@repo/tsconfig/base.json"`
+- In consumer packages, we'll implement something like this:
+    ```json
+    {
+    "devDependencies": {
+        "@repo/typescript-config": "*",
+        "typescript": "latest",
+        }
+    }
+    ```
+    and in its `tsconfig.json`:
+    ```json
+    {
+        "extends": "@repo/typescript-config/nextjs.json",
+        "compilerOptions": {
+            "outDir": "dist"
+        },
+        "include": ["src"],
+        "exclude": ["node_modules"]
+    }
+    ```
+    
 
 
 ## Tips
