@@ -70,7 +70,15 @@ https://turbo.build/repo/docs/guides/tools/typescript
         "exclude": ["node_modules"]
     }
     ```
-    
+- In libraries, we need to create dev and build script to build the typescript configurations
+    ```json
+    {
+        "scripts": {
+            "dev": "tsc --watch",
+            "build": "tsc"
+        }
+    }
+    ```
 
 
 ## Tips
