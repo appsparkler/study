@@ -47,6 +47,42 @@ https://turbo.build/repo/docs/crafting-your-repository
         - IDE autocompletion guaranteed
     - `imports` (optional) - read the manual to understand this better
 
+## Tasks & its Configuration
+- each key in the tasks object is a name of the task that can be executed by `turbo`.  `Turbo` will use the rest of the configuration of the task to run that task in the described order, caching log and file outputs in the `outputs` key when provided.
+    ```json
+    {
+        "$schema": "https://turbo.build/schema.json",
+        "tasks": {
+                "build": {
+                "dependsOn": ["^build"],
+                "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
+            },
+            "test": {
+                "outputs": ["coverage/**"],
+                "dependsOn": ["build"]
+            },
+            "dev": {
+                "cache": false,
+                "persistent": true
+            }
+        }
+    }
+    ```
+- `dependsOn` - an array of strings - a list of task that are required to complete before the task begins running.  There are three types of `dependsOn` notations:
+    - **dependency relationships** - prefixing with `^` - for ex. `"depdensOn": ["^build"] `.  `turbo` runs the `build` task at the bottom of the graph (package with most internal dependencies), sequentially moving towards the top of the graph (package with least internal dependencies).
+    - **same package relationship** - without any prefixes - for ex. `"depdensOn": ["build"] `.  `turbo` will run the task in the package only after all the depends on are completed. 
+    - **arbitary task relationship** - specifies task dependency between specific package tasks:
+        ```json
+        {
+            "tasks": {
+                "web#lint": {
+                "dependsOn": ["utils#build"]
+                }
+            }
+        }
+        ```
+        In this example, the `web#lint` task will wait for the `utils#build` task to complete.
+
 ## Typescript in Turborepo
 https://turbo.build/repo/docs/guides/tools/typescript
 - Share Typescript configuration - create a `packages/tsconfig` directory which could host the Typescript configurations that other packages could extend from.  Also, give a name to this package to easily extend it in other packages - for ex. `@repo/tsconfig`.  Now other packages can extends it like so: `"extends": "@repo/tsconfig/base.json"`
