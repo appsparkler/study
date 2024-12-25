@@ -79,6 +79,27 @@ https://turbo.build/repo/docs/guides/tools/typescript
         }
     }
     ```
+    and setup the entry points (exports) like so:
+    ```json
+    {
+        "exports": {
+            "./button": {
+            "types": "./src/button.ts"
+            "default": "./dist/button.js",
+            },
+            "./input": {
+            "types": "./src/input.ts"
+            "default": "./dist/input.js",
+            }
+        }
+    }
+    ```
+    Few important pointers:
+    - wildcard entry points has limitations - https://turbo.build/repo/docs/guides/tools/typescript#package-entrypoint-wildcards so the above pattern is better.
+    - this pattern is good to avoid barrel files (which helps with performance)
+    - with this configuration, editor will provide the necessary auto-importing suggestions
+    - published packages will not support this as src code is not included there.  So we'll need to generate and reference declaration files.
+    
 
 
 ## Tips
