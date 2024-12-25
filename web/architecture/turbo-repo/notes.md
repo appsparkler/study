@@ -99,7 +99,15 @@ https://turbo.build/repo/docs/guides/tools/typescript
     - this pattern is good to avoid barrel files (which helps with performance)
     - with this configuration, editor will provide the necessary auto-importing suggestions
     - published packages will not support this as src code is not included there.  So we'll need to generate and reference declaration files.
-    
+- Type checking - We can add this type-check script in each TS package:
+    ```json
+    {
+        "scripts": {
+            "check-types": "tsc --noEmit"
+        }
+    }
+    ```
+
 
 
 ## Tips
