@@ -150,6 +150,12 @@ https://turbo.build/repo/docs/guides/tools/typescript
 1. Install dependencies in the workspace they are used:
     ```sh
     npm install jest --workspace=web --workspace=@repo/ui --save-dev
+    npm install jest -w=web -w=@repo/ui --save-dev
+    ```
+1. To install in all workspaces
+    ```sh
+    npm install jest --workspaces --save-dev
+    npm install jest -ws --save-dev
     ```
 1. Keep dependencies on the same version
     1. Tools like `syncpack, manypkg, and sherif` can be used for this specific purpose
