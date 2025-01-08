@@ -147,10 +147,12 @@ Its done with browser cookie.  This is the structure of a GA cookie: `GA.1.2.180
     - campaign - campaign name
     - content - ad details - 
     - term - keyword - should only be used for paid-search-campaign - the keyword on which our ad will show.
-- only source is mandatory
+- only source, medium and campaign are mandatory (since 2019)
 - tips
     - avoid diacritics
     - be consistent with the values for the parameters
     - use `+` for blank space
     - don't leave any parameter value empty
     - use only lowercase
+- tool to use: https://ga-dev-tools.google/ga4/campaign-url-builder/
+- 
