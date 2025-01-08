@@ -140,5 +140,17 @@ Its done with browser cookie.  This is the structure of a GA cookie: `GA.1.2.180
     - use Google's Page Speed Insights tool to analyze app performance.
     - we can dive deeper by adding these dimensions - mobile OS, device brand, dimensions and the metric - Average Revenue Per User to understand which OS and/or device brand is yielding the maximum revenue and optimize our site for those users
     
-
-
+## UTM parameters - Urchin Tracking Module
+- medium, source, campaign, content and term - are the types of parameters we can track.  these are prefixed by `utm_`
+    - source - domain, ad platform name - ex. google
+    - medium - ad-type - for ex. post, banner, cpc (cost per click), etc.
+    - campaign - campaign name
+    - content - ad details - 
+    - term - keyword - should only be used for paid-search-campaign - the keyword on which our ad will show.
+- only source is mandatory
+- tips
+    - avoid diacritics
+    - be consistent with the values for the parameters
+    - use `+` for blank space
+    - don't leave any parameter value empty
+    - use only lowercase
