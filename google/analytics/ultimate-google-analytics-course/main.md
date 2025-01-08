@@ -154,5 +154,13 @@ Its done with browser cookie.  This is the structure of a GA cookie: `GA.1.2.180
     - use `+` for blank space
     - don't leave any parameter value empty
     - use only lowercase
-- tool to use: https://ga-dev-tools.google/ga4/campaign-url-builder/
-- 
+- tool to use: https://ga-dev-tools.google/ga4/campaign-url-builder/ to build a link with utm parameters
+
+## Landing pages and Bounce Rate 
+- Add dimension `Landing Pages + query string`
+- Add metric - `sessions` and `bounce rate`
+- remove unnecessary items from the list
+- filter sessions above a chosen threshold
+- sort descending by bounce rate.
+
+
