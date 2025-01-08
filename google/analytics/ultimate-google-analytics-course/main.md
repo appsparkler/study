@@ -162,5 +162,9 @@ Its done with browser cookie.  This is the structure of a GA cookie: `GA.1.2.180
 - remove unnecessary items from the list
 - filter sessions above a chosen threshold
 - sort descending by bounce rate.
-
+- additional tip
+    - add a filter with dimension `Session source / medium`
+    - filter for the `cpc` or equivalent cost per count value.
+    - look out for links with high bounce rate and remove them from target list to reduce the cost.
+    
 
