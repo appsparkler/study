@@ -175,5 +175,17 @@ Sometimes we want a more in-depth report wrt to groups.  For ex. we get the "Ref
 - Once duplicated(copied), we need to add in the the specific referral we want to see the metrics for - add the equation - `source contains udemy` and name is `Udemy`.
 - The order of the channels list is critical.  For ex. if `Udemy Referrals` comes **after** general `Referrals`, `Udemy Referrals` will not show up because `Referral` catches all so there's nothing left for `Udemy Referral` to catch.  Thus, we need to move `Udemey Refferal` before `Referral` for it to catch some numbers.
 
+## Session Source/medium in-depth analysis
+This report helps us to do a in-depth analysis of which campaign in CPC is giving us the highest returns.  Further, it also gives us info about which landing pages are giving us the highest return - so we can focus more on those landing pages.
+Again, in the `Acquisitions > Traffic Acquisition Report`, we selec the dimension to `Session source/medium` - i.e. where the sessions are pouring in from.
+- Select a sessions source/medium that we want to deep dive into.  We will deep dive into that session source/medium dimension in the Explore reports
+- Explore - Free Form Report
+    - Dimensions - Session source/medium, event name, session campaign, landing page query string
+    - Metrics - purchase conversion rate, engagement rate, session key event rate
+    - filters   
+        - Sessions source/medium equals `google / cpc`
+        - event name matches regexp `session_start|purchase`
+        - session campaign matches the campaign we are analyizing.
+    - Review the landing page that has the various conversion rate and make budget decisions - for ex. for a goal for maximum profitability, one can reduce spending on landing pages which has very low conversion rate and increase spending on landing pages which has high conversion rate.
     
 
