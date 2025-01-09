@@ -166,5 +166,14 @@ Its done with browser cookie.  This is the structure of a GA cookie: `GA.1.2.180
     - add a filter with dimension `Session source / medium`
     - filter for the `cpc` or equivalent cost per count value.
     - look out for links with high bounce rate and remove them from target list to reduce the cost.
+
+## Custom Channel Grouping
+link: https://marcelclasses.udemy.com/course/ultimate-google-analytics-course-50-practical-tips/learn/lecture/40943508?start=15#overview
+Sometimes we want a more in-depth report wrt to groups.  For ex. we get the "Referrals" dimension in the Acquisition > Traffic Acquisition Report.  However, the referral could be from any party.  To get more detailed report about from where the referral is coming, we need to create a **custom channel group**.
+- So we go to Admin panel > Channel Groups. 
+- GA already provides a `Default Channel Group`.  Instead of modifying it, we duplicate it and work with it to avoid any unintended changes to the default one.
+- Once duplicated(copied), we need to add in the the specific referral we want to see the metrics for - add the equation - `source contains udemy` and name is `Udemy`.
+- The order of the channels list is critical.  For ex. if `Udemy Referrals` comes **after** general `Referrals`, `Udemy Referrals` will not show up because `Referral` catches all so there's nothing left for `Udemy Referral` to catch.  Thus, we need to move `Udemey Refferal` before `Referral` for it to catch some numbers.
+
     
 
