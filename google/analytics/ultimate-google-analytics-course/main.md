@@ -187,5 +187,11 @@ Again, in the `Acquisitions > Traffic Acquisition Report`, we selec the dimensio
         - event name matches regexp `session_start|purchase`
         - session campaign matches the campaign we are analyizing.
     - Review the landing page that has the various conversion rate and make budget decisions - for ex. for a goal for maximum profitability, one can reduce spending on landing pages which has very low conversion rate and increase spending on landing pages which has high conversion rate.
-    
+
+## Session and User Conversion Rates
+As of now, it seems that we cannot drill down (analyze) into the user conversion rate or session conversion rate - i.e. why conversions are happening so these numbers are not very helpful.  Howerver, we can have a custom report with these dimensions and metrics.
+- Dimensions - device category
+- Metrics - Transactions, Session conversion rate, user conversion rate, total users
+
+
 
