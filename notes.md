@@ -4,7 +4,11 @@
 1. CE: Compute Engine
 1. VPC Network: Virtual Private Cloud Network
 
-## Exercies
+## Theoretical Questions
+1. What are the advantages of cloud platform?
+1. What are regions and zones?
+
+## Practical Exercies
 1. CE: Create a VM from scratch (with Debian OS)
     1. get super user access (sudo su)
     1. upgrade all package (apt update)
