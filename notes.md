@@ -15,3 +15,4 @@
     1. install apache v2 (apt install apache2)
     1. render `hello world` on the IP address assigned to it: `echo "$(hostname), $(hostname -i)"`
     1. VPC: assign a static IP to it
+1. CE: Create a VM and add an automation script that installs apache2 and echos the hostname information to the index.html.  End result is that we should see the web page on the external IP address.
