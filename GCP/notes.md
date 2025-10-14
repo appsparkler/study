@@ -9,6 +9,8 @@
 1. What are regions and zones?
 
 ## Practical Exercies
+
+### Compute Engine | Creating VM Instances
 1. CE: Create a VM from scratch (with Debian OS)
     1. get super user access (sudo su)
     1. upgrade all package (apt update)
