@@ -7,7 +7,7 @@
 1. What are the advantages of cloud platform?
 1. What are regions and zones?
 1. What are committed-discounts?
-1. What are preemptible VMs?
+1. What are preemptible VMs?  What are its advantages and restrictions?
 
 ## Practical Exercies
 
