@@ -8,6 +8,7 @@
 1. What are regions and zones?
 1. What are committed-discounts?
 1. What are preemptible VMs?  What are its advantages and restrictions?
+1. What are spot VMs?  How are the different from preemptible VMs?
 
 ## Practical Exercies
 
