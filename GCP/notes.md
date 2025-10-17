@@ -34,3 +34,6 @@ echo "Hello world from $(hostname) $(hostname -I)" > /var/www/html/index.html
 1. Setup a purchase-committment (for getting committed discounts)
 1. Show example of how to create preemptible and spot VMs (low cost VMs)
 1. Setup a budget and alerts
+
+### Tips & Tricks
+1. VM: When creating a VM with GPU, ensure to use an image which contains all the necessary libraries so that the VM can be used effeciently.
