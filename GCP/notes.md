@@ -29,6 +29,7 @@ echo "Hello world from $(hostname) $(hostname -I)" > /var/www/html/index.html
 1. CE: Create a VM with automation script and then create a machine image from that VM.
     1. Create instance from that image.  When accessing it with the external IP, it should have the name of the current VM instead of the original VM from which the machine image was created. 
 1. CE: PLUS setup auto-restart if a VM shuts down when it becomes unresponsive.
+1. CE: PLUS monitor an instance: the CPU, memory and disk-space utilization, etc. for a VM.
 
 ### Other
 1. Setup a purchase-committment (for getting committed discounts)
