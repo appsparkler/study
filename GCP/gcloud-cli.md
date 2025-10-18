@@ -3,10 +3,11 @@
 ## Notes
 - `core` is the default namespace so for any properties under `core`, we don't need to provide the namespace.  For ex. `gcloud config list account` would work same as `gcloud config list core/account`
 
-## Setting/Getting Config details
+## Setting/Getting/Unsetting Config details
 - `gcloud config <set/get> core/project`
 - `glcoud config <set/get> compute/zone`
 - `gcloud config <set/get> core/verbosity`
+- `gcloud config unset compute/zone`
 
 ## Useful commands
 ```bash
