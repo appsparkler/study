@@ -40,6 +40,6 @@ echo "Hello world from $(hostname) $(hostname -I)" > /var/www/html/index.html
 ### Tips & Tricks
 1. VM: When creating a VM with GPU, ensure to use an image which contains all the necessary libraries so that the VM can be used effeciently.
 
-### `gcloud` CLI
+### `gcloud` CLI Practical exercies
 1. start the CLI from the cloud console and set a default configuration.  Try all the commands mentioned in gcloud-cli.md file
 
