@@ -4,11 +4,12 @@
 - `core` is the default namespace so for any properties under `core`, we don't need to provide the namespace.  For ex. `gcloud config list account` would work same as `gcloud config list core/account`
 
 ## Listing/Setting/Getting/Unsetting Config details
-- `gcloud config list core`
-- `gcloud config <set/get> core/project`
-- `glcoud config <set/get> compute/zone`
-- `gcloud config <set/get> core/verbosity`
-- `gcloud config unset compute/zone`
+- `gcloud config list` # Lists the configuration.
+- `gcloud config list account` # List the account configured in `core`
+- `gcloud config <set/get> core/project` # get/set the project configured in `core`
+- `glcoud config <set/get> compute/zone` # get/set the zone configured in `compute`
+- `gcloud config <set/get> core/verbosity` # get/set the verbosity in core configuration
+- `gcloud config unset compute/zone` # unset a particular configuraiton
 
 ## Help!
 Help can be requested at any level.  For ex:
