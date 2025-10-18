@@ -11,6 +11,14 @@
 - `gcloud config <set/get> core/verbosity` # get/set the verbosity in core configuration
 - `gcloud config unset compute/zone` # unset a particular configuraiton
 
+## Listing/Creating/Activiating/Deleting/Describing Configurations
+- `gcloud config configurations`
+- `gcloud config configurations list` # Lists all configurations
+- `gcloud config configurations create <configuration-name>` # Creates a new configuration with the provided `configuration-name`
+- `gcloud config configurations activate <configuration-name>` # Activates the configuration provided
+- `gcloud config configurations describe <configuration-name>` # Describes the configuration provided
+- `gcloud config configurations delete <configuration-name>` # Deletes the configuration provided
+
 ## Help!
 Help can be requested at any level.  For ex:
 - `gcloud --help`
