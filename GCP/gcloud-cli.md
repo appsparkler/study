@@ -22,6 +22,15 @@
 - The default values can be overridded with local configuration values (in gcloud CLI).
 - Local configuration values can be further be overridden with command line options. 
 
+## `list` and `describe` commands
+- List are for getting a list of items whereas describe is to get informationon a particular item.
+- LIST # `gcloud compute regions/zones/images/machine-types/etc. list`
+    - common options are 
+        - `--filter=zone:<value>` # example `gcloud compute zones list --sort-by ~name --filter region:africa-south1`
+        - `--sort-by=<property>` # `--sort-by=region`.  for reverse sorting `--sort-by=~region` # example `gcloud compute regions list --sort-by ~name`
+        - `--uri` # will output the URI # `gcloud compute zones list --sort-by ~name --filter region:africa-south1 --uri`
+- DESCRIBE # `gcloud compute region  
+
 ## Listing/Setting/Getting/Unsetting Config details
 - `gcloud config list` # Lists the configuration.
 - `gcloud config list account` # List the account configured in `core`
