@@ -3,6 +3,16 @@
 ## Notes
 - `core` is the default namespace so for any properties under `core`, we don't need to provide the namespace.  For ex. `gcloud config list account` would work same as `gcloud config list core/account`
 
+## Anatomy of the `gcloud` CLI
+- `gcloud <GROUP> <SUB-GROUP> <ACTION>` is the bare bones structure of a gcloud command.
+- GROUP # could be any of config, compute, network-security, iam, etc.
+- SUBGROUP # examples are `instances` for `compute` or `configurations` for `config`, etc.
+- ACTION # examples are `describe`, `create`, `edit`, `delete`, etc.
+- examples:
+    - `gcloud compute instances describe <instance-name>`
+    - `gcloud compute instances create <instance-name>`
+    - `gcloud compute instances delete <instance-name>`
+
 ## Listing/Setting/Getting/Unsetting Config details
 - `gcloud config list` # Lists the configuration.
 - `gcloud config list account` # List the account configured in `core`
