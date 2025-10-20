@@ -13,7 +13,12 @@
     1. What is the command structure for `gcloud` commands?
     1. Render a list of machine-types filtered for 2 zones.
     1. How to configure the metadata?
-
+    1. List
+        1. List the regions for compute group, sort them by name in ascending and descending order, enlist the URI of these regions
+        1. List the various zones, for a particular region (apply filter) and list the URI for these zones.
+    1. Describe
+        1. Output the description of a region; for ex. afriaca-south1 region
+        
 ## Practical Exercies
 
 ### Compute Engine | Creating VM Instances
