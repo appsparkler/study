@@ -4,7 +4,7 @@
 - `core` is the default namespace so for any properties under `core`, we don't need to provide the namespace.  For ex. `gcloud config list account` would work same as `gcloud config list core/account`
 
 ## Anatomy of the `gcloud` CLI
-- `gcloud <GROUP> <SUB-GROUP> <ACTION>` is the bare bones structure of a gcloud command.
+- `gcloud <GROUP> <SUB-GROUP> <ACTION> <--options>` is the bare bones structure of a gcloud command.
 - GROUP # could be any of config, compute, network-security, iam, etc.
 - SUBGROUP # examples are `instances` for `compute` or `configurations` for `config`, etc.
 - ACTION # examples are `describe`, `create`, `edit`, `delete`, etc.
@@ -12,6 +12,15 @@
     - `gcloud compute instances describe <instance-name>`
     - `gcloud compute instances create <instance-name>`
     - `gcloud compute instances delete <instance-name>`
+- OPTIONS # examples are `--filter` for `machine-types` in `compute` 
+    - `gcloud compute machine-types list --filter zone:asia-southeast3-a`
+    - `gcloud compute machine-types list --filter "zone:(asia-southeast3-a asia-southeast3-b)"`
+
+## Configuring Default Settings and Overriding them
+- Default settings can be set with the command line or the UI/UX
+- Example with command line is `gcloud compute project-info add-metadata --metadata=...`
+- The default values can be overridded with local configuration values (in gcloud CLI).
+- Local configuration values can be further be overridden with command line options. 
 
 ## Listing/Setting/Getting/Unsetting Config details
 - `gcloud config list` # Lists the configuration.

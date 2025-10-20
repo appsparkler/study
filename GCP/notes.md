@@ -9,6 +9,10 @@
 1. What are committed-discounts?
 1. What are preemptible VMs?  What are its advantages and restrictions?
 1. What are spot VMs?  How are the different from preemptible VMs?
+1. GCLOUD CLI:
+    1. What is the command structure for `gcloud` commands?
+    1. Render a list of machine-types filtered for 2 zones.
+    1. How to configure the metadata?
 
 ## Practical Exercies
 
