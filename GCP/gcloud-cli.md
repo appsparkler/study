@@ -47,6 +47,10 @@
 - `gcloud config configurations describe <configuration-name>` # Describes the configuration provided
 - `gcloud config configurations delete <configuration-name>` # Deletes the configuration provided
 
+## Using Instance Templates
+We can create, delete or describe instance-templates using the `instance-templates` sub-group
+- `gcloud compute instance-templates <action>` 
+
 ## Help!
 Help can be requested at any level.  For ex:
 - `gcloud --help`

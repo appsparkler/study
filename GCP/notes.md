@@ -41,6 +41,7 @@ echo "Hello world from $(hostname) $(hostname -I)" > /var/www/html/index.html
 1. CE: PLUS setup auto-restart if a VM shuts down when it becomes unresponsive.
 1. CE: PLUS monitor an instance: the CPU, memory and disk-space utilization, etc. for a VM.
 1. CE: PLUS CREATE a sole-tenant template and node.  Run a VM on the sole-tenant node. 
+1. CLI:CE: CREATE an instance-template from the command line.  Next, create an instance with that instance template.
 
 ### Other
 1. Setup a purchase-committment (for getting committed discounts)
