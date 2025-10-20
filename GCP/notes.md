@@ -18,7 +18,8 @@
         1. List the various zones, for a particular region (apply filter) and list the URI for these zones.
     1. Describe
         1. Output the description of a region; for ex. afriaca-south1 region
-        
+    1. Create, Delete, Describe, Start and Stop a VM with the `gcloud` CLI. 
+
 ## Practical Exercies
 
 ### Compute Engine | Creating VM Instances
