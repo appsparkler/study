@@ -31,4 +31,7 @@ They can be cofigured as zonal (all instances in the same zone) or regional (all
         - initial delay: configure how long should you wait for the app to initialize before running a health check.
 
 ## Practical Exercises
-1. Create a 
+1. Create an instance group with an instance-template.  Configure auto-scaling and auto-healing.
+    1. Update the instance group with a new template.  Try both update policies:
+        1. Selective
+        1. Opportunistic
