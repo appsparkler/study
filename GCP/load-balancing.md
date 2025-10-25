@@ -37,5 +37,5 @@ Each layer makes use of the layer beneath it.  For ex. when we use the applicati
 ## Cloud Load Balancing Terminology
 1. Backend: Group of endpoints that receive traffic from a Google Cloud Load Balancer
 1. FrontEnd: The front-end IP for our client requests
-1. Routing Policy: For HTTP(S) load balancing to define rules directing the traffic to differnt backends.
+1. Routing Policy: For HTTP(S) load balancing to define rules directing the traffic to differnt backends.  For ex. we can rederict /v1 and /v2 to backend-service-1 and backend-service-2 respectively.
 
