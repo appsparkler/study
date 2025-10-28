@@ -37,5 +37,28 @@ Each layer makes use of the layer beneath it.  For ex. when we use the applicati
 ## Cloud Load Balancing Terminology
 1. Backend: Group of endpoints that receive traffic from a Google Cloud Load Balancer
 1. FrontEnd: The front-end IP for our client requests
-1. Routing Policy: For HTTP(S) load balancing to define rules directing the traffic to differnt backends.  For ex. we can rederict /v1 and /v2 to backend-service-1 and backend-service-2 respectively.
+1. Routing Policy: For HTTP(S) load balancing to define rules directing the traffic to differnt backends.  
+    - path based: For ex. we can rederict /v1 and /v2 to backend-service-v1 and backend-service-v2 respectively.
+    - host based: a.abc.com and b.abc.com could be directed to directed to different backend services
+    - http headers based: we can redirect traffic to a particular backend-service based on how the http headers are configured.
+
+## SSL/TLS Termination/Offloading
+- Client to load balancer: Over Internet - HTTPS recommended
+- Load balancer to VM instances: Through GOogle internal netowrk so HTTP is ok; HTTPS is preferred.
+- SSL/TLS Termination/Offloading 
+
+## Choosing a load balancer
+Choosing a load balancer, is based on traffic which can be either internal or external:
+- Internal IPv4 clients > Internal (traffic to/from internal IP addresses)
+    - > TCP or UDP traffic ? - Choose the Internal TCP/UDP load balancer
+    - > HTTP or HTTPS traffic? - Choose the INternal HTTP(S) load balancer
+- Extnernal IPv4 or IPv6 client > External (Internet to GCP Traffic)
+    - > HTTP or HTTPS
+        - > Regional - regional external HTTPS Load balancer
+        - > Not Regional - External HTTPS load balancer
+    - > TCP - SSL Offload?
+        - > Yes - SSL Proxy
+        - > No - 
+    - > UDP
+    - > ECP or IMPC
 
