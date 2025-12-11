@@ -1,6 +1,9 @@
 # Practical Labs
 
-## 1
+## 2 - Readymade LAMP stack in miniutes
+1. Setup a LAMP stack via the market place and visit 
+
+## 1 - Cloud Console and Cloud Shell Intro
 1. Create a storage bucket on Cloud Console
 1. Create a storage bucket from the Cloud Shell
     1. Checkout the UI and various features and options of the shell.
@@ -11,4 +14,3 @@
     1. Create `infraclass/config` file and save these variables in it.
     1. Use Nano to edit `.profile` and add `source infraclass/config` at the end of the file.
     1. Restart the environment variable and verify that the variables are available in the local environment.
-    
