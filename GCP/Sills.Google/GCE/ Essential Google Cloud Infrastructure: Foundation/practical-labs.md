@@ -1,9 +1,13 @@
 # Practical Labs
 
+
+
 ## 3 - Creating, deleting and switching between projects
 1. Create two projects
 1. Switch between projects on Cloud Console and on Cloud Shell 
 1. Shutdown a project from Cloud Console as well as Cloud Shell
+Ref link: https://www.youtube.com/watch?v=P_QHiOYwt0o
+
 
 ## 2.2 - Readymad Jenkins Solution
 1. Setup Jenkins via the market place
