@@ -1,6 +1,10 @@
 # Practical Labs
 
-
+## 4 - VPC Networking
+1. create an auto mode VPC network with firewall rules and two VM instances. 
+1. convert the auto mode network to a custom mode network and create other custom mode networks as shown in the example network diagram below:
+    ![example network diagram](example-network-diagram.png)
+1. You also test connectivity across networks.
 
 ## 3 - Creating, deleting and switching between projects
 1. Create two projects
