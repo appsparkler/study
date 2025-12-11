@@ -1,6 +1,16 @@
 # Practical Labs
 
-## 2 - Readymade LAMP stack in miniutes
+## 3 - Creating, deleting and switching between projects
+1. Create two projects
+1. Switch between projects on Cloud Console and on Cloud Shell 
+1. Shutdown a project from Cloud Console as well as Cloud Shell
+
+## 2.2 - Readymad Jenkins Solution
+1. Setup Jenkins via the market place
+https://www.youtube.com/watch?v=T2OV_dkgny4
+
+
+## 2.1 - Readymade LAMP stack in miniutes
 1. Setup a LAMP stack via the market place and visit 
 
 ## 1 - Cloud Console and Cloud Shell Intro
