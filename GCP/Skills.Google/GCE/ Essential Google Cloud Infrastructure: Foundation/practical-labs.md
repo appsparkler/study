@@ -1,5 +1,16 @@
 # Practical Labs
 
+## 6 - Understand Network Designs
+https://www.youtube.com/watch?v=tqwn3GPGroc
+
+## 5 - VPC Networking (Advanced)
+https://www.youtube.com/watch?v=NF1TDOInL5M
+- review network, subnetwork, routes and firewall in a project
+- delete default network and firewall rules
+- create network `mynetwork` with auto subnet (not recommended for production)
+- edit `mynetwork` network with custom subnet (recommended for production)
+- create two VMs on `mynetwork` in different
+
 ## 4 - VPC Networking
 1. create an auto mode VPC network with firewall rules and two VM instances. 
 1. convert the auto mode network to a custom mode network and create other custom mode networks as shown in the example network diagram below:
