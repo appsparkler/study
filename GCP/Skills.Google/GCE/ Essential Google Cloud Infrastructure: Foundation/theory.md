@@ -2,7 +2,7 @@
 
 ## VMs
 - There are 4 types of machine types
-    - General Purpose
+    - General Purpose - for day to day computing at a lower cost
     - Compute Optimized
     - Memory Optimized
     - Accelerator Optimized
