@@ -2,6 +2,7 @@
 
 ## 7 - Implement Private Google Access and Cloud NAT
 https://www.skills.google/paths/11/course_templates/50/labs/578291
+https://www.youtube.com/watch?v=9wRvnOAka7g
 - Create a private network with custom subnets
     - This subnet should not have access to Google services
 - Create a firewall rule
