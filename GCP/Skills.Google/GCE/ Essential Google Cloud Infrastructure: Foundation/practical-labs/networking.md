@@ -1,4 +1,5 @@
 # Practical Labs
+
 ## 7 - Implement Private Google Access and Cloud NAT
 https://www.skills.google/paths/11/course_templates/50/labs/578291
 https://www.youtube.com/watch?v=9wRvnOAka7g
