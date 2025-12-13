@@ -1,5 +1,13 @@
 # Practical Labs
 
+## 7 - Implement Private Google Access and Cloud NAT
+https://www.skills.google/paths/11/course_templates/50/labs/578291
+- Create a private network with custom subnets
+    - This subnet should not have access to Google services
+- Create a firewall rule
+- Attach a VM without external IP to this network
+    - Verify access to public IP addresses of Google APIs and services and other connections to the internet
+
 ## 6 - Understand Network Designs
 https://www.youtube.com/watch?v=tqwn3GPGroc
 
